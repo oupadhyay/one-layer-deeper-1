@@ -1,0 +1,7 @@
+{"elapsed_seconds":3.5,"exact_accuracy":0.0,"loss":3.043,"seed":74,"step":1,"type":"train"}
+{"elapsed_seconds":5.3,"exact_accuracy":0.008,"loss":2.113,"seed":74,"step":100,"type":"train"}
+{"elapsed_seconds":7.4,"exact_accuracy":0.016,"loss":2.105,"seed":74,"step":200,"type":"train"}
+{"elapsed_seconds":9.4,"exact_accuracy":0.055,"loss":1.899,"seed":74,"step":300,"type":"train"}
+{"exact_accuracy":0.009,"loss":2.394,"seed":74,"split":"test","type":"evaluation"}
+{"exact_accuracy":0.008,"loss":2.452,"seed":74,"split":"ood","type":"evaluation"}
+{"completed_steps":300,"mean_exact_accuracy":0.008,"training_seconds":9.4,"type":"summary"}
