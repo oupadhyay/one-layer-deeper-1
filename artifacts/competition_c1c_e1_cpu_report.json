@@ -1,0 +1,151 @@
+{
+  "track": "competition_engineering",
+  "run": "C1C_inner_refinement_x2_CPU_diagnostic",
+  "tier_faithful_timing": false,
+  "retry_count": 0,
+  "single_change_from_C1B": "reuse the complete tied transition body twice continuously within each outer macrostep, with one readout and feedback event after the second refinement",
+  "frozen_parent": {
+    "C1B_source": {"path": "competition_submission_c1b.py", "sha256": "425efc4b0422585008de49704857bc4d6e9e9936b127e66926d4987b3c00d293"},
+    "C1B_tests": {"path": "tests/test_competition_submission_c1b.py", "sha256": "abf417a1fe3fd32e400ae77ffd997de9fc1d31200b703fabf6e4a27d74852704"},
+    "C1B_report": {"path": "artifacts/competition_c1b_e1_cpu_report.json", "sha256": "377cb65213498217797f0feaf7e42b49858582f80c40815291d625fa3cf5a9b5"},
+    "C1A_source": {"path": "competition_submission_c1a.py", "sha256": "2ac90e61d36fa57c7f4f9ab7144b26022a515e3374c43ff87b7ede95ab4bb354"},
+    "C0_source": {"path": "competition_submission.py", "sha256": "00468b791b5b0ad23739170ceb1eec24f3a24c99ef7ef929fa4acf414cbedc73"},
+    "C0_tests": {"path": "tests/test_competition_submission.py", "sha256": "5bd5a82dfa5545641cf152225f8ca10c486b621fd598f788cc2b7de9e2af979b"}
+  },
+  "candidate": {
+    "source": {"path": "competition_submission_c1c.py", "sha256": "1ce0d67b7df8d9d3f1c1ba3de9b2ce5f077f852b86d97bb1910d8aabeb840680"},
+    "tests": {"path": "tests/test_competition_submission_c1c.py", "sha256": "0911b07a669c6656787d8058f586b60ab8a5bca86c031c88b803936760e8f520"},
+    "preflight": {"path": "artifacts/competition_c1c_preflight.json", "sha256": "4ae42163f50c997f641c5d29a9c2676ede358ff372ea217205d55888f8a2bc13"},
+    "persistent_state_change": false,
+    "seed74_state_dict_bitwise_equal_to_C1B_before_execution": true,
+    "optimizer_function_identity_preserved": true,
+    "training_gradient_gate": {"T1": 1.0, "T_not_1": 0.01},
+    "soft_whole_state_feedback_in_training": true,
+    "hard_whole_state_feedback_in_evaluation": true
+  },
+  "raw_runner_stdout": {
+    "path": "artifacts/competition_c1c_e1_cpu_raw_stdout.txt",
+    "sha256": "3e73d4f94b4ee2784c64e7cc85c5d7311dad750e1136392793e6f133653731fd",
+    "byte_count": 4682,
+    "utf8_bom": false,
+    "result_json_line_count": 1,
+    "contains_exact_RESULT_JSON_and_structured_metrics": true
+  },
+  "manifest": {
+    "path": "benchmark/manifests/local_competition_c1_e1_cpu.json",
+    "sha256": "0d1e9c8ed4d649f4e0d2767f853916163e46a7f223f6c16187e03737ae14bfcf"
+  },
+  "dataset": {
+    "root": "data/generated/squaring_mod_new11_easy_bidirectional_fixed_n_323_t123",
+    "sha256": {
+      "dataset_config.json": "84810bd77ef547af0248bee8d6167a32d88cc51be1e59b17cf8328446c2cca90",
+      "train.jsonl": "0bb75359414176c0b9d9f02d4130b688402f4874832536c56345d2e6f59bba53",
+      "test.jsonl": "32334305f4c1beaa0441ead71c0d64a6f5b529114ae1d0d5657242446664df09",
+      "ood.jsonl": "540de4cf620e4db3676ae4a9542aee24547784bdde65f71a8e569286a6af7cce",
+      "depth_t_1.jsonl": "b7be8bfcaa8b5600140a81cdc1fe7cfabd098002d4d5fae374e5e129590be40c",
+      "depth_t_2.jsonl": "aea79fed80d5045ede0cb064647becbc9a94fec0790ebdbe88ebc66f49da0f23",
+      "depth_t_4.jsonl": "b92d9e887f51c8f2364311179ec232876508c57453d88cfd928532f344a5e36c",
+      "depth_t_8.jsonl": "5a44f90369f4c2f6fba8141b2e78b1577e4886268bfb80b5209aa24b088cf7e0",
+      "depth_t_16.jsonl": "0ba887f041ab30513d87c20181eedee0e78251283585828c6d7043cee8c2d2a2",
+      "depth_t_32.jsonl": "831a6c3ec560e33741859b5a20afa8a5226feff8bd3efac68e6e681b8afbd357",
+      "depth_t_64.jsonl": "7fd67e1e13db4b9cd1d1100145358a9fbf2b7f64e8421703ec6709e95d50b0e2",
+      "depth_ood_n_t_1.jsonl": "4486381cf671f73a247ef8007e55d7f74c2aa46203449a9b08e3e34e5c4bc987",
+      "depth_ood_n_t_2.jsonl": "8ccd518530e714d68f2d31caa81a23ef81d2873c385316152b2bdcac9b90b5e9",
+      "depth_ood_n_t_4.jsonl": "98b86d64e7a80a97ba6b9aa3e7284a4b5ec3fb3cad8bad9903120dda9270b6fc",
+      "depth_ood_n_t_8.jsonl": "0373c808a8e5fa10a611ff8397491e67fcf8c205fb4220793a157c4968c0cae9",
+      "depth_ood_n_t_16.jsonl": "9156c1fae88a175d76d37896bcbfadff46575b396b0eea373d843dcf9a402824",
+      "depth_ood_n_t_32.jsonl": "c73d3102890acb7145634e466a88f4939344b462c78f87dae4629e3167d8d67b",
+      "depth_ood_n_t_64.jsonl": "5af162d3e9ddb8bc77c56246c591be74ec68da0c81b21c638a25a0410b37c0a7"
+    }
+  },
+  "environment": {
+    "python": "3.13.5",
+    "torch": "2.12.1+cpu",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD",
+    "cuda_available": false,
+    "device": "cpu",
+    "dtype": "float32",
+    "amp": false,
+    "git_head": "629a579da22379086f46942ad16935b31ce1b821"
+  },
+  "training": {
+    "seed": 74,
+    "batch_size": 64,
+    "allowance_seconds": 60.0,
+    "wall_seconds": 60.22126059996663,
+    "completed_steps": 199,
+    "examples_seen": 12736,
+    "updates_per_second": 3.304480809890424,
+    "examples_per_second": 211.48677183298713,
+    "model_state_elements": 311594,
+    "optimizer_state_elements_after_first_step": 623225,
+    "below_peak_lr_updates": 19,
+    "peak_lr_updates": 180,
+    "first_peak_lr_update": 20,
+    "learning_rate": {
+      "base": 0.0008,
+      "update_1": 0.00004,
+      "update_10": 0.0004,
+      "update_19": 0.00076,
+      "update_20_through_199": 0.0008
+    },
+    "curve": [
+      {"step": 1, "elapsed_seconds": 3.0, "loss": 2.684, "exact_accuracy_rounded": 0.0},
+      {"step": 100, "elapsed_seconds": 31.4, "loss": 1.933, "exact_accuracy_rounded": 0.031},
+      {"step": 199, "elapsed_seconds": 60.2, "loss": 1.916, "exact_accuracy_rounded": 0.031}
+    ],
+    "final_train_loss_exact": 1.9164553880691528,
+    "final_exact_count_not_preserved": true
+  },
+  "evaluation": {
+    "allowance_seconds": 30.0,
+    "wall_seconds": 30.45299759999034,
+    "test": {"loss": 1.898262945493855, "correct": 5, "count": 150},
+    "test_by_T": {
+      "status": "unavailable_from_frozen_runner_outputs",
+      "reason": "the runner preserved only aggregate test metrics and no checkpoint or per-example predictions; training was not rerun"
+    },
+    "ood_T6": {"loss": 1.8696529865264893, "correct": 6, "count": 100},
+    "seen_n_depth": [
+      {"T": 1, "status": "failed", "correct": 0, "count": 38},
+      {"T": 2, "status": "failed", "correct": 1, "count": 38},
+      {"T": 4, "status": "failed", "correct": 3, "count": 38},
+      {"T": 8, "status": "failed", "correct": 3, "count": 38},
+      {"T": 16, "status": "failed", "correct": 3, "count": 38},
+      {"T": 32, "status": "failed", "correct": 3, "count": 38},
+      {"T": 64, "status": "failed", "correct": 3, "count": 38}
+    ],
+    "ood_n_depth": [
+      {"T": 1, "status": "failed", "correct": 1, "count": 512},
+      {"T": 2, "status": "failed", "correct": 2, "count": 512},
+      {"T": 4, "status": "failed", "correct": 3, "count": 512},
+      {"T": 8, "status": "not_completed_timeout", "correct": null, "count": 512},
+      {"T": 16, "status": "not_started_evaluation_timeout", "correct": null, "count": 512},
+      {"T": 32, "status": "not_started_evaluation_timeout", "correct": null, "count": 512},
+      {"T": 64, "status": "not_started_evaluation_timeout", "correct": null, "count": 512}
+    ]
+  },
+  "throughput_comparison": {
+    "C1B": {"completed_steps": 217, "examples_seen": 13888, "wall_seconds": 62.3463902999938, "updates_per_second": 3.4805543505543026},
+    "C1C": {"completed_steps": 199, "examples_seen": 12736, "wall_seconds": 60.22126059996663, "updates_per_second": 3.304480809890424},
+    "C1C_over_C1B_updates_per_second": 0.9494122134205898,
+    "C1C_update_throughput_reduction_fraction": 0.05058778657941021,
+    "fixed_budget_exposure_confound": "C1C received 18 fewer updates and 1152 fewer examples than C1B; this competition-budget comparison does not isolate representational depth from optimization exposure."
+  },
+  "comparison": {
+    "C1B": {
+      "test": {"loss": 1.9091338457312073, "correct": 9, "count": 150},
+      "ood_T6": {"loss": 1.883508324623108, "correct": 10, "count": 100},
+      "seen_n_T1": {"correct": 1, "count": 38}
+    },
+    "no_input_train_position_marginal": {
+      "test_T1": {"loss": 1.9520262894, "correct": 1, "count": 50},
+      "test_T2": {"loss": 1.8600860870, "correct": 2, "count": 50},
+      "test_T3": {"loss": 1.8347353707, "correct": 6, "count": 50},
+      "test_aggregate": {"loss": 1.8830257671, "correct": 9, "count": 150},
+      "seen_n_T1": {"loss": 1.9064306192, "correct": 1, "count": 38}
+    }
+  },
+  "decision": "Predeclared rejection branch triggered: seen-N T1 is 0/38 (at or below 1/38) and aggregate test is 5/150, below the 9/150 no-input marginal, with worse CE. Reject inner_refinement_x2 under this fixed CPU budget; do not escalate refinement count. C2 remains locked and no retry or remote action is authorized."
+}

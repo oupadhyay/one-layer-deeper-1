@@ -1,0 +1,50 @@
+{
+  "architecture_import": "benchmark.s2_c1.S2Transformer",
+  "architecture_source_sha256": "283a1033e78f1e241554e495d366d30aa2033278ab08d6726a512072fb164087",
+  "checkpoint_sha256": "b321c4d310d555abeb420cd3e3df9c41a9d3bc698c686b4eeb84ec27ddcea9b2",
+  "claim_scope": "density/capacity control, not sparse-learning success",
+  "config_diff": "same seed78/batch256/AdamW/clip/fp32 CPU and fixed 5040 steps; dense contents/order and epochs-per-example differ; 37 full epochs plus 45 batches of epoch38",
+  "dataset_config_sha256": "10c26a868b02403b68f7f0348771b52866fcd1de8fb1978a6ce2f412327f2a98",
+  "dataset_diff": "dense train exact complement of test and T64 source edges; test/depth byte-copied; most non-threshold test states now lie between dense train neighbors, while threshold outputs remain uniquely held out",
+  "dataset_hashes": {
+    "dataset_config.json": "10c26a868b02403b68f7f0348771b52866fcd1de8fb1978a6ce2f412327f2a98",
+    "depth_t_16.jsonl": "66acfdc5612b7e1320c964f4ca197fb70fb744dbacbb8555c62d288b3e3fed79",
+    "depth_t_2.jsonl": "e8d54f79c3e51657d89138268fccc09950cdb6a43090c37fe5a08c81dac87435",
+    "depth_t_32.jsonl": "de8e9757832c8f5c23d6207f62f1307f56e9353b337b96e688887112402711ad",
+    "depth_t_4.jsonl": "8bed5b1df217a26035c9888bbdb634d24aed056b049b6178d03053ee0f25b951",
+    "depth_t_64.jsonl": "1bec3d8b712620a91072a6e52e39f88f0476bf03c0120ca701a20b81f9718d97",
+    "depth_t_8.jsonl": "fd407bef75e85a2f7a48ddb8afc2b3d36b32b7ba9b55aac4ffbdb051d75a2f54",
+    "test_state.jsonl": "4accb941940d5ff9d513b3d887c20a589e9c6c348b9833db64129b01fc65fcb2",
+    "train.jsonl": "4f1db72713873ba564f3b21faefc8f132d0f201b267b6870a3452c8ee3c1441c"
+  },
+  "dataset_manifest_sha256": "817e2df936909427934fdbe8f59ea1d596649c3e14eb2facedce6c97c64bf578",
+  "dataset_source_sha256": "86d4d28cbc98674441b480fb0457a90ce49dc59c714cb5eb3eedc2616a2682ae",
+  "depth_parsed_jsonl": [],
+  "device": "cpu",
+  "dtype": "torch.float32",
+  "example_count_delta_percent": 0.09468749999999027,
+  "examples_seen": 1281212,
+  "initialized_named_tensors_bitwise_equal_to_fresh_sparse_seed78": true,
+  "model_diff": "none; exact imported class",
+  "no_retry_selection_scheduler": true,
+  "optimization_parsed_jsonl": [
+    "train.jsonl"
+  ],
+  "optimizer_steps": 5040,
+  "parameter_count": 796426,
+  "parent_artifacts": {
+    "checkpoint_sha256": "78114f47b9516862cca5ae6191dad06318d3a81d1b52aab3d27f2b0d33c18ab7",
+    "metrics_sha256": "34c47580000dfcfceb976dad68df46dbcef0e7c192942fcfecc6214cb84893c8",
+    "provenance_sha256": "08b2e093700c5ce8dc9d05b49f1e802d3a270c8d1789be4a12c86d310871744d",
+    "sparse_c1_g1_pass": false,
+    "sparse_c1_test_errors": 11
+  },
+  "post_freeze_parsed_jsonl": [
+    "train.jsonl",
+    "test_state.jsonl"
+  ],
+  "runner_sha256": "f2387a987c07238ba0191b214d2461df04323a8796ad649053afc4d922f7069f",
+  "runner_test_sha256": "4e4337c964e9af55e5bb4f66f7def9f946b9587e5e8770df5e7cdfc5d9e226f6",
+  "sparse_examples_seen": 1280000,
+  "weights_only_strict_checkpoint_load": true
+}

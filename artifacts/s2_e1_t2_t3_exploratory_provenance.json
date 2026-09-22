@@ -1,0 +1,93 @@
+{
+  "access": {
+    "maximum_inferred_macrostep": 3,
+    "model_inference_inputs": {
+      "T2": "pinned depth_t_2 rows",
+      "T3": "derived in memory from pinned depth_t_64 prefixes"
+    },
+    "observed_path_open_calls_for_prefix_audit": [
+      "data\\generated\\s2_doublemod_seen_dense_v1\\depth_t_2.jsonl",
+      "data\\generated\\s2_doublemod_seen_dense_v1\\depth_t_4.jsonl",
+      "data\\generated\\s2_doublemod_seen_dense_v1\\depth_t_64.jsonl"
+    ],
+    "parsed_for_prefix_audit": [
+      "data\\generated\\s2_doublemod_seen_dense_v1\\depth_t_2.jsonl",
+      "data\\generated\\s2_doublemod_seen_dense_v1\\depth_t_4.jsonl",
+      "data\\generated\\s2_doublemod_seen_dense_v1\\depth_t_64.jsonl"
+    ],
+    "source_enforced_allowed_depth_paths": [
+      "data\\generated\\s2_doublemod_seen_dense_v1\\depth_t_2.jsonl",
+      "data\\generated\\s2_doublemod_seen_dense_v1\\depth_t_4.jsonl",
+      "data\\generated\\s2_doublemod_seen_dense_v1\\depth_t_64.jsonl"
+    ]
+  },
+  "certification": false,
+  "competition_engineering_implication": "diagnostic_only",
+  "derived_t3_sha256": "114df273d02b18577d72cb9b01ef786c6a8795ca5fd5d41fd00105761e1736f2",
+  "environment": {
+    "cpu_fp32": true,
+    "deterministic": true,
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.5 (main, Jul 23 2025, 00:30:06) [MSC v.1944 64 bit (AMD64)]",
+    "torch": "2.12.1+cpu"
+  },
+  "exploratory_only": true,
+  "historical_s2_stop_unchanged": true,
+  "inputs": {
+    "T2": {
+      "path": "data\\generated\\s2_doublemod_seen_dense_v1\\depth_t_2.jsonl",
+      "sha256": "e8d54f79c3e51657d89138268fccc09950cdb6a43090c37fe5a08c81dac87435"
+    },
+    "T4": {
+      "path": "data\\generated\\s2_doublemod_seen_dense_v1\\depth_t_4.jsonl",
+      "sha256": "8bed5b1df217a26035c9888bbdb634d24aed056b049b6178d03053ee0f25b951"
+    },
+    "T64": {
+      "path": "data\\generated\\s2_doublemod_seen_dense_v1\\depth_t_64.jsonl",
+      "sha256": "1bec3d8b712620a91072a6e52e39f88f0476bf03c0120ca701a20b81f9718d97"
+    },
+    "checkpoint": {
+      "path": "artifacts\\s2_e1_biscan_seed79.pt",
+      "sha256": "d0b6ef957d1876d226b2be7021d72986529f0c5053e4d17f35cb77099b9e14fb"
+    },
+    "dense_config": {
+      "path": "data\\generated\\s2_doublemod_seen_dense_v1\\dataset_config.json",
+      "sha256": "10c26a868b02403b68f7f0348771b52866fcd1de8fb1978a6ce2f412327f2a98"
+    },
+    "e1_metrics": {
+      "path": "metrics_s2_e1_biscan_seed79.jsonl",
+      "sha256": "2687220cfcee25e98fa449ff6c993b957309b44389151a8b0ff54a436a238793"
+    },
+    "e1_predeclaration": {
+      "path": "artifacts\\s2_e1_biscan_seed79_predeclaration.json",
+      "sha256": "f7c93a840c3b6ec99ddc4afdc207603285b103599ba5dc43afa029700d47e98e"
+    },
+    "e1_provenance": {
+      "path": "artifacts\\s2_e1_biscan_seed79_provenance.json",
+      "sha256": "39073932d08b6e74d54dec3f5b87d04e33c2319b7d9c53a42dfa94ebd5dc9249"
+    },
+    "e1_runner": {
+      "path": "benchmark\\s2_e1_biscan.py",
+      "sha256": "62ce733484eee46b313e550ee88bd1c2274a1b5ff2d8d6c87b5c251d030aa98a"
+    },
+    "manifest": {
+      "path": "data\\generated\\s2_doublemod_seen_dense_v1\\artifact_manifest.json",
+      "sha256": "817e2df936909427934fdbe8f59ea1d596649c3e14eb2facedce6c97c64bf578"
+    }
+  },
+  "model_calls": {
+    "T4": 0,
+    "initial": 10,
+    "repeat": 10
+  },
+  "purpose": "empirical_error_propagation_of_imperfect_E1_transition",
+  "repeat_equal": true,
+  "source_sha256": "a0f81ec75b156bb4416d8eafad88dd33a1945e64d97556baf20537a58c2c87db",
+  "state_nonmutation": true,
+  "test_sha256": "d484ec15fc765040c68e847ca5bbfadb5b7a67850ac5951973085cb179aa07e4",
+  "trace_sha256": {
+    "T2": "97a86a135cf185f92c3b031d782d545188c4826966b76c8ab80d79c7347d2b9f",
+    "T3": "6b05a2a9d6a471f78b562f2343ce1d0d3bdb481f8bd2461738d29d624d644607"
+  },
+  "training": null
+}

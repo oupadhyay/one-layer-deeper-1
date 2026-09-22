@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>One Layer Deeper — Research Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="eyebrow">Frozen experiment review</div>
+    <h1>One Layer Deeper research portal</h1>
+    <p class="lede">A static record of recent attempts. Training fit and held-out transfer are reported separately; a fitted training set is not evidence of transfer.</p>
+    <section class="references" aria-labelledby="references-title">
+      <h2 id="references-title">Frozen references</h2>
+      <p><strong>No-input baseline:</strong> aggregate test 9/150 · CE 1.8830257671; test T1 1/50 · CE 1.9520262894; seen-N T1 1/38 · CE 1.9064306192; aggregate OOD 10/100 · CE 1.7731187227.</p>
+      <p><strong>Strongest frozen E1 BiScan reference:</strong> promotion fail. Retained as a reference, not a successful transfer result.</p>
+      <p><strong>Joint T1 transfer:</strong> the score is the lower of each T1 accuracy divided by its public reference: seen-N 4/512 and OOD-N 2/512. A score above 1.0 means that one run beats both references. The portal also shows balanced accuracy, which is the lower raw accuracy. The stronger breakthrough gate is at least 10% on both profiles.</p>
+    </section>
+  </header>
+
+  <main>
+    <section id="summary" class="summary" aria-label="Experiment summary"></section>
+    <form class="filters" aria-label="Filter experiments">
+      <label>Approach <select id="group-filter"><option value="">All approaches</option></select></label>
+      <label>Outcome <select id="verdict-filter"><option value="">All outcome categories</option></select></label>
+    </form>
+    <section class="dashboard" aria-labelledby="dashboard-title">
+      <div class="dashboard-heading">
+        <div>
+          <div class="eyebrow">Transfer history</div>
+          <h2 id="dashboard-title">Rung accuracy by run date</h2>
+          <p>Compare Easy, Medium, and Hard runs. Hover over a point for its result. Select a point to open the complete run and architecture record.</p>
+        </div>
+        <div class="chart-controls">
+          <label>Depth rung
+            <select id="rung-filter">
+              <option value="1">T1</option><option value="2">T2</option><option value="4">T4</option>
+              <option value="8">T8</option><option value="16">T16</option><option value="32">T32</option><option value="64">T64</option>
+            </select>
+          </label>
+          <fieldset id="tier-controls">
+            <legend>Compute tiers</legend>
+            <label><input type="checkbox" value="easy" checked> Easy</label>
+            <label><input type="checkbox" value="medium" checked> Medium</label>
+            <label><input type="checkbox" value="hard" checked> Hard</label>
+          </fieldset>
+        </div>
+      </div>
+      <div class="chart-legend" aria-label="Tier colors">
+        <span class="legend-easy">Easy</span><span class="legend-medium">Medium</span><span class="legend-hard">Hard</span>
+      </div>
+      <div class="charts">
+        <article class="chart-card"><h3>Seen-N rungs</h3><div id="seen-chart" class="chart" aria-label="Seen-N rung accuracy chart"></div></article>
+        <article class="chart-card"><h3>OOD-N rungs</h3><div id="ood-chart" class="chart" aria-label="OOD-N rung accuracy chart"></div></article>
+      </div>
+      <p id="chart-status" class="chart-status" aria-live="polite"></p>
+    </section>
+    <div id="experiments" aria-live="polite"></div>
+    <p id="empty" class="empty" hidden>No experiments match these filters.</p>
+  </main>
+  <dialog id="run-dialog" aria-labelledby="run-dialog-title">
+    <div class="dialog-heading">
+      <div><div class="eyebrow">Frozen run details</div><h2 id="run-dialog-title"></h2></div>
+      <button id="dialog-close" type="button" aria-label="Close run details">Close</button>
+    </div>
+    <div id="run-dialog-content"></div>
+  </dialog>
+  <footer>Frozen local records · no service or database required</footer>
+  <script src="experiments.js"></script>
+  <script src="run_details.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,207 @@
+{
+  "created_at": "2026-08-10T20:09:04.769491+00:00",
+  "dataset_id": "e5",
+  "dataset_label": "E5 \u00b7 10\u201311 bit N, T=1/2/3",
+  "deadline_at": "2026-08-10T20:16:36.029947+00:00",
+  "filename": "submission.py",
+  "finished_at": "2026-08-10T20:10:20.538520+00:00",
+  "id": "1e1c0aba-70cf-4cda-bbe0-55831f427f56",
+  "manifest_name": "h100_easy_e5.json",
+  "metrics_available": true,
+  "metrics_url": "/api/submissions/1e1c0aba-70cf-4cda-bbe0-55831f427f56/metrics",
+  "modal_call_id": "fc-01KZPMP2DT3S1EWR5472T8MKNX",
+  "result": {
+    "depth_profile": {
+      "depth_factor": 0,
+      "ladder": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "max_certified_time_steps": null,
+      "ood_n_ladder": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "ood_n_max_certified_time_steps": null,
+      "ood_n_profile_available": true
+    },
+    "manifest": "squaring-mod-easy-e5",
+    "score": {
+      "mean_exact_accuracy": 0.003750000024835269,
+      "mean_loss": 2.816596513228707,
+      "num_measurements": 2,
+      "primary_metric": "mean_exact_accuracy"
+    },
+    "seeds": [
+      {
+        "completed_training_steps": 932,
+        "depth_profile": {
+          "depth_factor": 0,
+          "ladder": [
+            1,
+            2,
+            4,
+            8,
+            16,
+            32,
+            64
+          ],
+          "max_certified_time_steps": null,
+          "ood_n_ladder": [
+            1,
+            2,
+            4,
+            8,
+            16,
+            32,
+            64
+          ],
+          "ood_n_max_certified_time_steps": null,
+          "ood_n_rungs": [
+            {
+              "correct_examples": 1,
+              "exact_accuracy": 0.001953125,
+              "example_count": 512,
+              "status": "failed",
+              "time_steps": 1
+            },
+            {
+              "correct_examples": 1,
+              "exact_accuracy": 0.001953125,
+              "example_count": 512,
+              "status": "failed",
+              "time_steps": 2
+            },
+            {
+              "correct_examples": 0,
+              "exact_accuracy": 0.0,
+              "example_count": 512,
+              "status": "failed",
+              "time_steps": 4
+            },
+            {
+              "correct_examples": 0,
+              "exact_accuracy": 0.0,
+              "example_count": 512,
+              "status": "failed",
+              "time_steps": 8
+            },
+            {
+              "correct_examples": 0,
+              "exact_accuracy": 0.0,
+              "example_count": 512,
+              "status": "failed",
+              "time_steps": 16
+            },
+            {
+              "correct_examples": 0,
+              "exact_accuracy": 0.0,
+              "example_count": 512,
+              "status": "failed",
+              "time_steps": 32
+            },
+            {
+              "correct_examples": 0,
+              "exact_accuracy": 0.0,
+              "example_count": 512,
+              "status": "failed",
+              "time_steps": 64
+            }
+          ],
+          "rungs": [
+            {
+              "correct_examples": 1,
+              "exact_accuracy": 0.001953125,
+              "example_count": 512,
+              "status": "failed",
+              "time_steps": 1
+            },
+            {
+              "correct_examples": 5,
+              "exact_accuracy": 0.009765625,
+              "example_count": 512,
+              "status": "failed",
+              "time_steps": 2
+            },
+            {
+              "correct_examples": 1,
+              "exact_accuracy": 0.001953125,
+              "example_count": 512,
+              "status": "failed",
+              "time_steps": 4
+            },
+            {
+              "correct_examples": 1,
+              "exact_accuracy": 0.001953125,
+              "example_count": 512,
+              "status": "failed",
+              "time_steps": 8
+            },
+            {
+              "correct_examples": 2,
+              "exact_accuracy": 0.00390625,
+              "example_count": 512,
+              "status": "failed",
+              "time_steps": 16
+            },
+            {
+              "correct_examples": 1,
+              "exact_accuracy": 0.001953125,
+              "example_count": 512,
+              "status": "failed",
+              "time_steps": 32
+            },
+            {
+              "correct_examples": 2,
+              "exact_accuracy": 0.00390625,
+              "example_count": 512,
+              "status": "failed",
+              "time_steps": 64
+            }
+          ]
+        },
+        "evaluation": {
+          "ood": {
+            "correct_examples": 2,
+            "exact_accuracy": 0.0033333333333333335,
+            "example_count": 600,
+            "loss": 2.827794253558856
+          },
+          "test": {
+            "correct_examples": 5,
+            "exact_accuracy": 0.004166666716337204,
+            "example_count": 1200,
+            "loss": 2.805398772898558
+          }
+        },
+        "evaluation_batch_size": 512,
+        "evaluation_budget_seconds": 30.0,
+        "evaluation_seconds": 6.396476027999995,
+        "final_train_loss": 2.3088226318359375,
+        "max_training_steps": 1000000,
+        "model_state_elements": 179821,
+        "optimizer_state_elements_after_first_step": 359663,
+        "seed": 74,
+        "training_batch_size": 256,
+        "training_seconds": 60.032522764
+      }
+    ]
+  },
+  "run_created_at": "2026-08-10T20:09:04.769491+00:00",
+  "run_id": "b3972b39-482f-4048-ad92-75a52b8f3622",
+  "started_at": "2026-08-10T20:09:06.029947+00:00",
+  "status": "succeeded",
+  "submitter": "Ojasw Upadhyay",
+  "task": "squaring_mod",
+  "tier": "easy"
+}

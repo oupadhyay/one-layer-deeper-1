@@ -1,0 +1,23 @@
+﻿Hard leaderboard ╖ ranked by Max T, then OOD N Max T
+  #  max T  OOD N max T  participant / file
+ùùù  ùùùùù  ùùùùùùùùùùù  ùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùù
+  1     <1           <1  Daniδl Heres / submission.py
+  2     <1           <1  Yang Wang  / submission.py
+  3     <1           <1  Frosty40 / submission.py
+  4     <1           <1  khushidahi / submission.py
+  5     <1           <1  Nikhil Barhate / submission.py
+  6     <1           <1  Abhi Upadhyay / submission.py
+  7     <1           <1  Liang He / submission.py
+  8     <1           <1  Aakanksh Zarapkar / submission.py
+  9     <1           <1  Blake Camp / submission.py
+ 10     <1           <1  Aman Priyanshu / submission.py
+ 11     <1           <1  Yusuf Mohammad / submission.py
+ 12     <1           <1  Sudarshan Nambiar / submission.py
+ 13     <1           <1  Chris  / submission.py
+ 14     <1           <1  speedofsound5 / submission.py
+ 15     <1           <1  Edward Ngo / submission.py
+ 16     <1           <1  John Lussier / submission.py
+ 17     <1           <1  Colin Gordon / submission.py
+ 18     <1           <1  Jordan Rubin / submission.py
+ 19     <1           <1  priormancer / submission.py
+ 20     <1           <1  PragsPud / submission.py

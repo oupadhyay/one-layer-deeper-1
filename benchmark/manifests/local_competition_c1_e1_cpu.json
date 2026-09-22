@@ -1,0 +1,31 @@
+{
+  "name": "competition-c1-e1-cpu-functional-learning-diagnostic",
+  "data": {
+    "kind": "squaring_mod",
+    "data_root": "data/generated/squaring_mod_new11_easy_bidirectional_fixed_n_323_t123",
+    "batch_size": 64,
+    "eval_batch_size": 128,
+    "shuffle_train": true,
+    "shuffle_eval": false,
+    "num_workers": 2,
+    "pin_memory": true,
+    "drop_last": true,
+    "seed": 45
+  },
+  "runtime": {
+    "device": "cpu",
+    "dtype": "float32",
+    "amp": false,
+    "compile": false,
+    "total_training_time_seconds": 60,
+    "max_steps": 9500,
+    "seeds": [
+      74
+    ],
+    "grad_clip": 1,
+    "log_every": 100
+  },
+  "model_state": {
+    "maximum_elements": 500000000
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "protocol": "digit_pair_cellular_singlethread_v1",
+  "status": "frozen_resource_abort",
+  "execution_history": [
+    {
+      "kind": "superseded_implementation_probes",
+      "full_run_started": false,
+      "reason": "Review found three correctness faults before the final probes: row-specific boundary embeddings were not zero in mixed-width batches, output slots were not clamped to each row's active width, and the imported-module harness could reuse frozen BiScan checkpoint names. The candidate and harness were corrected, the focused tests were expanded, and the probe files were overwritten only after full revalidation.",
+      "old_candidate_sha256": "16db5d6a0314b46eb3986e36265e3a39d4c6d361134b7caf89f8cfdff96681c5",
+      "old_test_sha256": "27ca771e10bf150e8827ed11ea2234cf8d4567f96ff64f71e8f9d7ebef50e47b",
+      "old_harness_sha256": "7d07fdfe8ebcbec04f8e1cef86de450e5b99496636bc603118ee555069df7601",
+      "old_probe_sha256": [
+        "0b5b8cc3d4b5055e2254aca4d4af54c620af7db61ca019aa46e0573b6dbe286e",
+        "0d9c618af9d38a9357cb44ca068320fbcdc84ad304d6d90b9bf289124524d6df"
+      ]
+    },
+    {
+      "kind": "valid_corrected_probe_1",
+      "optimizer_updates": 20,
+      "artifact": "artifacts/digit_pair_cellular_singlethread_v1_probe1.json",
+      "sha256": "6808ea2f425ac8be8f18dcceaabbc63fcb5b20017c195667db96038827b519c9",
+      "seconds_per_update": 0.10534558999934233,
+      "resource_ratio": 3.0983997058630095
+    },
+    {
+      "kind": "valid_corrected_probe_2",
+      "optimizer_updates": 20,
+      "artifact": "artifacts/digit_pair_cellular_singlethread_v1_probe2.json",
+      "sha256": "cb03233623c8a382fa2485aecbde9929bc956271b54106244af2829f9de9a845",
+      "seconds_per_update": 0.10499346500146203,
+      "resource_ratio": 3.0880430882782948
+    },
+    {
+      "kind": "resource_gate_abort",
+      "full_run_optimizer_updates": 0,
+      "abort_sha256": "206f0e4695ff7709d08f5cde87bb3c250fa873f5cc60d632655cf17628ca586b"
+    }
+  ],
+  "candidate_artifact_sha256": {
+    "competition_loop10_digit_pair_cellular.py": "327cf28f09c55ce0c71e73655f8e66717312a90a544e51c4a2bc91e4b5b5a751",
+    "scripts/run_digit_pair_cellular_singlethread_v1.py": "06a0de787dd468a2ada498b64f8cc7e5a2cc5a62298be61d031eb9949e4e49d5",
+    "tests/test_competition_loop10_digit_pair_cellular.py": "1351c9a28ca707e39a27a9057e50968003c7e54eadf9af06109622958d05de0c"
+  },
+  "executed_dependency_sha256": {
+    "scripts/run_biscan_e5_diversity_singlethread_v1.py": "296663b2a1c9bfe7fc7275abc37a662d283dca2606b72aeaa1c27e0bc8adb4a5",
+    "scripts/run_latent_exposure_singlethread_v1.py": "02780ede10f072e322974850aab9647df5eeefeff6b81c9d26efb518942013e9"
+  },
+  "data_sha256": {
+    "manifest": "af01b9dec3a59579811b620a5aac76bc3637efaaf9a64eed55c4043018fc7cef",
+    "dataset_config": "65f0e350d3af37fa951243f35c82887163b8738c7692f72e45ba0508ec87d72f",
+    "dataset_directory": "472ba57a7b33a2266e19ac5bf333dd217e86460a626aa4a1033928bab31747d6"
+  },
+  "determinism": {
+    "valid_probe_comparison_payloads_equal": true,
+    "model_state_digest": "13025bf9a5cd098f94afbaf572c7fcd038558097c19fe605909f37915a6db18f",
+    "optimizer_state_digest": "8eea1880b5013e4e364c43c05fac997e70d7c16096b34b7964b17f954e923a89",
+    "scheduler_state_digest": "237e12d3ae222988eeb362c488dce1ac1662cb47e5f2b73a8074012a3e42821f",
+    "loader_generator_digest": "3100b4c6a145a9e6c3ea8eb51a83cce5a338443bcae1ab3f072d40ea5dec8e5b"
+  },
+  "resource_comparator": {
+    "protocol": "biscan_e5_diversity_singlethread_v1",
+    "predeclared_rounded_seconds_per_update": 0.034,
+    "probe_sha256": [
+      "446ef2751f8b6a4db59f7de189701c3036ac20caa300f6f482c83dd2bd1c6797",
+      "d75a53b0edd9f6fa06d1f7c75da56dd6d8fc2c7474dc46edd06b50a86cd35e6a"
+    ],
+    "legacy_probe_key_note": "The probe key e1_biscan_frozen_seconds_per_update is misnamed. Its value is the frozen E5 BiScan comparator.",
+    "slower_exact_reference_seconds_per_update": 0.034558075002860275,
+    "ratios_against_slower_exact_reference": [
+      3.048363949398894,
+      3.0381745798274937
+    ],
+    "robustness": "Both corrected ratios remain above the fixed 3.0 hard-reject boundary."
+  },
+  "state": {
+    "model_elements": 20906,
+    "full_checkpoint_created": false,
+    "final_weights_created": false
+  },
+  "decision": {
+    "resource_gate": "REJECT",
+    "full_run": "NOT RUN",
+    "automatic_follow_up": false
+  },
+  "classification": "deterministic CPU resource diagnostic; no accuracy result",
+  "remote_competition_action": false
+}

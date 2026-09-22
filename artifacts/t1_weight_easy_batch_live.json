@@ -1,0 +1,16 @@
+{
+  "attempts": [
+    {
+      "name": "conditional_t1_weight2_easy_v1",
+      "submission_id": "d962bde3-87b7-4da0-a81c-b6aaf518f402",
+      "return_code": 0,
+      "output": "valid: C:\\Users\\Ojasw\\Desktop\\test\\one-layer-deeper\\submissions\\conditional_t1_weight2_easy_v1\\submission.py (4226 bytes)\r\nqueued: d962bde3-87b7-4da0-a81c-b6aaf518f402\r\ntier:   easy\r\ndata:   e5\r\nleft:   59 today\r\nview:   https://onelayerdeeper.ai/submissions/d962bde3-87b7-4da0-a81c-b6aaf518f402\r\n[queued] submission.py\r\n[running] submission.py\r\n[succeeded] submission.py\r\nsubmission  d962bde3-87b7-4da0-a81c-b6aaf518f402\r\nfile        submission.py\r\nstatus      succeeded\r\nscore       0.62%\r\nmax T       None certified\r\nOOD N max T None certified\r\ntier        easy\r\ndataset     E5 \ufffd 10\ufffd11 bit N, T=1/2/3\r\nsuite       h100_easy_e5.json\r\nrun         11da157f-d286-43e7-ba4b-7f4ffe06b746\r\nmodal call  fc-01M05TGY665P13Y7FNKPT8KSQG\r\n"
+    },
+    {
+      "name": "conditional_t1_weight4_easy_v1",
+      "submission_id": "275c24a9-af66-4af8-ab64-803085a25033",
+      "return_code": 1,
+      "output": "valid: C:\\Users\\Ojasw\\Desktop\\test\\one-layer-deeper\\submissions\\conditional_t1_weight4_easy_v1\\submission.py (4226 bytes)\r\nqueued: 275c24a9-af66-4af8-ab64-803085a25033\r\ntier:   easy\r\ndata:   e5\r\nleft:   58 today\r\nview:   https://onelayerdeeper.ai/submissions/275c24a9-af66-4af8-ab64-803085a25033\r\n[queued] submission.py\r\n[running] submission.py\r\n[failed] submission.py\r\nsubmission  275c24a9-af66-4af8-ab64-803085a25033\r\nfile        submission.py\r\nstatus      failed\r\nscore       \ufffd\r\nmax T       \ufffd\r\nOOD N max T \ufffd\r\ntier        easy\r\ndataset     E5 \ufffd 10\ufffd11 bit N, T=1/2/3\r\nsuite       h100_easy_e5.json\r\nrun         9e6bb7fe-1fa8-4a39-b2e2-380d0756183c\r\nmodal call  fc-01M05TK1CB6GGT50WA4DFV3HR0\r\nerror       EVALUATION_FAILED\r\n"
+    }
+  ]
+}

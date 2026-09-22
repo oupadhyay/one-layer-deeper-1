@@ -1,0 +1,33 @@
+﻿submission  fd1cae7a-6562-4e5a-8500-30e4be1e316e
+file        submission.py
+status      failed
+score       ù
+max T       ù
+OOD N max T ù
+tier        easy
+dataset     E5 ╖ 10û11 bit N, T=1/2/3
+suite       h100_easy_e5.json
+run         6c52375d-488e-4103-b256-6e684e3c5f87
+modal call  fc-01KZGF20CEN9N9XHPP6YKTF9XZ
+error       EVALUATION_FAILED
+{
+  "created_at": "2026-08-08T10:35:18.638669+00:00",
+  "dataset_id": "e5",
+  "dataset_label": "E5 \u00b7 10\u201311 bit N, T=1/2/3",
+  "deadline_at": "2026-08-08T10:42:48.890736+00:00",
+  "error_code": "EVALUATION_FAILED",
+  "filename": "submission.py",
+  "finished_at": "2026-08-08T10:35:22.018255+00:00",
+  "id": "fd1cae7a-6562-4e5a-8500-30e4be1e316e",
+  "manifest_name": "h100_easy_e5.json",
+  "metrics_available": false,
+  "modal_call_id": "fc-01KZGF20CEN9N9XHPP6YKTF9XZ",
+  "result": null,
+  "run_created_at": "2026-08-08T10:35:18.638669+00:00",
+  "run_id": "6c52375d-488e-4103-b256-6e684e3c5f87",
+  "started_at": "2026-08-08T10:35:18.890736+00:00",
+  "status": "failed",
+  "submitter": "Ojasw Upadhyay",
+  "task": "squaring_mod",
+  "tier": "easy"
+}

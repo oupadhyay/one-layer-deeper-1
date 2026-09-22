@@ -1,0 +1,93 @@
+{
+  "attempts": [
+    {
+      "name": "conditional_medium_focal05_lr9_v1",
+      "tier": "medium",
+      "submission_id": "a2c10fbb-60c6-44a2-b1e3-9d54b311bcee",
+      "status": "failed",
+      "run_id": "f4bfeb1f-a2ec-4471-869e-967ff24f2d0b",
+      "finished_at": "2026-08-16T02:59:03.779163+00:00",
+      "note": "The exact configuration failed; the next independent package remains valid."
+    },
+    {
+      "name": "conditional_medium_plain_lr9_v1",
+      "tier": "medium",
+      "submission_id": "01a87096-c847-481d-8509-5f95badbcd3b",
+      "status": "succeeded",
+      "run_id": "d654dc68-1c40-473a-ad9b-a7af8b6f2600",
+      "finished_at": "2026-08-16T03:09:27.589395+00:00"
+    },
+    {
+      "name": "conditional_medium_focal10_lr9_v1",
+      "tier": "medium",
+      "submission_id": "0ef94ca2-186a-4507-ba03-7df62dd423a0",
+      "status": "succeeded",
+      "run_id": "6a05b176-1229-4837-bbbe-fab3cdf765f7",
+      "finished_at": "2026-08-16T03:19:45.212758+00:00"
+    },
+    {
+      "name": "conditional_medium_focal05_lr6_v1",
+      "tier": "medium",
+      "submission_id": "96b4b8c3-2a45-445e-a06e-108545039c15",
+      "status": "succeeded",
+      "run_id": "658efd58-37a2-4131-99f1-d2d9680b66c9",
+      "finished_at": "2026-08-16T03:30:11.813471+00:00"
+    },
+    {
+      "name": "conditional_medium_focal05_batch128_v1",
+      "tier": "medium",
+      "submission_id": "4b7c196c-976d-4df0-8c1a-925d82b1c603",
+      "status": "succeeded",
+      "run_id": "43d4a0d4-6b70-44dd-a9f8-966415e2ee7b",
+      "finished_at": "2026-08-16T03:40:53.981783+00:00"
+    },
+    {
+      "name": "conditional_medium_focal05_d96_v1",
+      "tier": "medium",
+      "submission_id": "193e56df-0bf8-4718-a75f-4a9c73c2c64e",
+      "status": "succeeded",
+      "run_id": "2c27906c-c0ba-42a0-87d0-89313b596618",
+      "finished_at": "2026-08-16T03:51:12.520414+00:00"
+    },
+    {
+      "name": "conditional_medium_focal05_lr10_v1",
+      "tier": "medium",
+      "submission_id": "e4bf7a30-afea-43eb-b74f-726c9996f8fa",
+      "status": "succeeded",
+      "run_id": "029b4120-8813-4f50-9986-d88faed2846a",
+      "finished_at": "2026-08-16T04:01:30.104452+00:00"
+    },
+    {
+      "name": "conditional_medium_focal05_warm32_v1",
+      "tier": "medium",
+      "submission_id": "409b9f8d-a8d5-4172-9e76-4c1a1c8e19c3",
+      "status": "succeeded",
+      "run_id": "37c0d11d-e9b5-47ef-9f06-726dbb723536",
+      "finished_at": "2026-08-16T04:11:48.288257+00:00"
+    },
+    {
+      "name": "conditional_medium_focal05_batch512_v1",
+      "tier": "medium",
+      "submission_id": "499481fd-3c47-4be2-8cba-eebd0f550349",
+      "status": "succeeded",
+      "run_id": "9f376cf3-e23b-4086-80ca-fb3658599c5a",
+      "finished_at": "2026-08-16T04:22:05.196244+00:00"
+    },
+    {
+      "name": "conditional_medium_focal05_d128_v1",
+      "tier": "medium",
+      "submission_id": "d7b4d509-3061-4682-9258-a912fae437e0",
+      "status": "succeeded",
+      "run_id": "a6b9de2a-be64-463c-a179-e207376b2d0f",
+      "finished_at": "2026-08-16T04:32:21.257231+00:00"
+    },
+    {
+      "name": "conditional_dynamic_hard_v1",
+      "tier": "hard",
+      "submission_id": "a465096d-40c7-4d68-b36c-d82bca101a71",
+      "status": "succeeded",
+      "run_id": "39c58419-e0ba-496e-b952-64b8df1a8a00",
+      "finished_at": "2026-08-16T05:32:35.650008+00:00"
+    }
+  ]
+}

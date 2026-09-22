@@ -1,0 +1,70 @@
+{
+  "protocol": "latent_x2_t1grad_d64_singlethread_v1",
+  "execution_history": [
+    {
+      "kind": "valid_probe_1",
+      "artifact": "artifacts/latent_x2_t1grad_d64_singlethread_v1_probe1.json",
+      "sha256": "e774ba55cb5053998fea5223e8f3bbaa6b31049d926df8637b5f832072621aa4",
+      "complete_update_time_ratio_to_d112_parent": 0.9019903037760681
+    },
+    {
+      "kind": "valid_probe_2",
+      "artifact": "artifacts/latent_x2_t1grad_d64_singlethread_v1_probe2.json",
+      "sha256": "e8022eb1a5aa224b05dac8882537fe8c73dc6fa1ed5d7f05121669e65a816438",
+      "complete_update_time_ratio_to_d112_parent": 0.9029798787248579
+    },
+    {
+      "kind": "fresh_full_run",
+      "updates": 1600,
+      "started_from_update": 0,
+      "loaded_parent_probe_or_checkpoint": false,
+      "result_sha256": "b43ab56988ecf0c6ab33d753086fb349f5aa3712f8b0bc3ba8dd8e0874b9ecee",
+      "final_weights_sha256": "5c0d8c2c550e1837d051def9aa8d7a1227a13f775ccc07f56fb9c6547e631ad2"
+    }
+  ],
+  "candidate_artifact_sha256": {
+    "competition_loop5_latent_x2_t1grad_d64.py": "f6f5e1abd1213e9b2a8c0370769f4dcdd18c1e751810394498aa23a2880ff4c6",
+    "tests/test_competition_loop5_latent_x2_t1grad_d64.py": "9972e3ca1027baf0817dcb6bd4fa4b80e0f547933b589ab4d55c39df56aee7ba",
+    "scripts/run_latent_x2_t1grad_d64_singlethread_v1.py": "796159aa8fb217167ebed00c133f9ed99ae64f22d2ae839a37ad333ee98ace69"
+  },
+  "executed_dependency_sha256": {
+    "scripts/run_latent_x2_t1grad_singlethread_v1.py": "44b515550d39aef7b59a455c479671ccc8561847ad89dd93ec216e5d2eb064cf",
+    "scripts/run_latent_inner_refinement_x2_singlethread_v1.py": "ed954decfedd73f9d495fb3e82364f8e15984944f49a3b0aff2370c8caa0596c",
+    "scripts/run_latent_exposure_singlethread_v1.py": "02780ede10f072e322974850aab9647df5eeefeff6b81c9d26efb518942013e9",
+    "competition_loop4_latent_x2_t1grad.py": "736e74b9f868f2a33da9ee527e307daaf4b61b7f3a31006e8954a9c7e15a002a",
+    "competition_loop3_latent_x2.py": "eaf75a7914ac9ef220f0d56aa635c2485357aba101f81066563119061edc7c9f",
+    "competition_loop2_latent.py": "c98c5a9fd276575cda6846ca7a00e2ec5a7e61f59a0743a85fa70ccf749f438f",
+    "competition_submission.py": "00468b791b5b0ad23739170ceb1eec24f3a24c99ef7ef929fa4acf414cbedc73",
+    "competition_submission_c1a.py": "2ac90e61d36fa57c7f4f9ab7144b26022a515e3374c43ff87b7ede95ab4bb354",
+    "competition_submission_c1b.py": "425efc4b0422585008de49704857bc4d6e9e9936b127e66926d4987b3c00d293",
+    "frozen_d112_parent_result": "811713bd3b41f9526b426f9a80f13c66ec4ebad3fb0aa7e3d0f79f95123160ce"
+  },
+  "data_sha256": {
+    "manifest": "0d1e9c8ed4d649f4e0d2767f853916163e46a7f223f6c16187e03737ae14bfcf",
+    "dataset_directory": "f662210477e43c3847fe43c2f164c97b2d0fde80ec255d45fde4bd7b71895089"
+  },
+  "milestone_checkpoint_sha256": {
+    "200": "76e73a070042478837d6a68fa3a1fdf905ee5d645f01b13b6f292cc630d50a4d",
+    "400": "1c7ff5cd8f3f9af0d4b947e9463b6672897dbdb1d1b24334b8b53183da74d4de",
+    "800": "590c991f39a67f44907ad760ffe45b8746740823610fae801a958218b29f6b7a",
+    "1600": "9dec743f3ef27e938e396f5e05ecebac3b5a5cbf08b226d00ec727ab600f6396"
+  },
+  "valid_probe_comparison_payloads_equal": true,
+  "state": {
+    "model_elements": 75797,
+    "final_weights_tensors": 33,
+    "final_weights_only": true,
+    "milestone_checkpoints_include_complete_resume_state": true
+  },
+  "throughput_context": {
+    "d64_full_run_training_seconds": 672.8059842002112,
+    "d112_parent_full_run_training_seconds": 707.5528632008,
+    "full_run_training_time_ratio_to_d112_parent": 0.9508914728386482,
+    "classification": "fixed-update CPU diagnostic; not H100 or competition-budget timing"
+  },
+  "exposure_gate": "FAIL",
+  "t1_interference_gate": "INCONCLUSIVE",
+  "competition_gate": "FAIL",
+  "automatic_follow_up": false,
+  "remote_action": false
+}

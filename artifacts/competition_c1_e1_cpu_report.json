@@ -1,0 +1,120 @@
+{
+  "track": "competition_engineering",
+  "run": "C1_public_E1_baseline",
+  "classification": "CPU functional/learning diagnostic",
+  "tier_faithful_timing": false,
+  "retry_count": 0,
+  "source": {
+    "path": "competition_submission.py",
+    "sha256": "00468b791b5b0ad23739170ceb1eec24f3a24c99ef7ef929fa4acf414cbedc73",
+    "soft_feedback_during_training": true,
+    "hard_feedback_during_evaluation": true,
+    "maximum_supported_time_steps": 64
+  },
+  "tests": {
+    "path": "tests/test_competition_submission.py",
+    "sha256": "5bd5a82dfa5545641cf152225f8ca10c486b621fd598f788cc2b7de9e2af979b"
+  },
+  "manifests": {
+    "public_e1": {
+      "path": "benchmark/manifests/h100_easy_e1.json",
+      "sha256": "f69f303962a2944a2dfddcc6f06477909d0a511f8415d71bdbcfcc921dfaa444"
+    },
+    "cpu_adaptation": {
+      "path": "benchmark/manifests/local_competition_c1_e1_cpu.json",
+      "sha256": "0d1e9c8ed4d649f4e0d2767f853916163e46a7f223f6c16187e03737ae14bfcf",
+      "runtime_only_deviations": {
+        "device": "cpu instead of cuda:0",
+        "dtype": "float32 instead of bfloat16",
+        "amp": "false instead of true"
+      }
+    }
+  },
+  "dataset": {
+    "root": "data/generated/squaring_mod_new11_easy_bidirectional_fixed_n_323_t123",
+    "sha256": {
+      "dataset_config.json": "84810bd77ef547af0248bee8d6167a32d88cc51be1e59b17cf8328446c2cca90",
+      "train.jsonl": "0bb75359414176c0b9d9f02d4130b688402f4874832536c56345d2e6f59bba53",
+      "test.jsonl": "32334305f4c1beaa0441ead71c0d64a6f5b529114ae1d0d5657242446664df09",
+      "ood.jsonl": "540de4cf620e4db3676ae4a9542aee24547784bdde65f71a8e569286a6af7cce",
+      "depth_t_1.jsonl": "b7be8bfcaa8b5600140a81cdc1fe7cfabd098002d4d5fae374e5e129590be40c",
+      "depth_t_2.jsonl": "aea79fed80d5045ede0cb064647becbc9a94fec0790ebdbe88ebc66f49da0f23",
+      "depth_t_4.jsonl": "b92d9e887f51c8f2364311179ec232876508c57453d88cfd928532f344a5e36c",
+      "depth_t_8.jsonl": "5a44f90369f4c2f6fba8141b2e78b1577e4886268bfb80b5209aa24b088cf7e0",
+      "depth_t_16.jsonl": "0ba887f041ab30513d87c20181eedee0e78251283585828c6d7043cee8c2d2a2",
+      "depth_t_32.jsonl": "831a6c3ec560e33741859b5a20afa8a5226feff8bd3efac68e6e681b8afbd357",
+      "depth_t_64.jsonl": "7fd67e1e13db4b9cd1d1100145358a9fbf2b7f64e8421703ec6709e95d50b0e2",
+      "depth_ood_n_t_1.jsonl": "4486381cf671f73a247ef8007e55d7f74c2aa46203449a9b08e3e34e5c4bc987",
+      "depth_ood_n_t_2.jsonl": "8ccd518530e714d68f2d31caa81a23ef81d2873c385316152b2bdcac9b90b5e9",
+      "depth_ood_n_t_4.jsonl": "98b86d64e7a80a97ba6b9aa3e7284a4b5ec3fb3cad8bad9903120dda9270b6fc",
+      "depth_ood_n_t_8.jsonl": "0373c808a8e5fa10a611ff8397491e67fcf8c205fb4220793a157c4968c0cae9",
+      "depth_ood_n_t_16.jsonl": "9156c1fae88a175d76d37896bcbfadff46575b396b0eea373d843dcf9a402824",
+      "depth_ood_n_t_32.jsonl": "c73d3102890acb7145634e466a88f4939344b462c78f87dae4629e3167d8d67b",
+      "depth_ood_n_t_64.jsonl": "5af162d3e9ddb8bc77c56246c591be74ec68da0c81b21c638a25a0410b37c0a7"
+    }
+  },
+  "environment": {
+    "python": "3.13.5",
+    "torch": "2.12.1+cpu",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "cpu": "AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD",
+    "cuda_available": false,
+    "git_head": "629a579da22379086f46942ad16935b31ce1b821"
+  },
+  "training": {
+    "seed": 74,
+    "batch_size": 64,
+    "allowance_seconds": 60.0,
+    "wall_seconds": 61.51455329998862,
+    "completed_steps": 217,
+    "examples_seen": 13888,
+    "updates_per_second": 3.527620511877149,
+    "examples_per_second": 225.76771276013753,
+    "model_state_elements": 311594,
+    "optimizer_state_elements_after_first_step": 623225,
+    "learning_rate": {
+      "base": 0.0008,
+      "step_1_before_scheduler": 0.000004,
+      "after_step_1": 0.000008,
+      "after_step_100": 0.000404,
+      "after_step_200": 0.0008,
+      "final_after_step_217": 0.0008
+    },
+    "curve": [
+      {"step": 1, "elapsed_seconds": 3.0, "loss": 2.556827, "exact_correct": 0, "count": 64},
+      {"step": 100, "elapsed_seconds": 29.8, "loss": 1.896061, "exact_correct": 0, "count": 64},
+      {"step": 200, "elapsed_seconds": 56.6, "loss": 1.880382, "exact_correct": 1, "count": 64},
+      {"step": 217, "elapsed_seconds": 61.51455329998862, "loss": 1.9328466653823853, "exact_correct": 3, "count": 64}
+    ]
+  },
+  "evaluation": {
+    "allowance_seconds": 30.0,
+    "wall_seconds": 31.094395799998892,
+    "allowance_overrun_seconds": 1.0943957999988925,
+    "test": {"loss": 1.89374378375579, "correct": 0, "count": 150},
+    "ood_t6": {"loss": 1.7882643938064575, "correct": 5, "count": 100},
+    "seen_n_depth": [
+      {"T": 1, "status": "failed", "correct": 1, "count": 38},
+      {"T": 2, "status": "failed", "correct": 4, "count": 38},
+      {"T": 4, "status": "failed", "correct": 3, "count": 38},
+      {"T": 8, "status": "failed", "correct": 1, "count": 38},
+      {"T": 16, "status": "failed", "correct": 3, "count": 38},
+      {"T": 32, "status": "failed", "correct": 1, "count": 38},
+      {"T": 64, "status": "failed", "correct": 3, "count": 38}
+    ],
+    "ood_n_depth": [
+      {"T": 1, "status": "failed", "correct": 2, "count": 512},
+      {"T": 2, "status": "failed", "correct": 0, "count": 512},
+      {"T": 4, "status": "failed", "correct": 0, "count": 512},
+      {"T": 8, "status": "failed", "correct": 0, "count": 512},
+      {"T": 16, "status": "not_completed_timeout", "correct": null, "count": 512},
+      {"T": 32, "status": "not_started_evaluation_timeout", "correct": null, "count": 512},
+      {"T": 64, "status": "not_started_evaluation_timeout", "correct": null, "count": 512}
+    ],
+    "max_certified_time_steps": null,
+    "ood_n_max_certified_time_steps": null
+  },
+  "deterministic_repeat": "not_measured_to_avoid_second_training_run",
+  "evaluation_nonmutation": "enforced_by_official_runner",
+  "interpretation": "C1 baseline failed the promotion floor: seen-N T1 was not perfect and public E1 test exact accuracy was zero. This result is CPU-budget-specific and is not tier-faithful H100 timing."
+}

@@ -1,0 +1,20 @@
+﻿valid: submissions\autoregressive_digit_decoder_easy_v1\submission.py (8260 bytes)
+queued: 12cba492-ae7c-47ad-8137-1219d7fa673c
+tier:   easy
+data:   e5
+left:   51 today
+view:   https://onelayerdeeper.ai/submissions/12cba492-ae7c-47ad-8137-1219d7fa673c
+[queued] submission.py
+[running] submission.py
+[succeeded] submission.py
+submission  12cba492-ae7c-47ad-8137-1219d7fa673c
+file        submission.py
+status      succeeded
+score       0.79%
+max T       <1
+OOD N max T <1
+tier        easy
+dataset     E5 ┬╖ 10ΓÇô11 bit N, T=1/2/3
+suite       h100_easy_e5.json
+run         65f0ff33-0ade-4929-8919-82785bf32ab8
+modal call  fc-01KZGF8T0ERH74DJZB84AFS04D

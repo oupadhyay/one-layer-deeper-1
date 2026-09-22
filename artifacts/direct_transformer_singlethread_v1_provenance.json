@@ -1,0 +1,95 @@
+{
+  "protocol": "direct_transformer_singlethread_v1",
+  "execution_history": [
+    {
+      "artifact": "artifacts/direct_transformer_singlethread_v1_probe1.json",
+      "complete_update_time_ratio_to_biscan": 1.2000872644493872,
+      "kind": "valid_probe_1",
+      "sha256": "d2635c10390705786d3f85a309d828aa6fa712eaee1f859e210d20c72fce36e2"
+    },
+    {
+      "artifact": "artifacts/direct_transformer_singlethread_v1_probe2.json",
+      "complete_update_time_ratio_to_biscan": 1.200367623448359,
+      "kind": "valid_probe_2",
+      "sha256": "7f7941b2c5de95a9c8b577e703315875d1f7b952c5fe518ed9532df710c36d87"
+    },
+    {
+      "examples": 102400,
+      "final_weights_sha256": "36395fee6ee58703bf2f00238d596ae695df067ba80b6c02f3ea1a50cb901620",
+      "kind": "fresh_full_run",
+      "loaded_probe_parent_or_checkpoint": false,
+      "result_sha256": "171c7c99af745ecad2741a12edc070176d6bb6f16d0b82dfb6f1a6161ddb1d7f",
+      "started_from_update": 0,
+      "updates": 1600
+    }
+  ],
+  "candidate_artifact_sha256": {
+    "competition_loop9_direct_transformer.py": "a9529fc9b2147196e605f01c9f4ce126e7f3eaf9fc3e61f365ec41cf51f9a365",
+    "scripts/run_direct_transformer_singlethread_v1.py": "3fad0543ff6a2d1fd3983b80cfc76b7eae87b74cf587828e5fcef76f224a4d17",
+    "tests/test_competition_loop9_direct_transformer.py": "231f6657a16840c29a8cf1db16636bed03c6b42639eb6538a14790ad46c8e617"
+  },
+  "executed_dependency_sha256": {
+    "competition_submission_c1a.py": "2ac90e61d36fa57c7f4f9ab7144b26022a515e3374c43ff87b7ede95ab4bb354",
+    "scripts/run_latent_exposure_singlethread_v1.py": "02780ede10f072e322974850aab9647df5eeefeff6b81c9d26efb518942013e9"
+  },
+  "historical_design_parent_sha256": {
+    "benchmark/s2_c1.py": "283a1033e78f1e241554e495d366d30aa2033278ab08d6726a512072fb164087"
+  },
+  "data_sha256": {
+    "dataset_directory": "f662210477e43c3847fe43c2f164c97b2d0fde80ec255d45fde4bd7b71895089",
+    "manifest": "0d1e9c8ed4d649f4e0d2767f853916163e46a7f223f6c16187e03737ae14bfcf"
+  },
+  "milestone_checkpoint_sha256": {
+    "200": "245e062274be70d12d45a8ad65da8738ef03bfb21f35573b365233fdf297a44e",
+    "400": "529b9e44a20445b7f3e03515570d2cf5e03b6d9d9d5c950aa402460577575f9d",
+    "800": "113541e4e70324c0c3c0aedfe61030d42601001ffbd6fbea3a5b74c711645e4f",
+    "1600": "0efeb46ab396e78f5ad7b55c0fe8e38cf61cfc09cb57642c6c3de3470224f220"
+  },
+  "valid_probe_comparison_payloads_equal": true,
+  "state": {
+    "final_weights_only": true,
+    "final_weights_tensors": 54,
+    "milestone_checkpoints_include_complete_resume_state": true,
+    "model_elements": 800138
+  },
+  "evaluation_scope": {
+    "depth_ood_n_t_1_diagnostic_seconds": 3.8096093999920413,
+    "depth_ood_n_t_1_time_excluded_from_result_diagnostics_elapsed_seconds": true,
+    "held_out_evaluated_only_after_update_1600": true,
+    "no_held_out_checkpoint_selection": true
+  },
+  "optimizer_identity_qualification": {
+    "executed_builder": "competition_submission_c1a.build_optimizer",
+    "result_contract_label": "C1B AdamW/warmup20",
+    "qualification": "C1B imports and reuses the C1A optimizer unchanged. The executed builder was C1A by identity; the result label is an inherited alias and does not change numerical execution."
+  },
+  "frozen_comparators": {
+    "biscan_result_sha256": "40cdf560942ac570a078be66b73aa0a4d73d8f75b8ff542c8100a2d2e3afd720",
+    "no_input_aggregate_test": {
+      "correct_examples": 9,
+      "cross_entropy": 1.8830257671
+    },
+    "no_input_seen_n_t1": {
+      "correct_examples": 1,
+      "cross_entropy": 1.9064306192
+    },
+    "no_input_test_t1": {
+      "correct_examples": 1,
+      "cross_entropy": 1.9520262894
+    },
+    "relative_place_attention_result_sha256": "8477074ad9133b115a2863ee13589f4266ebab170efd123a69ee5abff6033920",
+    "reversible_ssm_result_sha256": "0032f3c7a50cea21271ac8c788f5a92509aaf1b3d0cf7501b66fe7087646b2d4"
+  },
+  "gates": {
+    "competition_signal": "FAIL",
+    "exposure": "PASS",
+    "one_step_learnability": "PASS",
+    "promotion": "FAIL",
+    "transfer": "FAIL"
+  },
+  "interpretation": "The direct Transformer memorized the sparse training rows. It did not transfer the one-step map. Its held-out cross-entropy is much worse than the no-input marginals. This result does not test tied recursive composition.",
+  "branch_decision": "Close this exact four-block direct Transformer body. Do not run an automatic width, depth, horizon-gate, optimizer, exposure, or seed variant.",
+  "classification": "fixed-update CPU diagnostic; not H100 or competition-budget timing",
+  "automatic_follow_up": false,
+  "remote_action": false
+}

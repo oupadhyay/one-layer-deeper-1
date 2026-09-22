@@ -1,0 +1,25 @@
+{"kind": "curve", "step": 50, "loss": 2.8428492546081543}
+{"kind": "curve", "step": 100, "loss": 2.4978983402252197}
+{"kind": "curve", "step": 150, "loss": 1.4835476875305176}
+{"kind": "curve", "step": 200, "loss": 0.710996687412262}
+{"kind": "curve", "step": 250, "loss": 0.11818118393421173}
+{"kind": "curve", "step": 300, "loss": 0.02641085721552372}
+{"kind": "curve", "step": 350, "loss": 0.014682192355394363}
+{"kind": "curve", "step": 400, "loss": 0.009921520948410034}
+{"kind": "curve", "step": 450, "loss": 0.006524697877466679}
+{"kind": "curve", "step": 500, "loss": 0.004949469119310379}
+{"kind": "curve", "step": 550, "loss": 0.0038328198716044426}
+{"kind": "curve", "step": 600, "loss": 0.0031478810124099255}
+{"kind": "curve", "step": 650, "loss": 0.002561169443652034}
+{"kind": "curve", "step": 700, "loss": 0.0022944603115320206}
+{"kind": "curve", "step": 750, "loss": 0.0019175264751538634}
+{"kind": "curve", "step": 800, "loss": 0.001591616659425199}
+{"kind": "curve", "step": 850, "loss": 0.001430323114618659}
+{"kind": "curve", "step": 900, "loss": 0.0013067546533420682}
+{"kind": "curve", "step": 950, "loss": 0.001103718183003366}
+{"kind": "curve", "step": 1000, "loss": 0.0009844275191426277}
+{"kind": "curve", "step": 1050, "loss": 0.0009467311901971698}
+{"kind": "curve", "step": 1100, "loss": 0.0008459502132609487}
+{"kind": "curve", "step": 1150, "loss": 0.0007604609127156436}
+{"kind": "curve", "step": 1200, "loss": 0.0006829916965216398}
+{"config": {"batch_size": 256, "curve_every": 50, "eval_batch_size": 1024, "learning_rate": 0.003, "max_steps": 1200, "seed": 74, "weight_decay": 0.0001, "width": 64}, "elapsed_seconds": 6.402321200002916, "first_5000_test_state_errors": 0, "g1_pass": true, "kind": "final", "marginal_baseline": 0.0625, "metrics": {"test_context": {"digit_accuracy": [1.0, 1.0], "digit_ce": [0.000499314907938242, 0.00018666866526473314], "exact": 1.0}, "test_state": {"digit_accuracy": [1.0, 1.0], "digit_ce": [0.0004984271128972371, 0.00018550458053747813], "exact": 1.0}, "train": {"digit_accuracy": [1.0, 1.0], "digit_ce": [0.000497596965959439, 0.0001856382890389516], "exact": 1.0}}, "parameter_count": 33108}

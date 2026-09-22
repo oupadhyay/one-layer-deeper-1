@@ -1,0 +1,14 @@
+{
+  "variants": [
+    "submissions\\conditional_opt2_lr9_easy_v1\\submission.py",
+    "submissions\\conditional_opt2_lr11_easy_v1\\submission.py",
+    "submissions\\conditional_opt2_lr10_batch128_easy_v1\\submission.py",
+    "submissions\\conditional_opt2_lr10_batch512_easy_v1\\submission.py",
+    "submissions\\conditional_opt2_lr10_wd0_easy_v1\\submission.py",
+    "submissions\\conditional_opt2_lr10_wd3_easy_v1\\submission.py",
+    "submissions\\conditional_opt2_lr10_wd10_easy_v1\\submission.py",
+    "submissions\\conditional_opt2_lr10_warm8_easy_v1\\submission.py",
+    "submissions\\conditional_opt2_lr10_warm16_easy_v1\\submission.py",
+    "submissions\\conditional_opt2_lr10_warm64_easy_v1\\submission.py"
+  ]
+}

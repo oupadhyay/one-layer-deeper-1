@@ -1,0 +1,107 @@
+{
+  "comparison_payload": {
+    "backward_gate": {
+      "T1": 1.0,
+      "T_not_1": 0.01,
+      "forward_values_ungated": true
+    },
+    "batch_horizon_histogram": {
+      "T1": 416,
+      "T2": 432,
+      "T3": 432
+    },
+    "loader_generator_digest": "17214de48db07e3db6373707078e0e28f10b07c4f4e2591be26486ec5e326bc2",
+    "losses": [
+      2.8058228492736816,
+      2.5109477043151855,
+      2.494544744491577,
+      2.460390567779541,
+      2.2937464714050293,
+      2.4453978538513184,
+      2.3226068019866943,
+      2.2701330184936523,
+      2.441526174545288,
+      2.2992124557495117,
+      2.3313918113708496,
+      2.411247968673706,
+      2.373990058898926,
+      2.1837499141693115,
+      2.4445321559906006,
+      2.1358983516693115,
+      2.3035783767700195,
+      2.214909553527832,
+      2.128983974456787,
+      2.1953577995300293
+    ],
+    "model_state_digest": "9ae0828f21c4d16750b0f385e44a5cfd27e741c1aa3e207a48a4360b0990b6fa",
+    "optimizer_state_digest": "e52f6dbf4881bad49de2f93c23133106975bf5b4fa837f972bca15ffc0f18f9c",
+    "ordered_batch_digests": [
+      "b4bdff73354123ea7eda6a077d058676868b00cef57d0f5cfcab8e51aa9c2b42",
+      "6238702e2b5a3fffbe676272905152f034843c844e46321b23bd1feb182220fd",
+      "24ccd26f106dda83a1883b16af51ee9ad165d2f308e0926ca894522492d56b01",
+      "c1704be3a0be792ba410d53b8060214979baa76f0ea6df823f4b25660542c53b",
+      "709809801140e38366d5413b1390ed3c51f902e1d5c2f09f1e321c078dc14aa9",
+      "ada1891b2f7bec90e3bb421e538b8c60b73392419e1f29b884d576d6c3109d8f",
+      "c1a9de6f9cfba227b5f59345174fae3ca6b634aa500bbdc080fdb444eebca7bf",
+      "4dbd6859fd1b980272cc594dea064c1d9afba9cdd1c09035dfc6bcd7cc7badfd",
+      "e095859008b675e645091c5a34e68285c44f5b822165a84935796e3188b420fa",
+      "1099c358e9f9232831961fca61ddb68dc2bb442cc0a7950ef2a8b607efd8df9b",
+      "196e3b6c067cb110ecdb265e0671f5ed18daa5f3e7d0663529f81aa67db8f9df",
+      "c59609844e725d0e6f9a21877773ab0144ab387788545acd5a6625882ecf045c",
+      "3bbfc5f781c1059911ca4260a37cbe713623ab7ffd7703e057534a5b81927752",
+      "178662ed7fd2bbd4b0726cdb774c039382642e00f82cc931b1b1707d70e69405",
+      "ee36c1755a26bd317df4b94feb15a76a705d49f2b050d36f6943c78b90023ac3",
+      "4a62b07997657fb2041691428b88d2a52b28655203c550997b9a7c90df4a25f1",
+      "70e599184954d0ac231d7eeae2ed95dd1537432b9c5656b2fe205342c32fcf1c",
+      "8cee3ae4b8ef17cf1e3a5c44f8ab50fa538cb3a65f0bea25b59cbfb5795f51b9",
+      "9cd4a82ae049fb8e0e0cfc28c587a568c6d8ec80000d058c44da74fab664883a",
+      "436729a517fb8f304c297708ae326f575ea912ac0299ac1d8df57b122b33513b"
+    ],
+    "position": {
+      "batches_consumed_in_current_epoch": 2,
+      "batches_per_epoch": 9,
+      "epoch_index": 2,
+      "epoch_start_generator_digest": "6ed93547d6b6554aa08e8717846661f177e56d4df00e44d407867f9f257a28c2",
+      "examples": 1280,
+      "update": 20
+    },
+    "preflight": {
+      "d_model": 32,
+      "inputs": [
+        15,
+        89,
+        42
+      ],
+      "maximum_updates": 100,
+      "optimizer": "AdamW(lr=3e-3)",
+      "residues_mod_323": [
+        225,
+        169,
+        149
+      ],
+      "rows": 3,
+      "same_weight_eval_correct": 3,
+      "train_correct": 3,
+      "true_t": [
+        1,
+        1,
+        1
+      ],
+      "updates_run": 66
+    },
+    "protocol": "latent_x2_t1grad_singlethread_v1",
+    "scheduler_state_digest": "237e12d3ae222988eeb362c488dce1ac1662cb47e5f2b73a8074012a3e42821f",
+    "settings": {
+      "MKL_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "deterministic_algorithms": true,
+      "torch_num_interop_threads": 1,
+      "torch_num_threads": 1
+    }
+  },
+  "timing": {
+    "candidate_training_seconds_per_update": 0.40138383000157773,
+    "parent_frozen_seconds_per_update": 0.42097872162525163,
+    "ratio": 0.9534539618819097
+  }
+}

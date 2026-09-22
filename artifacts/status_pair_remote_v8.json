@@ -1,0 +1,218 @@
+﻿submission  394d852b-5e9b-44f9-8f09-cd717c2cacc1
+file        submission.py
+status      succeeded
+score       0.75%
+max T       <1
+OOD N max T <1
+tier        easy
+dataset     E5 ╖ 10û11 bit N, T=1/2/3
+suite       h100_easy_e5.json
+run         243c1a92-ee6d-46a4-9188-2e102b189237
+modal call  fc-01KZE47VGBGVBKR5VJ3CFHMB0M
+{
+  "created_at": "2026-08-07T12:47:46.285498+00:00",
+  "dataset_id": "e5",
+  "dataset_label": "E5 \u00b7 10\u201311 bit N, T=1/2/3",
+  "deadline_at": "2026-08-07T12:55:17.307583+00:00",
+  "filename": "submission.py",
+  "finished_at": "2026-08-07T12:49:01.204355+00:00",
+  "id": "394d852b-5e9b-44f9-8f09-cd717c2cacc1",
+  "manifest_name": "h100_easy_e5.json",
+  "metrics_available": true,
+  "metrics_url": "/api/submissions/394d852b-5e9b-44f9-8f09-cd717c2cacc1/metrics",
+  "modal_call_id": "fc-01KZE47VGBGVBKR5VJ3CFHMB0M",
+  "result": {
+    "depth_profile": {
+      "depth_factor": 0,
+      "ladder": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "max_certified_time_steps": null,
+      "ood_n_ladder": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "ood_n_max_certified_time_steps": null,
+      "ood_n_profile_available": true
+    },
+    "manifest": "squaring-mod-easy-e5",
+    "score": {
+      "mean_exact_accuracy": 0.0075000000496705365,
+      "mean_loss": 2.2103483593737385,
+      "num_measurements": 2,
+      "primary_metric": "mean_exact_accuracy"
+    },
+    "seeds": [
+      {
+        "completed_training_steps": 1101,
+        "depth_profile": {
+          "depth_factor": 0,
+          "ladder": [
+            1,
+            2,
+            4,
+            8,
+            16,
+            32,
+            64
+          ],
+          "max_certified_time_steps": null,
+          "ood_n_ladder": [
+            1,
+            2,
+            4,
+            8,
+            16,
+            32,
+            64
+          ],
+          "ood_n_max_certified_time_steps": null,
+          "ood_n_rungs": [
+            {
+              "correct_examples": 2,
+              "exact_accuracy": 0.00390625,
+              "example_count": 512,
+              "status": "failed",
+              "time_steps": 1
+            },
+            {
+              "correct_examples": 2,
+              "exact_accuracy": 0.00390625,
+              "example_count": 512,
+              "status": "failed",
+              "time_steps": 2
+            },
+            {
+              "correct_examples": 2,
+              "exact_accuracy": 0.00390625,
+              "example_count": 512,
+              "status": "failed",
+              "time_steps": 4
+            },
+            {
+              "correct_examples": 1,
+              "exact_accuracy": 0.001953125,
+              "example_count": 512,
+              "status": "failed",
+              "time_steps": 8
+            },
+            {
+              "correct_examples": 2,
+              "exact_accuracy": 0.00390625,
+              "example_count": 512,
+              "status": "failed",
+              "time_steps": 16
+            },
+            {
+              "correct_examples": 0,
+              "exact_accuracy": 0.0,
+              "example_count": 512,
+              "status": "failed",
+              "time_steps": 32
+            },
+            {
+              "correct_examples": 2,
+              "exact_accuracy": 0.00390625,
+              "example_count": 512,
+              "status": "failed",
+              "time_steps": 64
+            }
+          ],
+          "rungs": [
+            {
+              "correct_examples": 2,
+              "exact_accuracy": 0.00390625,
+              "example_count": 512,
+              "status": "failed",
+              "time_steps": 1
+            },
+            {
+              "correct_examples": 3,
+              "exact_accuracy": 0.005859375,
+              "example_count": 512,
+              "status": "failed",
+              "time_steps": 2
+            },
+            {
+              "correct_examples": 3,
+              "exact_accuracy": 0.005859375,
+              "example_count": 512,
+              "status": "failed",
+              "time_steps": 4
+            },
+            {
+              "correct_examples": 5,
+              "exact_accuracy": 0.009765625,
+              "example_count": 512,
+              "status": "failed",
+              "time_steps": 8
+            },
+            {
+              "correct_examples": 1,
+              "exact_accuracy": 0.001953125,
+              "example_count": 512,
+              "status": "failed",
+              "time_steps": 16
+            },
+            {
+              "correct_examples": 1,
+              "exact_accuracy": 0.001953125,
+              "example_count": 512,
+              "status": "failed",
+              "time_steps": 32
+            },
+            {
+              "correct_examples": 4,
+              "exact_accuracy": 0.0078125,
+              "example_count": 512,
+              "status": "failed",
+              "time_steps": 64
+            }
+          ]
+        },
+        "evaluation": {
+          "ood": {
+            "correct_examples": 3,
+            "exact_accuracy": 0.005000000049670537,
+            "example_count": 600,
+            "loss": 2.216489208118798
+          },
+          "test": {
+            "correct_examples": 12,
+            "exact_accuracy": 0.010000000049670537,
+            "example_count": 1200,
+            "loss": 2.2042075106286787
+          }
+        },
+        "evaluation_batch_size": 512,
+        "evaluation_budget_seconds": 30.0,
+        "evaluation_seconds": 4.122381388999997,
+        "final_train_loss": 2.1472694873809814,
+        "max_training_steps": 1000000,
+        "model_state_elements": 68874,
+        "optimizer_state_elements_after_first_step": 137777,
+        "seed": 74,
+        "training_batch_size": 512,
+        "training_seconds": 60.007645896
+      }
+    ]
+  },
+  "run_created_at": "2026-08-07T12:47:46.285498+00:00",
+  "run_id": "243c1a92-ee6d-46a4-9188-2e102b189237",
+  "started_at": "2026-08-07T12:47:47.307583+00:00",
+  "status": "succeeded",
+  "submitter": "Ojasw Upadhyay",
+  "task": "squaring_mod",
+  "tier": "easy"
+}

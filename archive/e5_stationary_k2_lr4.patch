@@ -1,0 +1,5 @@
+LR-only experiment source is the final K2 submission.py with this one change:
+
+@@ build_optimizer
+-        lr=2.0e-3,
++        lr=4.0e-3,

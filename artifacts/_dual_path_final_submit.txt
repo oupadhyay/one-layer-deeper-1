@@ -1,0 +1,20 @@
+﻿valid: submissions\dual_path_place_transition_easy_v1\submission.py (9001 bytes)
+queued: 4be20766-e280-49f9-9f5d-226a667fa137
+tier:   easy
+data:   e5
+left:   47 today
+view:   https://onelayerdeeper.ai/submissions/4be20766-e280-49f9-9f5d-226a667fa137
+[queued] submission.py
+[running] submission.py
+[succeeded] submission.py
+submission  4be20766-e280-49f9-9f5d-226a667fa137
+file        submission.py
+status      succeeded
+score       0.29%
+max T       <1
+OOD N max T <1
+tier        easy
+dataset     E5 ┬╖ 10ΓÇô11 bit N, T=1/2/3
+suite       h100_easy_e5.json
+run         1125eaf9-30f5-410a-9fec-afa02b8ad8d9
+modal call  fc-01KZGJE0D1D63Z4JMQC3G7SCWE

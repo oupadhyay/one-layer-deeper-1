@@ -1,0 +1,12 @@
+{
+  "variants": [
+    "submissions\\conditional_loss_smooth02_easy_v1\\submission.py",
+    "submissions\\conditional_loss_smooth05_easy_v1\\submission.py",
+    "submissions\\conditional_loss_smooth10_easy_v1\\submission.py",
+    "submissions\\conditional_loss_focal05_easy_v1\\submission.py",
+    "submissions\\conditional_loss_focal10_easy_v1\\submission.py",
+    "submissions\\conditional_loss_focal20_easy_v1\\submission.py",
+    "submissions\\conditional_loss_hard25_easy_v1\\submission.py",
+    "submissions\\conditional_loss_hard50_easy_v1\\submission.py"
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "protocol": "biscan_e5_diversity_singlethread_v1",
+  "execution_history": [
+    {
+      "artifact": "artifacts/biscan_e5_diversity_singlethread_v1_probe1.json",
+      "complete_update_time_ratio_to_frozen_e1_biscan": 0.07963497247457671,
+      "kind": "valid_probe_1",
+      "sha256": "446ef2751f8b6a4db59f7de189701c3036ac20caa300f6f482c83dd2bd1c6797"
+    },
+    {
+      "artifact": "artifacts/biscan_e5_diversity_singlethread_v1_probe2.json",
+      "complete_update_time_ratio_to_frozen_e1_biscan": 0.08041388576967352,
+      "kind": "valid_probe_2",
+      "sha256": "d75a53b0edd9f6fa06d1f7c75da56dd6d8fc2c7474dc46edd06b50a86cd35e6a"
+    },
+    {
+      "examples": 102400,
+      "final_weights_sha256": "83b6eb1cf462d51b4940c58f91a7065bb6dcd3cca46a74134a4e2665ad9a4daf",
+      "kind": "fresh_full_run",
+      "loaded_probe_parent_or_checkpoint": false,
+      "result_sha256": "71fbaf967f16f5823ed30fdfb8a380d1bfc7fe879adbbaf03e6db0f8ef26b60d",
+      "started_from_update": 0,
+      "updates": 1600
+    }
+  ],
+  "candidate_artifact_sha256": {
+    "competition_loop6_biscan_t1grad.py": "7fa66ef1d543716bb7c543bd7f0d90fd5703297f5a039d81a0ba2e58cac4445c",
+    "scripts/run_biscan_e5_diversity_singlethread_v1.py": "296663b2a1c9bfe7fc7275abc37a662d283dca2606b72aeaa1c27e0bc8adb4a5",
+    "tests/test_competition_loop6_biscan_t1grad.py": "325946cb287d595fa8f4b88725e9838abfa8523703c2516ffde9998d12cd5930"
+  },
+  "executed_dependency_sha256": {
+    "competition_submission.py": "00468b791b5b0ad23739170ceb1eec24f3a24c99ef7ef929fa4acf414cbedc73",
+    "competition_submission_c1a.py": "2ac90e61d36fa57c7f4f9ab7144b26022a515e3374c43ff87b7ede95ab4bb354",
+    "scripts/run_latent_exposure_singlethread_v1.py": "02780ede10f072e322974850aab9647df5eeefeff6b81c9d26efb518942013e9"
+  },
+  "data_sha256": {
+    "dataset_config": "65f0e350d3af37fa951243f35c82887163b8738c7692f72e45ba0508ec87d72f",
+    "dataset_directory": "472ba57a7b33a2266e19ac5bf333dd217e86460a626aa4a1033928bab31747d6",
+    "local_manifest": "af01b9dec3a59579811b620a5aac76bc3637efaaf9a64eed55c4043018fc7cef",
+    "official_h100_e5_manifest": "f2bd3816dcee53b90e83b717f60350e5011df1ebb7281774b9ad64cd025c0318"
+  },
+  "milestone_checkpoint_sha256": {
+    "200": "0166a31eb9b447ebee2f8b0d7a0dddce8041497dec2d179af0cb75fda2381e0b",
+    "400": "fc15c85b0a3d99a28719d2f284d6b17840811cf48d437ab15181d2e0510c4100",
+    "800": "acc9d6b10e687e86833c01980298d6b5bafdb0519317135ca24c72546d0006c1",
+    "1600": "9a957c216c5f8f6561321bf93187104904bee8a1a73769083164dc279a909693"
+  },
+  "valid_probe_comparison_payloads_equal": true,
+  "probe_timing_qualification": {
+    "e1_frozen_probe_seconds_per_update": 0.385,
+    "e5_probe_seconds_per_update_approximate": 0.034,
+    "qualification": "The 0.0796 to 0.0804 ratios use non-comparable environment timing. The approximately 11x discrepancy is not explained by the small horizon-histogram difference. It affected no metric or fixed-update gate and must not be interpreted as an E5 speedup."
+  },
+  "state": {
+    "final_weights_only": true,
+    "final_weights_tensors": 11,
+    "milestone_checkpoints_include_complete_resume_state": true,
+    "model_elements": 63178
+  },
+  "evaluation_scope": {
+    "held_out_evaluated_only_after_update_1600": true,
+    "no_held_out_checkpoint_selection": true,
+    "depth_ood_n_t_1_time_is_recorded_in_its_metric_but_excluded_from_result_diagnostics_elapsed_seconds": true
+  },
+  "optimizer_identity_qualification": {
+    "executed_builder": "competition_submission_c1a.build_optimizer",
+    "result_contract_label": "C1B AdamW/warmup20",
+    "qualification": "C1B imports and reuses the C1A optimizer unchanged. The executed builder was C1A by identity; the inherited result label does not change numerical execution."
+  },
+  "frozen_comparator": {
+    "e1_biscan_result_sha256": "40cdf560942ac570a078be66b73aa0a4d73d8f75b8ff542c8100a2d2e3afd720",
+    "qualification": "E1 and E5 use different data distributions and partition sizes. Compare learning behavior, not raw exact counts. No E5 no-input marginal artifact was available, and no label inspection was performed to create one."
+  },
+  "gates": {
+    "exposure": "FAIL",
+    "ood_t6_supporting": "FAIL",
+    "one_step_learnability": "FAIL",
+    "promotion": "FAIL",
+    "variable_n_transfer": "FAIL"
+  },
+  "gate_label_qualification": "The frozen result key depth_t6_supporting evaluates the OOD T6 split. It is not a depth-rung split. The corrected provenance label is ood_t6_supporting.",
+  "interpretation": "At 102400 sampled examples, diverse 10/11-bit N support did not force the frozen BiScan to learn a reusable transition. Train T1 improved late but remained below the predeclared learnability gate, and all held-out transfer measures remained near noise with poor calibration.",
+  "branch_decision": "Close this fixed-update E5 data-diversity discriminator. Do not extend exposure or change BiScan width, direction, gate, optimizer, or seed.",
+  "classification": "fixed-update CPU data-regime diagnostic; not H100 or competition-budget timing",
+  "automatic_follow_up": false,
+  "remote_action": false
+}

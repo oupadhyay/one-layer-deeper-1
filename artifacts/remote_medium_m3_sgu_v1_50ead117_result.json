@@ -1,0 +1,207 @@
+{
+  "created_at": "2026-08-11T08:03:20.815818+00:00",
+  "dataset_id": "m3",
+  "dataset_label": "M3 \u00b7 11/13/15 bit N, fixed T=2",
+  "deadline_at": "2026-08-11T08:24:21.309634+00:00",
+  "filename": "submission.py",
+  "finished_at": "2026-08-11T08:13:33.146066+00:00",
+  "id": "50ead117-7c0c-4b9e-9644-c83fc2ce4c54",
+  "manifest_name": "h100_medium_m3.json",
+  "metrics_available": true,
+  "metrics_url": "/api/submissions/50ead117-7c0c-4b9e-9644-c83fc2ce4c54/metrics",
+  "modal_call_id": "fc-01KZQXHXFZ9V2DHAMC0QHDG0RM",
+  "result": {
+    "depth_profile": {
+      "depth_factor": 0,
+      "ladder": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "max_certified_time_steps": null,
+      "ood_n_ladder": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "ood_n_max_certified_time_steps": null,
+      "ood_n_profile_available": true
+    },
+    "manifest": "squaring-mod-medium-m3",
+    "score": {
+      "mean_exact_accuracy": 0.002625,
+      "mean_loss": 2.1966510628067395,
+      "num_measurements": 2,
+      "primary_metric": "mean_exact_accuracy"
+    },
+    "seeds": [
+      {
+        "completed_training_steps": 41833,
+        "depth_profile": {
+          "depth_factor": 0,
+          "ladder": [
+            1,
+            2,
+            4,
+            8,
+            16,
+            32,
+            64
+          ],
+          "max_certified_time_steps": null,
+          "ood_n_ladder": [
+            1,
+            2,
+            4,
+            8,
+            16,
+            32,
+            64
+          ],
+          "ood_n_max_certified_time_steps": null,
+          "ood_n_rungs": [
+            {
+              "correct_examples": 0,
+              "exact_accuracy": 0.0,
+              "example_count": 768,
+              "status": "failed",
+              "time_steps": 1
+            },
+            {
+              "correct_examples": 0,
+              "exact_accuracy": 0.0,
+              "example_count": 768,
+              "status": "failed",
+              "time_steps": 2
+            },
+            {
+              "correct_examples": 0,
+              "exact_accuracy": 0.0,
+              "example_count": 768,
+              "status": "failed",
+              "time_steps": 4
+            },
+            {
+              "correct_examples": 0,
+              "exact_accuracy": 0.0,
+              "example_count": 768,
+              "status": "failed",
+              "time_steps": 8
+            },
+            {
+              "correct_examples": 0,
+              "exact_accuracy": 0.0,
+              "example_count": 768,
+              "status": "failed",
+              "time_steps": 16
+            },
+            {
+              "correct_examples": 0,
+              "exact_accuracy": 0.0,
+              "example_count": 768,
+              "status": "failed",
+              "time_steps": 32
+            },
+            {
+              "correct_examples": 2,
+              "exact_accuracy": 0.0026041666666666665,
+              "example_count": 768,
+              "status": "failed",
+              "time_steps": 64
+            }
+          ],
+          "rungs": [
+            {
+              "correct_examples": 0,
+              "exact_accuracy": 0.0,
+              "example_count": 768,
+              "status": "failed",
+              "time_steps": 1
+            },
+            {
+              "correct_examples": 3,
+              "exact_accuracy": 0.00390625,
+              "example_count": 768,
+              "status": "failed",
+              "time_steps": 2
+            },
+            {
+              "correct_examples": 2,
+              "exact_accuracy": 0.0026041666666666665,
+              "example_count": 768,
+              "status": "failed",
+              "time_steps": 4
+            },
+            {
+              "correct_examples": 3,
+              "exact_accuracy": 0.00390625,
+              "example_count": 768,
+              "status": "failed",
+              "time_steps": 8
+            },
+            {
+              "correct_examples": 1,
+              "exact_accuracy": 0.0013020833333333333,
+              "example_count": 768,
+              "status": "failed",
+              "time_steps": 16
+            },
+            {
+              "correct_examples": 2,
+              "exact_accuracy": 0.0026041666666666665,
+              "example_count": 768,
+              "status": "failed",
+              "time_steps": 32
+            },
+            {
+              "correct_examples": 0,
+              "exact_accuracy": 0.0,
+              "example_count": 768,
+              "status": "failed",
+              "time_steps": 64
+            }
+          ]
+        },
+        "evaluation": {
+          "ood": {
+            "correct_examples": 7,
+            "exact_accuracy": 0.0023333333333333335,
+            "example_count": 3000,
+            "loss": 2.1444998033406386
+          },
+          "test": {
+            "correct_examples": 7,
+            "exact_accuracy": 0.002916666666666667,
+            "example_count": 2400,
+            "loss": 2.2488023222728404
+          }
+        },
+        "evaluation_batch_size": 512,
+        "evaluation_budget_seconds": 300.0,
+        "evaluation_seconds": 3.749116759000003,
+        "final_train_loss": 1.9699043035507202,
+        "max_training_steps": 1000000,
+        "model_state_elements": 80088,
+        "optimizer_state_elements_after_first_step": 160194,
+        "seed": 74,
+        "training_batch_size": 256,
+        "training_seconds": 600.139392073
+      }
+    ]
+  },
+  "run_created_at": "2026-08-11T08:03:20.815818+00:00",
+  "run_id": "cd25fe2a-031a-4eff-9246-7f56551a613e",
+  "started_at": "2026-08-11T08:03:21.309634+00:00",
+  "status": "succeeded",
+  "submitter": "Ojasw Upadhyay",
+  "task": "squaring_mod",
+  "tier": "medium"
+}

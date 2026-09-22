@@ -1,0 +1,73 @@
+{
+  "protocol": "factorized_pair_reducer_d96k3_singlethread_v1_trainability400",
+  "status": "frozen_trainability_reject",
+  "classification": "train-only 400-update E5 successive-halving screen",
+  "artifact_sha256": {
+    "candidate": "d7867fbe33c291a3e3e6e2f28d95f5dd786077810c21df97c448179d8f0b6a9d",
+    "tests": "ba4ece88dcc15a30ddda977b7077439a682a935dcff244a1ce20c9a61b34dd9c",
+    "harness": "ba93d79cf8c56ac22d36371b3384455533d5f93c8ae49dd228329b707bd4fcfb",
+    "probe1": "ec86f42116f1b0ea29630e282689ad8793d64a1c141119fcc30a1edbc56a1baf",
+    "probe2": "71efe0c6e931d6403aac58bb1b0db04564e416ebe67d9256672677a2d978f0d6",
+    "resource_review_record": "89c53096d0b8fbd365c0a84723441dea23165041ebbac7cf32eed54593d46ffe",
+    "result": "69be848cde8fdcbc6f91f6ceb1c5ff36f6cb767945c21c9bdc1155a587ab1a0f",
+    "checkpoint": "81b63fd71ebd2cea9dc7d53a61deaf63b47c11ee9f1e1674301edd55dcc545d7"
+  },
+  "executed_dependency_sha256": {
+    "scripts/run_biscan_e5_diversity_singlethread_v1.py": "296663b2a1c9bfe7fc7275abc37a662d283dca2606b72aeaa1c27e0bc8adb4a5",
+    "scripts/run_latent_exposure_singlethread_v1.py": "02780ede10f072e322974850aab9647df5eeefeff6b81c9d26efb518942013e9"
+  },
+  "data_sha256": {
+    "manifest": "af01b9dec3a59579811b620a5aac76bc3637efaaf9a64eed55c4043018fc7cef",
+    "dataset_config": "65f0e350d3af37fa951243f35c82887163b8738c7692f72e45ba0508ec87d72f",
+    "dataset_directory": "472ba57a7b33a2266e19ac5bf333dd217e86460a626aa4a1033928bab31747d6"
+  },
+  "contract": {
+    "model_state_elements": 143722,
+    "latent_width": 96,
+    "tied_microphases": 3,
+    "scratch_tokens": 8,
+    "fresh_updates": 400,
+    "examples": 25600,
+    "model_seed": 74,
+    "loader_seed": 45,
+    "objective": "plain endpoint cross entropy",
+    "held_out_evaluation": false,
+    "probe_or_checkpoint_loaded": false
+  },
+  "resource_review": {
+    "final_probe_ratios": [
+      2.616044852937407,
+      2.6179598529672465
+    ],
+    "decision": "authorize only the 400-update trainability screen",
+    "full_1600_update_run_authorized": false,
+    "actual_training_seconds": 35.96941889997106
+  },
+  "trainability_gate": {
+    "full_train_correct": 31,
+    "full_train_examples": 4800,
+    "full_train_cross_entropy": 2.128841517109073,
+    "t1_correct": 6,
+    "t1_examples": 1600,
+    "t1_cross_entropy": 2.1275078399271905,
+    "lsd_cross_entropy": 2.2966482498000067,
+    "tens_cross_entropy": 2.294312070442634,
+    "unique_predicted_sequences": 169,
+    "failed_clauses": [
+      "t1_learnability",
+      "lsd_ce",
+      "tens_ce"
+    ],
+    "pass": false
+  },
+  "correction_history": [
+    "The initial valid probes entered the review band. The harness added an explicit trainability-only review path and removed its UTF-8 BOM. Both probes were regenerated under the final harness before training.",
+    "No correction occurred during the valid update0-to-400 run."
+  ],
+  "decision": {
+    "exact_configuration": "REJECT at successive-halving stage",
+    "full_1600_update_run": "NOT STARTED",
+    "broad_arithmetic_workspace_area": "OPEN for a compute-optimized cellular hypothesis"
+  },
+  "remote_competition_action": false
+}

@@ -1,0 +1,29 @@
+{
+  "name": "squaring-mod-local-e5-3.6x-cpu",
+  "data": {
+    "kind": "squaring_mod",
+    "data_root": "data/generated/e5_10x_control",
+    "batch_size": 64,
+    "eval_batch_size": 256,
+    "shuffle_train": true,
+    "shuffle_eval": false,
+    "num_workers": 0,
+    "pin_memory": false,
+    "drop_last": true,
+    "seed": 45
+  },
+  "runtime": {
+    "device": "cpu",
+    "dtype": "float32",
+    "amp": false,
+    "compile": false,
+    "total_training_time_seconds": 3600,
+    "max_steps": 9500,
+    "seeds": [74],
+    "grad_clip": 1.0,
+    "log_every": 100
+  },
+  "model_state": {
+    "maximum_elements": 500000000
+  }
+}

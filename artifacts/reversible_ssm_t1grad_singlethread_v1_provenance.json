@@ -1,0 +1,73 @@
+{
+  "protocol": "reversible_ssm_t1grad_singlethread_v1",
+  "execution_history": [
+    {
+      "kind": "valid_probe_1",
+      "artifact": "artifacts/reversible_ssm_t1grad_singlethread_v1_probe1.json",
+      "sha256": "c7308e490c4c1f7474202b8c9fe331ef6d9b396c3ae03b786002115d2b16d5c0",
+      "complete_update_time_ratio_to_biscan": 0.8692102992002971
+    },
+    {
+      "kind": "valid_probe_2",
+      "artifact": "artifacts/reversible_ssm_t1grad_singlethread_v1_probe2.json",
+      "sha256": "4532a5430341763e952e94a8aa42cf35f8edc6dbea09b98978bad465e29e4635",
+      "complete_update_time_ratio_to_biscan": 0.8655364061973965
+    },
+    {
+      "kind": "fresh_full_run",
+      "updates": 1600,
+      "examples": 102400,
+      "started_from_update": 0,
+      "loaded_probe_parent_or_checkpoint": false,
+      "result_sha256": "0032f3c7a50cea21271ac8c788f5a92509aaf1b3d0cf7501b66fe7087646b2d4",
+      "final_weights_sha256": "f1938316ccecbec0ac11ef4d8678f9ea087b2efd62e252a8d9b785f8d53902f3"
+    }
+  ],
+  "candidate_artifact_sha256": {
+    "competition_loop8_reversible_ssm_t1grad.py": "df7ff9866a3451a01aba18e6c78c6f2754045ec95edb464b94ddb5917bf03875",
+    "tests/test_competition_loop8_reversible_ssm_t1grad.py": "cbd6456a7e3718fb48417f560baca1862f6fe57148431c4187da0805c3664bfc",
+    "scripts/run_reversible_ssm_t1grad_singlethread_v1.py": "2729bea3cf9113af33604fe5c46e25a5d85bc22b3073199c25cf57c162011899"
+  },
+  "executed_dependency_sha256": {
+    "scripts/run_relative_place_attention_t1grad_singlethread_v1.py": "fcc78b1dfd3518e70b004ab3c278dec20417458987f387638960b658fca7f597",
+    "scripts/run_latent_exposure_singlethread_v1.py": "02780ede10f072e322974850aab9647df5eeefeff6b81c9d26efb518942013e9",
+    "competition_submission_c1a.py": "2ac90e61d36fa57c7f4f9ab7144b26022a515e3374c43ff87b7ede95ab4bb354",
+    "competition_submission.py": "00468b791b5b0ad23739170ceb1eec24f3a24c99ef7ef929fa4acf414cbedc73"
+  },
+  "protocol_parent_sha256": {
+    "competition_submission_c1b.py": "425efc4b0422585008de49704857bc4d6e9e9936b127e66926d4987b3c00d293",
+    "frozen_biscan_result": "40cdf560942ac570a078be66b73aa0a4d73d8f75b8ff542c8100a2d2e3afd720",
+    "frozen_relative_place_attention_result": "8477074ad9133b115a2863ee13589f4266ebab170efd123a69ee5abff6033920"
+  },
+  "data_sha256": {
+    "manifest": "0d1e9c8ed4d649f4e0d2767f853916163e46a7f223f6c16187e03737ae14bfcf",
+    "dataset_directory": "f662210477e43c3847fe43c2f164c97b2d0fde80ec255d45fde4bd7b71895089"
+  },
+  "milestone_checkpoint_sha256": {
+    "200": "2312a178f1bc116e3725262d48619e567f52cb3262b2b1e038fed4798f41ad18",
+    "400": "6181be22a28cc580141de2e9a371a0f13e67a0dfad1ec5e22046bbb4662dbb76",
+    "800": "8da7f5f641491e542ba4d3c94db854e307e72bfd3a3778a43a6d252aa4d50cf5",
+    "1600": "2b00b3ecb87b7b7b9d9da94f96da22326b05840521c9efecd51f065c909f9c9b"
+  },
+  "valid_probe_comparison_payloads_equal": true,
+  "state": {
+    "model_elements": 3852,
+    "final_weights_tensors": 15,
+    "final_weights_only": true,
+    "milestone_checkpoints_include_complete_resume_state": true
+  },
+  "evaluation_scope": {
+    "held_out_evaluated_only_after_update_1600": true,
+    "depth_ood_n_t_1_seconds_are_recorded_in_its_own_metric_but_not_added_to_diagnostics.elapsed_seconds": true
+  },
+  "gates": {
+    "exposure": "FAIL",
+    "one_step_learnability": "REJECT",
+    "competition_signal": "FAIL",
+    "transfer": "FAIL",
+    "promotion": "FAIL"
+  },
+  "classification": "fixed-update CPU diagnostic; not H100 or competition-budget timing",
+  "automatic_follow_up": false,
+  "remote_action": false
+}

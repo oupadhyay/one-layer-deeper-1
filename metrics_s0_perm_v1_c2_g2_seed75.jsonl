@@ -1,0 +1,25 @@
+{"kind": "curve", "step": 50, "loss": 2.9396705627441406}
+{"kind": "curve", "step": 100, "loss": 2.842088460922241}
+{"kind": "curve", "step": 150, "loss": 2.6441450119018555}
+{"kind": "curve", "step": 200, "loss": 1.7997616529464722}
+{"kind": "curve", "step": 250, "loss": 0.7082774639129639}
+{"kind": "curve", "step": 300, "loss": 0.09659634530544281}
+{"kind": "curve", "step": 350, "loss": 0.014655973762273788}
+{"kind": "curve", "step": 400, "loss": 0.007926403544843197}
+{"kind": "curve", "step": 450, "loss": 0.005273327697068453}
+{"kind": "curve", "step": 500, "loss": 0.0037766071036458015}
+{"kind": "curve", "step": 550, "loss": 0.003002861747518182}
+{"kind": "curve", "step": 600, "loss": 0.002404451137408614}
+{"kind": "curve", "step": 650, "loss": 0.0019465740770101547}
+{"kind": "curve", "step": 700, "loss": 0.001637315028347075}
+{"kind": "curve", "step": 750, "loss": 0.0013928803382441401}
+{"kind": "curve", "step": 800, "loss": 0.0012509028892964125}
+{"kind": "curve", "step": 850, "loss": 0.0010739861754700541}
+{"kind": "curve", "step": 900, "loss": 0.0009187987307086587}
+{"kind": "curve", "step": 950, "loss": 0.0008023201371543109}
+{"kind": "curve", "step": 1000, "loss": 0.0007255523232743144}
+{"kind": "curve", "step": 1050, "loss": 0.0006579625769518316}
+{"kind": "curve", "step": 1100, "loss": 0.0006056468118913472}
+{"kind": "curve", "step": 1150, "loss": 0.0005482578417286277}
+{"kind": "curve", "step": 1200, "loss": 0.0004946074332110584}
+{"checkpoint": "artifacts\\s0_perm_v1_c2_seed75.pt", "checkpoint_sha256": "bf6655626c37c7ca2e563b1aefa6c1200be6c3b22148480a0a57004687c6ef98", "config": {"batch_size": 256, "curve_every": 50, "eval_batch_size": 1024, "learning_rate": 0.003, "max_steps": 1200, "seed": 75, "weight_decay": 0.0001, "width": 64}, "control": "C2", "elapsed_seconds": 6.463751000002958, "first_5000_errors": {"test_context": 0, "test_state": 0}, "g2_pass": true, "kind": "final", "leading_zero_metrics": {"ood_size_t1_diagnostic": {"count": 2000, "digit_accuracy": [0.273, 0.998], "digit_ce": [5.98624365234375, 0.00969664192199707], "exact": 0.272}, "test_context": {"count": 3200, "digit_accuracy": [1.0, 1.0], "digit_ce": [0.0004821749369148165, 0.00010593047918519005], "exact": 1.0}, "test_state": {"count": 3750, "digit_accuracy": [1.0, 1.0], "digit_ce": [0.00048074149290720623, 0.00010574125051498413], "exact": 1.0}, "train": {"count": 16250, "digit_accuracy": [1.0, 1.0], "digit_ce": [0.00048074686160454384, 0.00010449921259513268], "exact": 1.0}}, "metrics": {"ood_size_t1_diagnostic": {"digit_accuracy": [0.24541666666666667, 0.41729166666666667], "digit_ce": [6.093646850585937, 15.491834920247396], "exact": 0.11333333333333333}, "test_context": {"digit_accuracy": [1.0, 1.0], "digit_ce": [0.00036410283064469695, 0.00013946784019935876], "exact": 1.0}, "test_state": {"digit_accuracy": [1.0, 1.0], "digit_ce": [0.0003634410252173742, 0.00013925587137540181], "exact": 1.0}, "train": {"digit_accuracy": [1.0, 1.0], "digit_ce": [0.0003630278242322115, 0.00013867926081785788], "exact": 1.0}}, "parameter_count": 33108, "provenance": "artifacts\\s0_perm_v1_c2_seed75_provenance.json"}

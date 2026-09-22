@@ -1,0 +1,12 @@
+{
+  "status": "predeclared_before_optimization",
+  "experiment": "S2-E1 bidirectional scan v1",
+  "seed": 79,
+  "architecture": {"embedding": [10, 32], "shared_state_context": true, "pair_width": 64, "down_scan": [3, 2, 1, 0], "down_gru": [64, 64], "up_scan": [0, 1, 2, 3], "up_gru": [128, 64], "readout": [64, 10], "outer_steps": 1, "output_order": "LSD-first"},
+  "parameter_count": 63178,
+  "initial_state_sha256": "00634e1ca09906faef049b5ba3670d9deb73b85da021f3a156970acf36a129c8",
+  "initialization": "manual_seed(79) reset; embedding normal(0,.02); GRUs down then up, native input gate blocks Xavier uniform, recurrent gate blocks orthogonal, biases zero; readout Xavier uniform, bias zero",
+  "dataset": {"root": "data/generated/s2_doublemod_seen_dense_v1", "manifest_sha256": "817e2df936909427934fdbe8f59ea1d596649c3e14eb2facedce6c97c64bf578", "config_sha256": "10c26a868b02403b68f7f0348771b52866fcd1de8fb1978a6ce2f412327f2a98", "train_sha256": "4f1db72713873ba564f3b21faefc8f132d0f201b267b6870a3452c8ee3c1441c", "test_sha256": "4accb941940d5ff9d513b3d887c20a589e9c6c348b9833db64129b01fc65fcb2", "dense_g0_sha256": "0ed5dee741f528ea6ab9db61e566dcc91a5e576c7004e98d8f7438baa2cf2a9b"},
+  "optimization": {"cpu_fp32": true, "deterministic": true, "threads": [1, 1], "optimizer": "AdamW", "lr": 0.001, "betas": [0.9, 0.999], "eps": 1e-8, "weight_decay": 0.0001, "batch_size": 256, "shuffle_seed": 79, "workers": 0, "drop_last": false, "ce": "mean over four places", "clip": 1.0, "steps": 5040, "examples": 1281212, "full_epochs": 37, "partial_epoch_batches": 45, "wall_seconds": 1500, "retry": false, "scheduler": false, "validation_during_train": false},
+  "selection_rule": "conjunctive gates only; a pass advances solely to independent-seed review"
+}

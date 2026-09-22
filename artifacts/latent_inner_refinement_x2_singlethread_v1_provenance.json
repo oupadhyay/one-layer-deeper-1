@@ -1,0 +1,54 @@
+{
+  "protocol": "latent_inner_refinement_x2_singlethread_v1",
+  "execution_history": [
+    {
+      "kind": "probe_pair_with_incomplete_timing_scope",
+      "numerical_payloads_equal": true,
+      "full_run_started": false,
+      "probe_1_sha256_before_overwrite": "38882424fb340386b16a49e3fdf0d6547b8d2aa8800432e0815cb8622e02bb6a",
+      "probe_2_sha256_before_overwrite": "6ebd0f7742d83996e4f86f1beee8c5ce0de16f6e4353844227dd9d5478eb2f00",
+      "repair": "The timer was expanded from forward/backward only to the complete update loop, including batch retrieval and epoch iterator restart. Model, optimizer, data, seed, loss, and update semantics did not change."
+    },
+    {
+      "kind": "valid_deterministic_probe_1",
+      "artifact": "artifacts/latent_inner_refinement_x2_singlethread_v1_probe1.json",
+      "sha256": "064b8a4889e4c6c99bb314d38e7925d754337f23d7d64795fbbff6982c005cf9",
+      "complete_update_time_ratio_to_parent": 0.9455714732141121
+    },
+    {
+      "kind": "valid_deterministic_probe_2",
+      "artifact": "artifacts/latent_inner_refinement_x2_singlethread_v1_probe2.json",
+      "sha256": "ba1b01e1f286ee7cf79b2586f48e7f1cf4281e44e1d17a653637ced7686221e7",
+      "complete_update_time_ratio_to_parent": 0.9424860797458988
+    },
+    {
+      "kind": "fresh_full_run",
+      "updates": 1600,
+      "started_from_update": 0,
+      "loaded_parent_probe_or_checkpoint": false,
+      "result_sha256": "225b3f79087e9d5b52fb7e229b7e35b219d30fc6972ed2986d428615bc3d2f36"
+    }
+  ],
+  "executed_dependency_sha256": {
+    "canonical_harness_scripts/run_latent_exposure_singlethread_v1.py": "02780ede10f072e322974850aab9647df5eeefeff6b81c9d26efb518942013e9",
+    "parent_competition_loop2_latent.py": "c98c5a9fd276575cda6846ca7a00e2ec5a7e61f59a0743a85fa70ccf749f438f",
+    "inherited_competition_submission.py": "00468b791b5b0ad23739170ceb1eec24f3a24c99ef7ef929fa4acf414cbedc73",
+    "inherited_competition_submission_c1a.py": "2ac90e61d36fa57c7f4f9ab7144b26022a515e3374c43ff87b7ede95ab4bb354",
+    "inherited_competition_submission_c1b.py": "425efc4b0422585008de49704857bc4d6e9e9936b127e66926d4987b3c00d293",
+    "frozen_parent_result": "b75ab4562a3c97bc6be3c7538467f6d38313c3fedb1bc579ed9eea2f45e38285"
+  },
+  "throughput_context": {
+    "valid_probe_complete_update_ratios": [
+      0.9455714732141121,
+      0.9424860797458988
+    ],
+    "probe_ratio_scope": "20-update probe complete-update timing; not full-run throughput",
+    "full_run_training_seconds": 706.3058907996747,
+    "parent_full_run_training_seconds": 673.5659546004026,
+    "full_run_training_time_ratio_to_parent": 1.0486068750590212
+  },
+  "valid_probe_comparison_payloads_equal": true,
+  "mechanistic_gate": "PASS",
+  "competition_gate": "FAIL",
+  "remote_action": false
+}

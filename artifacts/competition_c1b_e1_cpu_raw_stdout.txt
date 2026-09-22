@@ -1,0 +1,34 @@
+{
+  "manifest": "competition-c1-e1-cpu-functional-learning-diagnostic",
+  "model_spec": {
+    "vocab_size": 17,
+    "max_seq_len": 13,
+    "maximum_model_state_elements": 500000000
+  },
+  "training_batch_size": 64,
+  "evaluation_batch_size": 128,
+  "max_training_steps": 9500,
+  "total_training_time_seconds": 60.0,
+  "training_time_seconds_per_seed": 60.0,
+  "evaluation_time_seconds_per_seed": 30.0,
+  "seeds": [
+    74
+  ]
+}
+step=1 loss=2.556827 accuracy=0.000000 elapsed=2.9s budget=60.0s
+step=100 loss=1.930219 accuracy=0.000000 elapsed=30.0s budget=60.0s
+step=200 loss=1.878022 accuracy=0.000000 elapsed=56.7s budget=60.0s
+seed=74 split=test loss=1.909134 exact_accuracy=0.060000
+seed=74 split=ood loss=1.883508 exact_accuracy=0.100000
+seed=74 profile=seen_n depth_t=1 exact_accuracy=0.026316 certified=False
+seed=74 profile=seen_n depth_t=2 exact_accuracy=0.026316 certified=False
+seed=74 profile=seen_n depth_t=4 exact_accuracy=0.105263 certified=False
+seed=74 profile=seen_n depth_t=8 exact_accuracy=0.105263 certified=False
+seed=74 profile=seen_n depth_t=16 exact_accuracy=0.105263 certified=False
+seed=74 profile=seen_n depth_t=32 exact_accuracy=0.105263 certified=False
+seed=74 profile=seen_n depth_t=64 exact_accuracy=0.105263 certified=False
+seed=74 profile=ood_n depth_t=1 exact_accuracy=0.001953 certified=False
+seed=74 profile=ood_n depth_t=2 exact_accuracy=0.007812 certified=False
+seed=74 profile=ood_n depth_t=4 exact_accuracy=0.005859 certified=False
+seed=74 profile=ood_n depth_t=8 exact_accuracy=0.005859 certified=False
+RESULT_JSON={"depth_profile": {"depth_factor": 0, "ladder": [1, 2, 4, 8, 16, 32, 64], "max_certified_time_steps": null, "ood_n_ladder": [1, 2, 4, 8, 16, 32, 64], "ood_n_max_certified_time_steps": null, "ood_n_profile_available": true}, "manifest": "competition-c1-e1-cpu-functional-learning-diagnostic", "score": {"mean_exact_accuracy": 0.08000000114242237, "mean_loss": 1.8963210851771577, "num_measurements": 2, "primary_metric": "mean_exact_accuracy"}, "seeds": [{"completed_training_steps": 217, "depth_profile": {"depth_factor": 0, "ladder": [1, 2, 4, 8, 16, 32, 64], "max_certified_time_steps": null, "ood_n_ladder": [1, 2, 4, 8, 16, 32, 64], "ood_n_max_certified_time_steps": null, "ood_n_rungs": [{"correct_examples": 1, "exact_accuracy": 0.001953125, "example_count": 512, "status": "failed", "time_steps": 1}, {"correct_examples": 4, "exact_accuracy": 0.0078125, "example_count": 512, "status": "failed", "time_steps": 2}, {"correct_examples": 3, "exact_accuracy": 0.005859375, "example_count": 512, "status": "failed", "time_steps": 4}, {"correct_examples": 3, "exact_accuracy": 0.005859375, "example_count": 512, "status": "failed", "time_steps": 8}, {"correct_examples": 0, "exact_accuracy": null, "example_count": 512, "status": "not_completed", "time_steps": 16}], "rungs": [{"correct_examples": 1, "exact_accuracy": 0.02631578966975212, "example_count": 38, "status": "failed", "time_steps": 1}, {"correct_examples": 1, "exact_accuracy": 0.02631578966975212, "example_count": 38, "status": "failed", "time_steps": 2}, {"correct_examples": 4, "exact_accuracy": 0.10526315867900848, "example_count": 38, "status": "failed", "time_steps": 4}, {"correct_examples": 4, "exact_accuracy": 0.10526315867900848, "example_count": 38, "status": "failed", "time_steps": 8}, {"correct_examples": 4, "exact_accuracy": 0.10526315867900848, "example_count": 38, "status": "failed", "time_steps": 16}, {"correct_examples": 4, "exact_accuracy": 0.10526315867900848, "example_count": 38, "status": "failed", "time_steps": 32}, {"correct_examples": 4, "exact_accuracy": 0.10526315867900848, "example_count": 38, "status": "failed", "time_steps": 64}]}, "evaluation": {"ood": {"correct_examples": 10, "exact_accuracy": 0.10000000149011612, "example_count": 100, "loss": 1.883508324623108}, "test": {"correct_examples": 9, "exact_accuracy": 0.0600000007947286, "example_count": 150, "loss": 1.9091338457312073}}, "evaluation_batch_size": 128, "evaluation_budget_seconds": 30.0, "evaluation_seconds": 30.97817639997811, "final_train_loss": 1.9442758560180664, "max_training_steps": 9500, "model_state_elements": 311594, "optimizer_state_elements_after_first_step": 623225, "seed": 74, "training_batch_size": 64, "training_seconds": 62.3463902999938}], "structured_metrics": [{"elapsed_seconds": 2.9, "exact_accuracy": 0.0, "loss": 2.557, "seed": 74, "step": 1, "type": "train"}, {"elapsed_seconds": 30.0, "exact_accuracy": 0.0, "loss": 1.93, "seed": 74, "step": 100, "type": "train"}, {"elapsed_seconds": 56.7, "exact_accuracy": 0.0, "loss": 1.878, "seed": 74, "step": 200, "type": "train"}, {"elapsed_seconds": 62.3, "exact_accuracy": 0.031, "loss": 1.944, "seed": 74, "step": 217, "type": "train"}, {"exact_accuracy": 0.06, "loss": 1.909, "seed": 74, "split": "test", "type": "evaluation"}, {"exact_accuracy": 0.1, "loss": 1.884, "seed": 74, "split": "ood", "type": "evaluation"}, {"completed_steps": 217, "mean_exact_accuracy": 0.08, "training_seconds": 62.3, "type": "summary"}]}

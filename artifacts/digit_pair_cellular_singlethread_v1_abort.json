@@ -1,0 +1,56 @@
+{
+  "status": "resource_gate_abort_before_full_run",
+  "protocol": "digit_pair_cellular_singlethread_v1",
+  "contract": {
+    "candidate": "two-dimensional digit-pair cellular workspace",
+    "data_regime": "E5 variable N",
+    "planned_updates": 1600,
+    "planned_examples": 102400,
+    "model_seed": 74,
+    "loader_seed": 45,
+    "model_state_elements": 20906,
+    "resource_rule": "ratio above 3.0 rejects; ratio from 2.5 through 3.0 requires review",
+    "full_run_started": false
+  },
+  "preflight": {
+    "focused_tests": "4/4 PASS",
+    "capacity_rows": 3,
+    "capacity_train_correct": 3,
+    "capacity_same_weight_eval_correct": 3,
+    "capacity_updates": 12,
+    "source_validation": "PASS",
+    "py_compile": "PASS",
+    "diff_check": "PASS"
+  },
+  "valid_probes": [
+    {
+      "artifact": "artifacts/digit_pair_cellular_singlethread_v1_probe1.json",
+      "seconds_per_update": 0.10534558999934233,
+      "ratio_to_frozen_e5_biscan": 3.0983997058630095,
+      "sha256": "6808ea2f425ac8be8f18dcceaabbc63fcb5b20017c195667db96038827b519c9"
+    },
+    {
+      "artifact": "artifacts/digit_pair_cellular_singlethread_v1_probe2.json",
+      "seconds_per_update": 0.10499346500146203,
+      "ratio_to_frozen_e5_biscan": 3.0880430882782948,
+      "sha256": "cb03233623c8a382fa2485aecbde9929bc956271b54106244af2829f9de9a845"
+    }
+  ],
+  "probe_comparison_payloads_equal": true,
+  "probe_counts": {
+    "ordered_examples": 1280,
+    "horizon_histogram": {"T1": 425, "T2": 437, "T3": 418},
+    "width_histogram": {"3": 644, "4": 636},
+    "workspace_initializations": 60,
+    "vectorized_cell_calls": 480,
+    "active_row_cell_calls": 17814
+  },
+  "decision": {
+    "resource_gate": "REJECT",
+    "full_numerical_run": "NOT AUTHORIZED",
+    "nearby_tuning": "NOT AUTHORIZED",
+    "reason": "Both valid complete-update ratios exceeded the predeclared 3.0 rejection boundary."
+  },
+  "interpretation": "The explicit pair-cell workspace is legal, deterministic, local, and able to fit the capacity rows. Its fixed two-dimensional cellular computation is too expensive for the bounded CPU screen. No train or held-out scientific metric was produced.",
+  "limitation": "This is a resource rejection, not an accuracy or learnability result. It does not show that a cellular workspace cannot learn the task under another compute budget."
+}

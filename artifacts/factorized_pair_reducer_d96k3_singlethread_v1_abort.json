@@ -1,0 +1,20 @@
+{
+  "status": "review-completed-trainability-authorized",
+  "protocol": "factorized_pair_reducer_d96k3_singlethread_v1",
+  "resource_gate": {
+    "frozen_e5_biscan_seconds_per_update": 0.034,
+    "pass_threshold_ratio": 2.5,
+    "review_stop_upper_ratio": 3.0,
+    "probe1_seconds_per_update": 0.09555200999602675,
+    "probe1_ratio": 2.8103532351772573,
+    "probe2_seconds_per_update": 0.09539966500014999,
+    "probe2_ratio": 2.805872500004411,
+    "decision": "authorize only the 400-update trainability screen; keep the 1,600-update path blocked",
+    "projected_400_update_seconds": 38.2208039984107
+  },
+  "probe_comparison_payloads_exactly_equal": true,
+  "trainability400_started": false,
+  "full_1600_update_run_authorized": false,
+  "held_out_or_ood_evaluated": false,
+  "correction_history": []
+}

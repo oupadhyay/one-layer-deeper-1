@@ -1,0 +1,94 @@
+{
+  "track": "competition_engineering",
+  "run": "C1B_T1_dominant_gradient_CPU_diagnostic",
+  "tier_faithful_timing": false,
+  "retry_count": 0,
+  "single_change_from_C1A": "training-only returned-logit gradient scale T1=1.0 and T!=1=0.01",
+  "parent": {
+    "C1A_report_sha256": "209f8d983e33f43f9f3de803e006ae6ed096ab6cb0ee4b2a92659bab946d3b3e",
+    "C1A_wrapper_sha256": "2ac90e61d36fa57c7f4f9ab7144b26022a515e3374c43ff87b7ede95ab4bb354",
+    "frozen_model_sha256": "00468b791b5b0ad23739170ceb1eec24f3a24c99ef7ef929fa4acf414cbedc73",
+    "manifest_sha256": "0d1e9c8ed4d649f4e0d2767f853916163e46a7f223f6c16187e03737ae14bfcf"
+  },
+  "ablation": {
+    "source_path": "competition_submission_c1b.py",
+    "source_sha256": "425efc4b0422585008de49704857bc4d6e9e9936b127e66926d4987b3c00d293",
+    "test_path": "tests/test_competition_submission_c1b.py",
+    "test_sha256": "abf417a1fe3fd32e400ae77ffd997de9fc1d31200b703fabf6e4a27d74852704",
+    "persistent_state_change": false,
+    "initialization_bitwise_equal": true,
+    "train_and_eval_forward_logits_bitwise_equal_to_parent": true,
+    "true_T_execution_unchanged": true,
+    "evaluation_gradient_gate": false
+  },
+  "raw_runner_stdout": {
+    "path": "artifacts/competition_c1b_e1_cpu_raw_stdout.txt",
+    "sha256": "0242e14b229938b31da57838905af2b1cfbb04201cd7a40fd55870724b1d13bf",
+    "contains_exact_RESULT_JSON_and_structured_metrics": true
+  },
+  "dataset": {
+    "config_sha256": "84810bd77ef547af0248bee8d6167a32d88cc51be1e59b17cf8328446c2cca90",
+    "all_18_split_hashes": "identical to and enumerated in frozen C1A report SHA 209f8d983e33f43f9f3de803e006ae6ed096ab6cb0ee4b2a92659bab946d3b3e"
+  },
+  "environment": {
+    "python": "3.13.5",
+    "torch": "2.12.1+cpu",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "cuda_available": false,
+    "git_head": "629a579da22379086f46942ad16935b31ce1b821"
+  },
+  "training": {
+    "seed": 74,
+    "batch_size": 64,
+    "allowance_seconds": 60.0,
+    "wall_seconds": 62.3463902999938,
+    "completed_steps": 217,
+    "examples_seen": 13888,
+    "updates_per_second": 3.4805543505543026,
+    "examples_per_second": 222.75547843547537,
+    "model_state_elements": 311594,
+    "optimizer_state_elements_after_first_step": 623225,
+    "below_peak_lr_updates": 19,
+    "peak_lr_updates": 198,
+    "curve": [
+      {"step": 1, "elapsed_seconds": 2.9, "loss": 2.556827, "exact_correct": 0, "count": 64},
+      {"step": 100, "elapsed_seconds": 30.0, "loss": 1.930219, "exact_correct": 0, "count": 64},
+      {"step": 200, "elapsed_seconds": 56.7, "loss": 1.878022, "exact_correct": 0, "count": 64},
+      {"step": 217, "elapsed_seconds": 62.3463902999938, "loss": 1.9442758560180664, "exact_correct": 2, "count": 64}
+    ]
+  },
+  "evaluation": {
+    "allowance_seconds": 30.0,
+    "wall_seconds": 30.97817639997811,
+    "test": {"loss": 1.9091338457312073, "correct": 9, "count": 150},
+    "ood_T6": {"loss": 1.883508324623108, "correct": 10, "count": 100},
+    "seen_n_depth": [
+      {"T": 1, "status": "failed", "correct": 1, "count": 38},
+      {"T": 2, "status": "failed", "correct": 1, "count": 38},
+      {"T": 4, "status": "failed", "correct": 4, "count": 38},
+      {"T": 8, "status": "failed", "correct": 4, "count": 38},
+      {"T": 16, "status": "failed", "correct": 4, "count": 38},
+      {"T": 32, "status": "failed", "correct": 4, "count": 38},
+      {"T": 64, "status": "failed", "correct": 4, "count": 38}
+    ],
+    "ood_n_depth": [
+      {"T": 1, "status": "failed", "correct": 1, "count": 512},
+      {"T": 2, "status": "failed", "correct": 4, "count": 512},
+      {"T": 4, "status": "failed", "correct": 3, "count": 512},
+      {"T": 8, "status": "failed", "correct": 3, "count": 512},
+      {"T": 16, "status": "not_completed_timeout", "correct": null, "count": 512},
+      {"T": 32, "status": "not_started_evaluation_timeout", "correct": null, "count": 512},
+      {"T": 64, "status": "not_started_evaluation_timeout", "correct": null, "count": 512}
+    ]
+  },
+  "comparison": {
+    "C1": {"test_correct": 0, "ood_correct": 5, "seen_n_T1_correct": 1},
+    "C1A": {"test_correct": 3, "ood_correct": 10, "seen_n_T1_correct": 1},
+    "C1B": {"test_correct": 9, "ood_correct": 10, "seen_n_T1_correct": 1},
+    "no_input_marginal": {
+      "test": {"loss": 1.8830, "correct": 9, "count": 150},
+      "ood_T6": {"loss": 1.7731, "correct": 10, "count": 100}
+    }
+  },
+  "decision": "T1-dominant supervision did not improve seen-N T1 and only matched no-input marginal exact counts with worse CE. The one-step transition body failed this discriminator. C2 remains locked; next review should consider the predeclared second tied continuous inner refinement per macro-transition, with feedback and scratch unchanged."
+}

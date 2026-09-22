@@ -1,0 +1,64 @@
+{
+  "checkpoint_config": {
+    "batch_size": 256,
+    "curve_every_epochs": 5,
+    "embedding_dim": 32,
+    "epochs": 60,
+    "eval_batch_size": 2048,
+    "gradient_clip": 1.0,
+    "hidden_dim": 64,
+    "learning_rate": 0.001,
+    "max_training_seconds": 1800.0,
+    "seed": 77,
+    "weight_decay": 0.0
+  },
+  "device": "cpu",
+  "dtype": "torch.float32",
+  "evaluator_git_status": "?? benchmark/s1_r3_depth.py",
+  "evaluator_sha256": "405f5a65ff036a0a62ebaa947c99b71387f7a5a0867b39f213596f8e4b375d72",
+  "final_epoch": 60,
+  "gate": {
+    "certified_through": 64,
+    "r3_pass_through_t64": true
+  },
+  "metrics_sha256": "25112c91fb128cf412ab770940e9a888f25577ac8cfe338593f90ca5ac824c01",
+  "model_visible_fields": [
+    "canonical x0 digits",
+    "canonical a digits"
+  ],
+  "no_training": true,
+  "optimizer_constructed": false,
+  "optimizer_steps": 4740,
+  "parameter_count": 25930,
+  "parsed_jsonl": [
+    "depth_t_2.jsonl",
+    "depth_t_4.jsonl",
+    "depth_t_8.jsonl",
+    "depth_t_16.jsonl",
+    "depth_t_32.jsonl",
+    "depth_t_64.jsonl"
+  ],
+  "test_git_status": "?? tests/test_s1_r3_depth.py",
+  "test_sha256": "ac8c2a3917cd4a878cf1ecc200ccdcc984fa40207d43dcae02a45432fb0c45c7",
+  "verified_input_hashes": {
+    "architecture": "8b5f80b838c6346a69a0e2c14160c964635ad64e5ffbe17ad24b331e4ff03c6b",
+    "checkpoint": "2cc603963473055d281fb2f86263440baf96c0dfc8bb7f2447b026ebb874b32d",
+    "config": "b9e2696527d6577a016532a9f83c6cfbc57941b9a68a936dfe6868f588045abd",
+    "dataset:dataset_config.json": "b9e2696527d6577a016532a9f83c6cfbc57941b9a68a936dfe6868f588045abd",
+    "dataset:depth_t_16.jsonl": "e8e14109b09d11c4179d62fafeb219fc0d7ed276ef508245ca460656a4290e3e",
+    "dataset:depth_t_2.jsonl": "7517d0c7e4de3c58c5b08d19566410664e9f11782acfa5433772c869d9f969a1",
+    "dataset:depth_t_32.jsonl": "e2eb1b473f89ed551aab64b15f8673b9afaec8024a6658aebe5689f1f776ac0f",
+    "dataset:depth_t_4.jsonl": "c033d91be2e18013bfe8d94af54debcfb2262be43feb9033fe041e8c68236193",
+    "dataset:depth_t_64.jsonl": "65aa7a75df6f659a7b691781bf8d9da8e7885c77e08234d14bfabe002a2e930a",
+    "dataset:depth_t_8.jsonl": "95e904dd92e0efa7f172befdcb688324cd1573c6679d73b90ee8f7399e89bb49",
+    "dataset:test_context.jsonl": "dc5de1a241b30ec48e2b4782622d9356341190bd8c34ca684113578881fcf238",
+    "dataset:test_state.jsonl": "d83514b571500ab2a74097f806c6181ed87baa9ffcca7c5b282fecab4c6ab9a4",
+    "dataset:train.jsonl": "baaddd75f20888055f1abcdcf0b3537f69140441b8b4fb7f6dcf92b08e68605a",
+    "g0_metrics": "13c7ae2c59fc9b3a30f5a2445585cb67a6ef3fc59ce42ddd4dbd73e1126143f5",
+    "generator": "d3a3e261a04595b8eb6a352fe7d523f935bbb70e6365c40ecdfb180718fa42b5",
+    "manifest": "93d5f0bc6786f7080bca3a9df2dff72e12740125a7082ef39c3753d7789df10f",
+    "r2_metrics": "4bb8d04e902f53328407cfa413b5e50332bbd05cb325898ba67cb3c01905bfa2",
+    "r2_provenance": "0c9838f4e31fb712b8289078f1cb4a957d40361587416d0ca8e2841015a99a95",
+    "r2_runner": "77350db06cda6142f72bd82bbc794e0d815d0b90d5b8c49a72afe17b09c373a5"
+  }
+}

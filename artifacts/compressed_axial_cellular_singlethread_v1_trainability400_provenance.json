@@ -1,0 +1,71 @@
+{
+  "protocol": "compressed_axial_cellular_singlethread_v1_trainability400",
+  "status": "frozen_trainability_reject",
+  "classification": "train-only 400-update E5 successive-halving screen",
+  "artifact_sha256": {
+    "candidate": "3fbcdcf3ac386074b9c4c117e1f856021ce713cbf1dbf5e35add1f64b9b7374b",
+    "tests": "83a039e85c44fd064ccc68ab20c61022237dcac574d6f68bc91eb0a67946ea04",
+    "harness": "ac0a25119003ffef9a5ac1c81ea2c5148d32b7bc35174c25118014550b2da995",
+    "probe1": "bef682972122b3e9c28694b1057b194a8da48b03a38c8a1f80fff6e99f08a3c1",
+    "probe2": "8b0f67ecd0a7607ebf62b46df09c9f3b5204954cb21a015c378d9e39d690596a",
+    "result_after_wording_correction": "9f5c23a8b18c8fb10bdde6e593292fa85b449692fb44e0456fd0ae9576fae9bd",
+    "checkpoint": "565f0d9874171bde2cbf07b012133bdaeb5bafb7cf9b45be74f588fa12b3c58b"
+  },
+  "executed_dependency_sha256": {
+    "scripts/run_factorized_pair_reducer_d96k3_singlethread_v1.py": "ba93d79cf8c56ac22d36371b3384455533d5f93c8ae49dd228329b707bd4fcfb",
+    "scripts/run_biscan_e5_diversity_singlethread_v1.py": "296663b2a1c9bfe7fc7275abc37a662d283dca2606b72aeaa1c27e0bc8adb4a5",
+    "scripts/run_latent_exposure_singlethread_v1.py": "02780ede10f072e322974850aab9647df5eeefeff6b81c9d26efb518942013e9"
+  },
+  "historical_design_parent_sha256": {
+    "competition_loop10_digit_pair_cellular.py": "327cf28f09c55ce0c71e73655f8e66717312a90a544e51c4a2bc91e4b5b5a751"
+  },
+  "data_sha256": {
+    "manifest": "af01b9dec3a59579811b620a5aac76bc3637efaaf9a64eed55c4043018fc7cef",
+    "dataset_config": "65f0e350d3af37fa951243f35c82887163b8738c7692f72e45ba0508ec87d72f",
+    "dataset_directory": "472ba57a7b33a2266e19ac5bf333dd217e86460a626aa4a1033928bab31747d6"
+  },
+  "contract": {
+    "model_state_elements": 13162,
+    "channels": 32,
+    "microtick_order": ["H", "V", "H", "V"],
+    "fresh_updates": 400,
+    "examples": 25600,
+    "model_seed": 74,
+    "loader_seed": 45,
+    "forward_objective": "ordinary endpoint cross entropy",
+    "backward_gradient_scale": {"T1": 1.0, "T2": 0.01, "T3": 0.01},
+    "held_out_evaluation": false,
+    "probe_or_checkpoint_loaded": false
+  },
+  "resource_gate": {
+    "probe_seconds_per_update": [0.0286295350, 0.0289028150],
+    "ratios": [0.842045, 0.850083],
+    "pass": true,
+    "training_elapsed_seconds": 12.1244444999611
+  },
+  "trainability_gate": {
+    "full_train_correct": 48,
+    "full_train_examples": 4800,
+    "full_train_cross_entropy": 2.15377982095324,
+    "t1_correct": 20,
+    "t1_examples": 1600,
+    "t1_cross_entropy": 2.1053866100713674,
+    "lsd_cross_entropy": 2.3037803334742786,
+    "tens_cross_entropy": 2.2911674025267725,
+    "unique_predicted_sequences": 518,
+    "failed_clauses": ["t1_learnability", "lsd_ce", "tens_ce"],
+    "pass": false
+  },
+  "correction_history": [
+    "A first unrecorded update0-to-400 attempt completed training, then stopped before aggregation because the inherited harness expected a four-value parser. No result or checkpoint artifact was created from that attempt.",
+    "The parser adaptation was corrected and the recorded screen restarted freshly from update0.",
+    "After the valid run, only the result contract wording was corrected to disclose the executed horizon gradient scales. No numerical field changed."
+  ],
+  "decision": {
+    "compute_efficiency_hypothesis": "PASS",
+    "exact_configuration_trainability": "REJECT",
+    "full_1600_update_run": "NOT STARTED",
+    "broad_cellular_family": "OPEN for a separately predeclared optimization hypothesis"
+  },
+  "remote_competition_action": false
+}

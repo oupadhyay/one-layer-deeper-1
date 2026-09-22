@@ -1,0 +1,42 @@
+{
+  "protocol": "latent_x2_t1grad_singlethread_v1",
+  "execution_history": [
+    {
+      "kind": "valid_probe_1",
+      "artifact": "artifacts/latent_x2_t1grad_singlethread_v1_probe1.json",
+      "sha256": "2b354449a675eb0f42f7e290cf2680afb6b91ae13c884dd8cf6f387665c233d1",
+      "complete_update_time_ratio_to_parent": 0.9498776766078617
+    },
+    {
+      "kind": "valid_probe_2",
+      "artifact": "artifacts/latent_x2_t1grad_singlethread_v1_probe2.json",
+      "sha256": "b88ce3acdc0f8a459c03e1357762643dbf3ffb5bd12c003bacef4af1d4b07ea5",
+      "complete_update_time_ratio_to_parent": 0.9534539618819097
+    },
+    {
+      "kind": "fresh_full_run",
+      "updates": 1600,
+      "started_from_update": 0,
+      "loaded_parent_probe_or_checkpoint": false,
+      "result_sha256": "811713bd3b41f9526b426f9a80f13c66ec4ebad3fb0aa7e3d0f79f95123160ce"
+    }
+  ],
+  "executed_dependency_sha256": {
+    "candidate_parent_competition_loop3_latent_x2.py": "eaf75a7914ac9ef220f0d56aa635c2485357aba101f81066563119061edc7c9f",
+    "model_parent_competition_loop2_latent.py": "c98c5a9fd276575cda6846ca7a00e2ec5a7e61f59a0743a85fa70ccf749f438f",
+    "executed_x2_harness_scripts/run_latent_inner_refinement_x2_singlethread_v1.py": "ed954decfedd73f9d495fb3e82364f8e15984944f49a3b0aff2370c8caa0596c",
+    "canonical_harness_scripts/run_latent_exposure_singlethread_v1.py": "02780ede10f072e322974850aab9647df5eeefeff6b81c9d26efb518942013e9",
+    "inherited_competition_submission.py": "00468b791b5b0ad23739170ceb1eec24f3a24c99ef7ef929fa4acf414cbedc73",
+    "inherited_competition_submission_c1a.py": "2ac90e61d36fa57c7f4f9ab7144b26022a515e3374c43ff87b7ede95ab4bb354",
+    "inherited_competition_submission_c1b.py": "425efc4b0422585008de49704857bc4d6e9e9936b127e66926d4987b3c00d293"
+  },
+  "valid_probe_comparison_payloads_equal": true,
+  "ordinary_forward_ce_reported": true,
+  "backward_gradient_gate": {
+    "T1": 1.0,
+    "T_not_1": 0.01
+  },
+  "t1_interference_gate": "PASS",
+  "competition_gate": "FAIL",
+  "remote_action": false
+}

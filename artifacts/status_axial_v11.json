@@ -1,0 +1,218 @@
+﻿submission  10978ea6-3b67-4e3c-8bb6-a3017c691ace
+file        submission.py
+status      succeeded
+score       0.46%
+max T       <1
+OOD N max T <1
+tier        easy
+dataset     E5 ╖ 10û11 bit N, T=1/2/3
+suite       h100_easy_e5.json
+run         9d10ba30-6165-437b-afaa-e19143bbdee5
+modal call  fc-01KZDZ7Z066S57JP626JGZRNWV
+{
+  "created_at": "2026-08-07T11:20:26.974349+00:00",
+  "dataset_id": "e5",
+  "dataset_label": "E5 \u00b7 10\u201311 bit N, T=1/2/3",
+  "deadline_at": "2026-08-07T11:27:58.000819+00:00",
+  "filename": "submission.py",
+  "finished_at": "2026-08-07T11:21:39.825526+00:00",
+  "id": "10978ea6-3b67-4e3c-8bb6-a3017c691ace",
+  "manifest_name": "h100_easy_e5.json",
+  "metrics_available": true,
+  "metrics_url": "/api/submissions/10978ea6-3b67-4e3c-8bb6-a3017c691ace/metrics",
+  "modal_call_id": "fc-01KZDZ7Z066S57JP626JGZRNWV",
+  "result": {
+    "depth_profile": {
+      "depth_factor": 0,
+      "ladder": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "max_certified_time_steps": null,
+      "ood_n_ladder": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "ood_n_max_certified_time_steps": null,
+      "ood_n_profile_available": true
+    },
+    "manifest": "squaring-mod-easy-e5",
+    "score": {
+      "mean_exact_accuracy": 0.004583333345750968,
+      "mean_loss": 2.4729713931222514,
+      "num_measurements": 2,
+      "primary_metric": "mean_exact_accuracy"
+    },
+    "seeds": [
+      {
+        "completed_training_steps": 1217,
+        "depth_profile": {
+          "depth_factor": 0,
+          "ladder": [
+            1,
+            2,
+            4,
+            8,
+            16,
+            32,
+            64
+          ],
+          "max_certified_time_steps": null,
+          "ood_n_ladder": [
+            1,
+            2,
+            4,
+            8,
+            16,
+            32,
+            64
+          ],
+          "ood_n_max_certified_time_steps": null,
+          "ood_n_rungs": [
+            {
+              "correct_examples": 1,
+              "exact_accuracy": 0.001953125,
+              "example_count": 512,
+              "status": "failed",
+              "time_steps": 1
+            },
+            {
+              "correct_examples": 0,
+              "exact_accuracy": 0.0,
+              "example_count": 512,
+              "status": "failed",
+              "time_steps": 2
+            },
+            {
+              "correct_examples": 0,
+              "exact_accuracy": 0.0,
+              "example_count": 512,
+              "status": "failed",
+              "time_steps": 4
+            },
+            {
+              "correct_examples": 0,
+              "exact_accuracy": 0.0,
+              "example_count": 512,
+              "status": "failed",
+              "time_steps": 8
+            },
+            {
+              "correct_examples": 0,
+              "exact_accuracy": 0.0,
+              "example_count": 512,
+              "status": "failed",
+              "time_steps": 16
+            },
+            {
+              "correct_examples": 0,
+              "exact_accuracy": 0.0,
+              "example_count": 512,
+              "status": "failed",
+              "time_steps": 32
+            },
+            {
+              "correct_examples": 0,
+              "exact_accuracy": 0.0,
+              "example_count": 512,
+              "status": "failed",
+              "time_steps": 64
+            }
+          ],
+          "rungs": [
+            {
+              "correct_examples": 1,
+              "exact_accuracy": 0.001953125,
+              "example_count": 512,
+              "status": "failed",
+              "time_steps": 1
+            },
+            {
+              "correct_examples": 1,
+              "exact_accuracy": 0.001953125,
+              "example_count": 512,
+              "status": "failed",
+              "time_steps": 2
+            },
+            {
+              "correct_examples": 0,
+              "exact_accuracy": 0.0,
+              "example_count": 512,
+              "status": "failed",
+              "time_steps": 4
+            },
+            {
+              "correct_examples": 2,
+              "exact_accuracy": 0.00390625,
+              "example_count": 512,
+              "status": "failed",
+              "time_steps": 8
+            },
+            {
+              "correct_examples": 1,
+              "exact_accuracy": 0.001953125,
+              "example_count": 512,
+              "status": "failed",
+              "time_steps": 16
+            },
+            {
+              "correct_examples": 2,
+              "exact_accuracy": 0.00390625,
+              "example_count": 512,
+              "status": "failed",
+              "time_steps": 32
+            },
+            {
+              "correct_examples": 2,
+              "exact_accuracy": 0.00390625,
+              "example_count": 512,
+              "status": "failed",
+              "time_steps": 64
+            }
+          ]
+        },
+        "evaluation": {
+          "ood": {
+            "correct_examples": 2,
+            "exact_accuracy": 0.0033333333333333335,
+            "example_count": 600,
+            "loss": 2.486392658387599
+          },
+          "test": {
+            "correct_examples": 7,
+            "exact_accuracy": 0.005833333358168602,
+            "example_count": 1200,
+            "loss": 2.4595501278569034
+          }
+        },
+        "evaluation_batch_size": 512,
+        "evaluation_budget_seconds": 30.0,
+        "evaluation_seconds": 3.965705460999999,
+        "final_train_loss": 2.124556541442871,
+        "max_training_steps": 1000000,
+        "model_state_elements": 46634,
+        "optimizer_state_elements_after_first_step": 93280,
+        "seed": 74,
+        "training_batch_size": 512,
+        "training_seconds": 60.00008507
+      }
+    ]
+  },
+  "run_created_at": "2026-08-07T11:20:26.974349+00:00",
+  "run_id": "9d10ba30-6165-437b-afaa-e19143bbdee5",
+  "started_at": "2026-08-07T11:20:28.000819+00:00",
+  "status": "succeeded",
+  "submitter": "Ojasw Upadhyay",
+  "task": "squaring_mod",
+  "tier": "easy"
+}

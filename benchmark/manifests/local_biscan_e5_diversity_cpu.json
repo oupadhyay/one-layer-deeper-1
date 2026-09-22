@@ -1,0 +1,29 @@
+{
+  "name": "biscan-e5-diversity-cpu",
+  "data": {
+    "kind": "squaring_mod",
+    "data_root": "data/generated/squaring_mod_new11_easy_bidirectional_variable_b1011_t123",
+    "batch_size": 64,
+    "eval_batch_size": 128,
+    "shuffle_train": true,
+    "shuffle_eval": false,
+    "num_workers": 0,
+    "pin_memory": false,
+    "drop_last": true,
+    "seed": 45
+  },
+  "runtime": {
+    "device": "cpu",
+    "dtype": "float32",
+    "amp": false,
+    "compile": false,
+    "total_training_time_seconds": 3600,
+    "max_steps": 1600,
+    "seeds": [74],
+    "grad_clip": 1.0,
+    "log_every": 200
+  },
+  "model_state": {
+    "maximum_elements": 500000000
+  }
+}

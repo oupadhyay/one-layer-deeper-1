@@ -1,0 +1,35 @@
+{
+  "protocol": "latent_exposure_singlethread_v1",
+  "execution_history": [
+    {
+      "kind": "probe_implementation_check",
+      "updates_completed": 20,
+      "artifact_written": false,
+      "outcome": "The canonical encoder failed on a zero-dimensional optimizer tensor after training. The tensor encoder was repaired from tensor.view(uint8) to tensor.reshape(-1).view(uint8). No model, optimizer, data, seed, or training-protocol field changed."
+    },
+    {
+      "kind": "deterministic_probe_1",
+      "updates_completed": 20,
+      "artifact": "artifacts/latent_exposure_singlethread_v1_probe1.json",
+      "sha256": "751982d1787872339d415372290583019804fd60c0d921c7e77774748b31182d"
+    },
+    {
+      "kind": "deterministic_probe_2",
+      "updates_completed": 20,
+      "artifact": "artifacts/latent_exposure_singlethread_v1_probe2.json",
+      "sha256": "751982d1787872339d415372290583019804fd60c0d921c7e77774748b31182d"
+    },
+    {
+      "kind": "full_exposure_run",
+      "updates_completed": 1600,
+      "started_from_update": 0,
+      "loaded_probe_or_historical_weights": false,
+      "artifact": "artifacts/latent_exposure_singlethread_v1_results.json",
+      "sha256": "b75ab4562a3c97bc6be3c7538467f6d38313c3fedb1bc579ed9eea2f45e38285"
+    }
+  ],
+  "deterministic_probe_payloads_equal": true,
+  "exposure_gate_passed": true,
+  "competition_signal_gate_passed": false,
+  "remote_action": false
+}

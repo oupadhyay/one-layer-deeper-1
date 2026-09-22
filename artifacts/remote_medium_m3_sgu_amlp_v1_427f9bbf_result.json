@@ -1,0 +1,51 @@
+{
+  "created_at": "2026-08-11T09:13:28.522490+00:00",
+  "dataset_id": "m3",
+  "dataset_label": "M3 \u00b7 11/13/15 bit N, fixed T=2",
+  "deadline_at": "2026-08-11T09:34:28.870075+00:00",
+  "filename": "submission.py",
+  "finished_at": "2026-08-11T09:23:40.239610+00:00",
+  "id": "427f9bbf-0c08-4cfb-82a4-7f034fde9f2c",
+  "manifest_name": "h100_medium_m3.json",
+  "metrics_available": true,
+  "metrics_url": "/api/submissions/427f9bbf-0c08-4cfb-82a4-7f034fde9f2c/metrics",
+  "modal_call_id": "fc-01KZR1JAE6CN3X6YPRAP9B0M3H",
+  "result": {
+    "depth_profile": {"depth_factor": 0, "ladder": [1,2,4,8,16,32,64], "max_certified_time_steps": null, "ood_n_ladder": [1,2,4,8,16,32,64], "ood_n_max_certified_time_steps": null, "ood_n_profile_available": true},
+    "manifest": "squaring-mod-medium-m3",
+    "score": {"mean_exact_accuracy": 0.0012916666666666667, "mean_loss": 2.223905119778878, "num_measurements": 2, "primary_metric": "mean_exact_accuracy"},
+    "seeds": [{
+      "completed_training_steps": 41746,
+      "depth_profile": {
+        "depth_factor": 0, "ladder": [1,2,4,8,16,32,64], "max_certified_time_steps": null,
+        "ood_n_ladder": [1,2,4,8,16,32,64], "ood_n_max_certified_time_steps": null,
+        "ood_n_rungs": [
+          {"correct_examples":1,"exact_accuracy":0.0013020833333333333,"example_count":768,"status":"failed","time_steps":1},
+          {"correct_examples":0,"exact_accuracy":0.0,"example_count":768,"status":"failed","time_steps":2},
+          {"correct_examples":1,"exact_accuracy":0.0013020833333333333,"example_count":768,"status":"failed","time_steps":4},
+          {"correct_examples":1,"exact_accuracy":0.0013020833333333333,"example_count":768,"status":"failed","time_steps":8},
+          {"correct_examples":0,"exact_accuracy":0.0,"example_count":768,"status":"failed","time_steps":16},
+          {"correct_examples":1,"exact_accuracy":0.0013020833333333333,"example_count":768,"status":"failed","time_steps":32},
+          {"correct_examples":0,"exact_accuracy":0.0,"example_count":768,"status":"failed","time_steps":64}],
+        "rungs": [
+          {"correct_examples":1,"exact_accuracy":0.0013020833333333333,"example_count":768,"status":"failed","time_steps":1},
+          {"correct_examples":1,"exact_accuracy":0.0013020833333333333,"example_count":768,"status":"failed","time_steps":2},
+          {"correct_examples":0,"exact_accuracy":0.0,"example_count":768,"status":"failed","time_steps":4},
+          {"correct_examples":0,"exact_accuracy":0.0,"example_count":768,"status":"failed","time_steps":8},
+          {"correct_examples":0,"exact_accuracy":0.0,"example_count":768,"status":"failed","time_steps":16},
+          {"correct_examples":1,"exact_accuracy":0.0013020833333333333,"example_count":768,"status":"failed","time_steps":32},
+          {"correct_examples":0,"exact_accuracy":0.0,"example_count":768,"status":"failed","time_steps":64}]},
+      "evaluation": {
+        "ood": {"correct_examples":4,"exact_accuracy":0.0013333333333333333,"example_count":3000,"loss":2.1518984676939232},
+        "test": {"correct_examples":3,"exact_accuracy":0.00125,"example_count":2400,"loss":2.295911771863833}},
+      "evaluation_batch_size":512,"evaluation_budget_seconds":300.0,"evaluation_seconds":4.015614681999978,
+      "final_train_loss":1.9189850091934204,"max_training_steps":1000000,"model_state_elements":89048,
+      "optimizer_state_elements_after_first_step":178116,"seed":74,"training_batch_size":256,"training_seconds":600.006953912}]},
+  "run_created_at": "2026-08-11T09:13:28.522490+00:00",
+  "run_id": "a46453e7-0dee-4abe-909c-4dab0a3b7980",
+  "started_at": "2026-08-11T09:13:28.870075+00:00",
+  "status": "succeeded",
+  "submitter": "Ojasw Upadhyay",
+  "task": "squaring_mod",
+  "tier": "medium"
+}

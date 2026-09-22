@@ -1,0 +1,83 @@
+{
+  "track": "competition_engineering",
+  "candidate": "C1C_inner_refinement_x2",
+  "authorization_scope": "implementation_and_preflight_only",
+  "training_run_performed": false,
+  "source": {
+    "path": "competition_submission_c1c.py",
+    "sha256": "1ce0d67b7df8d9d3f1c1ba3de9b2ce5f077f852b86d97bb1910d8aabeb840680"
+  },
+  "tests": {
+    "path": "tests/test_competition_submission_c1c.py",
+    "sha256": "0911b07a669c6656787d8058f586b60ab8a5bca86c031c88b803936760e8f520",
+    "candidate_specific_passed": 9,
+    "parent_C0_C1B_passed": 17
+  },
+  "frozen_parent": {
+    "C1B_source_sha256": "425efc4b0422585008de49704857bc4d6e9e9936b127e66926d4987b3c00d293",
+    "C1B_test_sha256": "abf417a1fe3fd32e400ae77ffd997de9fc1d31200b703fabf6e4a27d74852704",
+    "C1A_optimizer_source_sha256": "2ac90e61d36fa57c7f4f9ab7144b26022a515e3374c43ff87b7ede95ab4bb354"
+  },
+  "architecture_delta": {
+    "persistent_state_delta_elements": 0,
+    "official_E1_state_elements_parent": 311594,
+    "official_E1_state_elements_candidate": 311594,
+    "seed74_state_dict_keys_shapes_values_bitwise_equal": true,
+    "single_transition_body_object": true,
+    "same_body_parameter_identity_for_both_refinements": true,
+    "refinements_per_outer_macrostep": 2,
+    "readouts_per_outer_macrostep": 1,
+    "intermediate_readout_or_quantization": false,
+    "outer_feedback_events_per_macrostep": 1
+  },
+  "preserved_behavior": {
+    "T1_gradient_scale": 1.0,
+    "non_T1_gradient_scale": 0.01,
+    "warmup_updates": 20,
+    "soft_training_feedback": true,
+    "hard_evaluation_feedback": true,
+    "true_T_cap": 64,
+    "context_encoded_once": true,
+    "X_and_T_excluded_from_context": true,
+    "N_retained_in_context": true
+  },
+  "preflight_evidence": {
+    "mixed_T123_global_refinement_calls": 6,
+    "mixed_T123_active_refinements_per_row": [2, 4, 6],
+    "mixed_T123_readout_calls": 3,
+    "pass2_input_equals_continuous_pass1_output": true,
+    "next_macro_input_equals_hard_whole_state_reembedding_in_eval": true,
+    "finite_nonzero_gradient_through_every_inner_output": true,
+    "gradient_scales_verified": [1.0, 0.01, 0.01],
+    "mixed_isolated_row_gradient_matches_homogeneous": true,
+    "mixed_logits_match_homogeneous": true,
+    "padding_batch_invariance": true,
+    "tail_alignment": true,
+    "max_length": true,
+    "deterministic_nonmutating_eval": true,
+    "true_label_T1_soft_overfit_and_hard_eval_exact": true,
+    "CPU_bfloat16_forward_backward_finite": true,
+    "source_validator": true,
+    "py_compile": true,
+    "two_step_runner_smoke": {
+      "completed_steps": 2,
+      "optimizer_state_elements_after_step1": 621881
+    }
+  },
+  "CPU_throughput_microbenchmark": {
+    "classification": "relative synthetic B64 mixed-T benchmark; not official-run throughput",
+    "C1B": {
+      "mean_update_seconds": 0.026706420007394628,
+      "updates_per_second": 37.44418007816526,
+      "T64_eval_B64_median_seconds": 0.13866669998969883
+    },
+    "C1C": {
+      "mean_update_seconds": 0.045296299998881295,
+      "updates_per_second": 22.07685837529108,
+      "T64_eval_B64_median_seconds": 0.2491689000162296
+    },
+    "C1C_over_C1B_update_throughput_ratio": 0.589586381360618,
+    "confound": "At equal 60-second CPU budget, C1C is expected to receive materially fewer updates than C1B."
+  },
+  "next_action": "Return for independent preflight review. C1C training remains unauthorized."
+}

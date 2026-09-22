@@ -1,0 +1,20 @@
+﻿valid: submissions\dnc_transition_easy_v1\submission.py (11453 bytes)
+queued: 3c4556e2-3a88-4828-a351-74a2f9389a1a
+tier:   easy
+data:   e5
+left:   50 today
+view:   https://onelayerdeeper.ai/submissions/3c4556e2-3a88-4828-a351-74a2f9389a1a
+[queued] submission.py
+[running] submission.py
+[succeeded] submission.py
+submission  3c4556e2-3a88-4828-a351-74a2f9389a1a
+file        submission.py
+status      succeeded
+score       0.38%
+max T       <1
+OOD N max T <1
+tier        easy
+dataset     E5 ┬╖ 10ΓÇô11 bit N, T=1/2/3
+suite       h100_easy_e5.json
+run         a98cfba9-566b-435c-953e-be7f4270731d
+modal call  fc-01KZGGAAW55X6PAPP08CZY3314

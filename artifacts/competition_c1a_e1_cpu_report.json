@@ -1,0 +1,127 @@
+{
+  "track": "competition_engineering",
+  "run": "C1A_CPU_warmup_fraction_diagnostic",
+  "tier_faithful_timing": false,
+  "retry_count": 0,
+  "single_change": "scheduler warmup denominator 200 -> 20",
+  "frozen_parent": {
+    "source": {"path": "competition_submission.py", "sha256": "00468b791b5b0ad23739170ceb1eec24f3a24c99ef7ef929fa4acf414cbedc73"},
+    "tests": {"path": "tests/test_competition_submission.py", "sha256": "5bd5a82dfa5545641cf152225f8ca10c486b621fd598f788cc2b7de9e2af979b"},
+    "C1_report": {"path": "artifacts/competition_c1_e1_cpu_report.json", "sha256": "be5031726e445ad32ba182c863d231d6e808abd5c0b9392c70f2a724cb5cd36e"}
+  },
+  "ablation_wrapper": {
+    "path": "competition_submission_c1a.py",
+    "sha256": "2ac90e61d36fa57c7f4f9ab7144b26022a515e3374c43ff87b7ede95ab4bb354",
+    "build_model_identity_is_frozen_parent": true,
+    "seed74_initialization_bitwise_equal": true,
+    "optimizer_groups_and_hyperparameters_equal_except_scheduler": true
+  },
+  "raw_runner_stdout": {
+    "path": "artifacts/competition_c1a_e1_cpu_raw_stdout.txt",
+    "sha256": "0c81245db65bb61501f58e4a742ef74920326d1ffb341828258b2c77a9869d4b",
+    "contains_exact_RESULT_JSON_and_structured_metrics": true
+  },
+  "manifest": {
+    "path": "benchmark/manifests/local_competition_c1_e1_cpu.json",
+    "sha256": "0d1e9c8ed4d649f4e0d2767f853916163e46a7f223f6c16187e03737ae14bfcf"
+  },
+  "dataset": {
+    "root": "data/generated/squaring_mod_new11_easy_bidirectional_fixed_n_323_t123",
+    "sha256": {
+      "dataset_config.json": "84810bd77ef547af0248bee8d6167a32d88cc51be1e59b17cf8328446c2cca90",
+      "train.jsonl": "0bb75359414176c0b9d9f02d4130b688402f4874832536c56345d2e6f59bba53",
+      "test.jsonl": "32334305f4c1beaa0441ead71c0d64a6f5b529114ae1d0d5657242446664df09",
+      "ood.jsonl": "540de4cf620e4db3676ae4a9542aee24547784bdde65f71a8e569286a6af7cce",
+      "depth_t_1.jsonl": "b7be8bfcaa8b5600140a81cdc1fe7cfabd098002d4d5fae374e5e129590be40c",
+      "depth_t_2.jsonl": "aea79fed80d5045ede0cb064647becbc9a94fec0790ebdbe88ebc66f49da0f23",
+      "depth_t_4.jsonl": "b92d9e887f51c8f2364311179ec232876508c57453d88cfd928532f344a5e36c",
+      "depth_t_8.jsonl": "5a44f90369f4c2f6fba8141b2e78b1577e4886268bfb80b5209aa24b088cf7e0",
+      "depth_t_16.jsonl": "0ba887f041ab30513d87c20181eedee0e78251283585828c6d7043cee8c2d2a2",
+      "depth_t_32.jsonl": "831a6c3ec560e33741859b5a20afa8a5226feff8bd3efac68e6e681b8afbd357",
+      "depth_t_64.jsonl": "7fd67e1e13db4b9cd1d1100145358a9fbf2b7f64e8421703ec6709e95d50b0e2",
+      "depth_ood_n_t_1.jsonl": "4486381cf671f73a247ef8007e55d7f74c2aa46203449a9b08e3e34e5c4bc987",
+      "depth_ood_n_t_2.jsonl": "8ccd518530e714d68f2d31caa81a23ef81d2873c385316152b2bdcac9b90b5e9",
+      "depth_ood_n_t_4.jsonl": "98b86d64e7a80a97ba6b9aa3e7284a4b5ec3fb3cad8bad9903120dda9270b6fc",
+      "depth_ood_n_t_8.jsonl": "0373c808a8e5fa10a611ff8397491e67fcf8c205fb4220793a157c4968c0cae9",
+      "depth_ood_n_t_16.jsonl": "9156c1fae88a175d76d37896bcbfadff46575b396b0eea373d843dcf9a402824",
+      "depth_ood_n_t_32.jsonl": "c73d3102890acb7145634e466a88f4939344b462c78f87dae4629e3167d8d67b",
+      "depth_ood_n_t_64.jsonl": "5af162d3e9ddb8bc77c56246c591be74ec68da0c81b21c638a25a0410b37c0a7"
+    }
+  },
+  "environment": {
+    "python": "3.13.5",
+    "torch": "2.12.1+cpu",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "cuda_available": false,
+    "git_head": "629a579da22379086f46942ad16935b31ce1b821"
+  },
+  "training": {
+    "seed": 74,
+    "batch_size": 64,
+    "allowance_seconds": 60.0,
+    "wall_seconds": 61.280640399985714,
+    "completed_steps": 217,
+    "examples_seen": 13888,
+    "updates_per_second": 3.541085709673011,
+    "examples_per_second": 226.6294854190727,
+    "model_state_elements": 311594,
+    "optimizer_state_elements_after_first_step": 623225,
+    "below_peak_lr_updates": 19,
+    "peak_lr_updates": 198,
+    "first_peak_lr_update": 20,
+    "learning_rate": {
+      "base": 0.0008,
+      "update_1": 0.00004,
+      "update_10": 0.0004,
+      "update_19": 0.00076,
+      "update_20_through_217": 0.0008
+    },
+    "curve": [
+      {"step": 1, "elapsed_seconds": 2.9, "loss": 2.556827, "exact_correct": 0, "count": 64},
+      {"step": 100, "elapsed_seconds": 29.7, "loss": 1.904033, "exact_correct": 0, "count": 64},
+      {"step": 200, "elapsed_seconds": 56.5, "loss": 1.873217, "exact_correct": 1, "count": 64},
+      {"step": 217, "elapsed_seconds": 61.280640399985714, "loss": 1.927587866783142, "exact_correct": 2, "count": 64}
+    ]
+  },
+  "evaluation": {
+    "allowance_seconds": 30.0,
+    "wall_seconds": 31.344404900009977,
+    "test": {"loss": 1.8808184285413594, "correct": 3, "count": 150},
+    "ood_t6": {"loss": 1.7857398986816406, "correct": 10, "count": 100},
+    "seen_n_depth": [
+      {"T": 1, "status": "failed", "correct": 1, "count": 38},
+      {"T": 2, "status": "failed", "correct": 1, "count": 38},
+      {"T": 4, "status": "failed", "correct": 5, "count": 38},
+      {"T": 8, "status": "failed", "correct": 2, "count": 38},
+      {"T": 16, "status": "failed", "correct": 5, "count": 38},
+      {"T": 32, "status": "failed", "correct": 2, "count": 38},
+      {"T": 64, "status": "failed", "correct": 5, "count": 38}
+    ],
+    "ood_n_depth": [
+      {"T": 1, "status": "failed", "correct": 2, "count": 512},
+      {"T": 2, "status": "failed", "correct": 0, "count": 512},
+      {"T": 4, "status": "failed", "correct": 1, "count": 512},
+      {"T": 8, "status": "failed", "correct": 2, "count": 512},
+      {"T": 16, "status": "not_completed_timeout", "correct": null, "count": 512},
+      {"T": 32, "status": "not_started_evaluation_timeout", "correct": null, "count": 512},
+      {"T": 64, "status": "not_started_evaluation_timeout", "correct": null, "count": 512}
+    ]
+  },
+  "comparison": {
+    "C1": {
+      "test": {"loss": 1.89374378375579, "correct": 0, "count": 150},
+      "ood_t6": {"loss": 1.7882643938064575, "correct": 5, "count": 100},
+      "seen_n_T1": {"correct": 1, "count": 38}
+    },
+    "no_input_per_place_marginal": {
+      "test": {"loss": 1.8830, "correct": 9, "count": 150},
+      "ood_t6": {"loss": 1.7731, "correct": 10, "count": 100}
+    },
+    "C1A": {
+      "test": {"loss": 1.8808184285413594, "correct": 3, "count": 150},
+      "ood_t6": {"loss": 1.7857398986816406, "correct": 10, "count": 100},
+      "seen_n_T1": {"correct": 1, "count": 38}
+    }
+  },
+  "decision": "C1A remains at or below the no-input marginal exact baseline and seen-N T1 is far from exact. Stop CPU scheduler tuning; C2 remains locked; return for architecture or feedback-state ablation review."
+}

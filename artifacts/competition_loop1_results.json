@@ -1,0 +1,437 @@
+{
+  "candidates": {
+    "A": {
+      "evaluation": {
+        "depth_ood_n_t_1": {
+          "correct_examples": 2,
+          "deterministic_nonmutation": true,
+          "exact_accuracy": 0.00390625,
+          "example_count": 512,
+          "loss": 2.756354699318345
+        },
+        "depth_t_1": {
+          "correct_examples": 1,
+          "deterministic_nonmutation": true,
+          "exact_accuracy": 0.02631578966975212,
+          "example_count": 38,
+          "loss": 1.9439609050750732
+        },
+        "ood": {
+          "correct_examples": 6,
+          "deterministic_nonmutation": true,
+          "exact_accuracy": 0.05999999865889549,
+          "example_count": 100,
+          "loss": 1.8919856548309326
+        },
+        "test": {
+          "correct_examples": 2,
+          "deterministic_nonmutation": true,
+          "exact_accuracy": 0.013333333532015483,
+          "example_count": 150,
+          "loss": 1.9189173185319972
+        }
+      },
+      "micro_overfit": {
+        "eval_hard": {
+          "correct_examples": 2,
+          "deterministic_nonmutation": true,
+          "exact_accuracy": 0.6666666865348816,
+          "example_count": 3,
+          "loss": 0.39796575903892517
+        },
+        "train_soft": {
+          "correct_examples": 2,
+          "deterministic_nonmutation": true,
+          "exact_accuracy": 0.6666666865348816,
+          "example_count": 3,
+          "label_count": 8,
+          "loss": 0.397965669631958
+        },
+        "training": {
+          "below_peak_lr_updates": 19,
+          "elapsed_seconds": 0.9048973000026308,
+          "exact": 0.6666666865348816,
+          "examples": 300,
+          "examples_per_second": 331.5293348749386,
+          "loss": 0.40458613634109497,
+          "peak_lr": 0.0008,
+          "peak_lr_updates": 81,
+          "updates": 100,
+          "updates_per_second": 110.50977829164621
+        }
+      },
+      "rejection_gates": {
+        "architecture_signal": false,
+        "eval_nonmutation": true,
+        "finite": true,
+        "micro_hard_exact_3_of_3": false,
+        "under_state_budget": true
+      },
+      "screen_training": {
+        "below_peak_lr_updates": 19,
+        "elapsed_seconds": 50.29506229999242,
+        "exact": 0.03125,
+        "examples": 12800,
+        "examples_per_second": 254.49814384665606,
+        "loss": 1.902133584022522,
+        "peak_lr": 0.0008,
+        "peak_lr_updates": 181,
+        "updates": 200,
+        "updates_per_second": 3.976533497604001
+      },
+      "state_elements": 197550,
+      "status": "rejected"
+    },
+    "B": {
+      "evaluation": {
+        "depth_ood_n_t_1": {
+          "correct_examples": 2,
+          "deterministic_nonmutation": true,
+          "exact_accuracy": 0.00390625,
+          "example_count": 512,
+          "loss": 2.643486915813578
+        },
+        "depth_t_1": {
+          "correct_examples": 0,
+          "deterministic_nonmutation": true,
+          "exact_accuracy": 0.0,
+          "example_count": 38,
+          "loss": 1.9307783842086792
+        },
+        "ood": {
+          "correct_examples": 0,
+          "deterministic_nonmutation": true,
+          "exact_accuracy": 0.0,
+          "example_count": 100,
+          "loss": 1.8799978494644165
+        },
+        "test": {
+          "correct_examples": 0,
+          "deterministic_nonmutation": true,
+          "exact_accuracy": 0.0,
+          "example_count": 150,
+          "loss": 1.9072753800418312
+        }
+      },
+      "micro_overfit": {
+        "eval_hard": {
+          "correct_examples": 2,
+          "deterministic_nonmutation": true,
+          "exact_accuracy": 0.6666666865348816,
+          "example_count": 3,
+          "loss": 0.17161588370800018
+        },
+        "train_soft": {
+          "correct_examples": 2,
+          "deterministic_nonmutation": true,
+          "exact_accuracy": 0.6666666865348816,
+          "example_count": 3,
+          "label_count": 8,
+          "loss": 0.17161576449871063
+        },
+        "training": {
+          "below_peak_lr_updates": 19,
+          "elapsed_seconds": 0.45808800001395866,
+          "exact": 1.0,
+          "examples": 300,
+          "examples_per_second": 654.896002494845,
+          "loss": 0.17191079258918762,
+          "peak_lr": 0.0008,
+          "peak_lr_updates": 81,
+          "updates": 100,
+          "updates_per_second": 218.29866749828165
+        }
+      },
+      "rejection_gates": {
+        "architecture_signal": false,
+        "eval_nonmutation": true,
+        "finite": true,
+        "micro_hard_exact_3_of_3": false,
+        "under_state_budget": true
+      },
+      "screen_training": {
+        "below_peak_lr_updates": 19,
+        "elapsed_seconds": 51.40721889998531,
+        "exact": 0.0,
+        "examples": 12800,
+        "examples_per_second": 248.99226750435352,
+        "loss": 1.9190936088562012,
+        "peak_lr": 0.0008,
+        "peak_lr_updates": 181,
+        "updates": 200,
+        "updates_per_second": 3.8905041797555238
+      },
+      "state_elements": 197914,
+      "status": "rejected"
+    },
+    "C": {
+      "evaluation": {
+        "depth_ood_n_t_1": {
+          "correct_examples": 0,
+          "deterministic_nonmutation": true,
+          "exact_accuracy": 0.0,
+          "example_count": 512,
+          "loss": 2.7391234713291235
+        },
+        "depth_t_1": {
+          "correct_examples": 1,
+          "deterministic_nonmutation": true,
+          "exact_accuracy": 0.02631578966975212,
+          "example_count": 38,
+          "loss": 1.9214115142822266
+        },
+        "ood": {
+          "correct_examples": 2,
+          "deterministic_nonmutation": true,
+          "exact_accuracy": 0.019999999552965164,
+          "example_count": 100,
+          "loss": 1.8473401069641113
+        },
+        "test": {
+          "correct_examples": 5,
+          "deterministic_nonmutation": true,
+          "exact_accuracy": 0.033333333730697634,
+          "example_count": 150,
+          "loss": 1.9139134247701364
+        }
+      },
+      "micro_overfit": {
+        "eval_hard": {
+          "correct_examples": 1,
+          "deterministic_nonmutation": true,
+          "exact_accuracy": 0.3333333432674408,
+          "example_count": 3,
+          "loss": 0.9847315549850464
+        },
+        "train_soft": {
+          "correct_examples": 1,
+          "deterministic_nonmutation": true,
+          "exact_accuracy": 0.3333333432674408,
+          "example_count": 3,
+          "label_count": 8,
+          "loss": 0.9847315549850464
+        },
+        "training": {
+          "below_peak_lr_updates": 19,
+          "elapsed_seconds": 0.5123321000137366,
+          "exact": 0.3333333432674408,
+          "examples": 300,
+          "examples_per_second": 585.5576880542062,
+          "loss": 0.9890971183776855,
+          "peak_lr": 0.0008,
+          "peak_lr_updates": 81,
+          "updates": 100,
+          "updates_per_second": 195.18589601806875
+        }
+      },
+      "rejection_gates": {
+        "architecture_signal": false,
+        "eval_nonmutation": true,
+        "finite": true,
+        "micro_hard_exact_3_of_3": false,
+        "under_state_budget": true
+      },
+      "screen_training": {
+        "below_peak_lr_updates": 19,
+        "elapsed_seconds": 52.28156780003337,
+        "exact": 0.015625,
+        "examples": 12800,
+        "examples_per_second": 244.8281591125473,
+        "loss": 1.9210480451583862,
+        "peak_lr": 0.0008,
+        "peak_lr_updates": 181,
+        "updates": 200,
+        "updates_per_second": 3.8254399861335515
+      },
+      "state_elements": 222554,
+      "status": "rejected"
+    },
+    "D": {
+      "evaluation": {
+        "depth_ood_n_t_1": {
+          "correct_examples": 1,
+          "deterministic_nonmutation": true,
+          "exact_accuracy": 0.001953125,
+          "example_count": 512,
+          "loss": 2.884691912289624
+        },
+        "depth_t_1": {
+          "correct_examples": 1,
+          "deterministic_nonmutation": true,
+          "exact_accuracy": 0.02631578966975212,
+          "example_count": 38,
+          "loss": 1.9381184577941895
+        },
+        "ood": {
+          "correct_examples": 14,
+          "deterministic_nonmutation": true,
+          "exact_accuracy": 0.14000000059604645,
+          "example_count": 100,
+          "loss": 1.8753716945648193
+        },
+        "test": {
+          "correct_examples": 6,
+          "deterministic_nonmutation": true,
+          "exact_accuracy": 0.040000000397364295,
+          "example_count": 150,
+          "loss": 1.9101313920389684
+        }
+      },
+      "micro_overfit": {
+        "eval_hard": {
+          "correct_examples": 2,
+          "deterministic_nonmutation": true,
+          "exact_accuracy": 0.6666666865348816,
+          "example_count": 3,
+          "loss": 0.5927078723907471
+        },
+        "train_soft": {
+          "correct_examples": 2,
+          "deterministic_nonmutation": true,
+          "exact_accuracy": 0.6666666865348816,
+          "example_count": 3,
+          "label_count": 8,
+          "loss": 0.5927079319953918
+        },
+        "training": {
+          "below_peak_lr_updates": 19,
+          "elapsed_seconds": 0.40716370003065094,
+          "exact": 0.6666666865348816,
+          "examples": 300,
+          "examples_per_second": 736.8043859936832,
+          "loss": 0.6004994511604309,
+          "peak_lr": 0.0008,
+          "peak_lr_updates": 81,
+          "updates": 100,
+          "updates_per_second": 245.6014619978944
+        }
+      },
+      "rejection_gates": {
+        "architecture_signal": false,
+        "eval_nonmutation": true,
+        "finite": true,
+        "micro_hard_exact_3_of_3": false,
+        "under_state_budget": true
+      },
+      "screen_training": {
+        "below_peak_lr_updates": 19,
+        "elapsed_seconds": 51.24860789999366,
+        "exact": 0.03125,
+        "examples": 12800,
+        "examples_per_second": 249.76288185189094,
+        "loss": 1.8987987041473389,
+        "peak_lr": 0.0008,
+        "peak_lr_updates": 181,
+        "updates": 200,
+        "updates_per_second": 3.902545028935796
+      },
+      "state_elements": 223493,
+      "status": "rejected"
+    },
+    "E": {
+      "evaluation": {
+        "depth_ood_n_t_1": {
+          "correct_examples": 2,
+          "deterministic_nonmutation": true,
+          "exact_accuracy": 0.00390625,
+          "example_count": 512,
+          "loss": 2.6876281618838673
+        },
+        "depth_t_1": {
+          "correct_examples": 1,
+          "deterministic_nonmutation": true,
+          "exact_accuracy": 0.02631578966975212,
+          "example_count": 38,
+          "loss": 1.9374405145645142
+        },
+        "ood": {
+          "correct_examples": 7,
+          "deterministic_nonmutation": true,
+          "exact_accuracy": 0.07000000029802322,
+          "example_count": 100,
+          "loss": 1.8895512819290161
+        },
+        "test": {
+          "correct_examples": 6,
+          "deterministic_nonmutation": true,
+          "exact_accuracy": 0.040000000397364295,
+          "example_count": 150,
+          "loss": 1.9158708273323992
+        }
+      },
+      "micro_overfit": {
+        "eval_hard": {
+          "correct_examples": 2,
+          "deterministic_nonmutation": true,
+          "exact_accuracy": 0.6666666865348816,
+          "example_count": 3,
+          "loss": 0.3261515498161316
+        },
+        "train_soft": {
+          "correct_examples": 2,
+          "deterministic_nonmutation": true,
+          "exact_accuracy": 0.6666666865348816,
+          "example_count": 3,
+          "label_count": 8,
+          "loss": 0.3261515498161316
+        },
+        "training": {
+          "below_peak_lr_updates": 19,
+          "elapsed_seconds": 0.4233247999800369,
+          "exact": 0.6666666865348816,
+          "examples": 300,
+          "examples_per_second": 708.6757024727759,
+          "loss": 0.33042004704475403,
+          "peak_lr": 0.0008,
+          "peak_lr_updates": 81,
+          "updates": 100,
+          "updates_per_second": 236.22523415759196
+        }
+      },
+      "rejection_gates": {
+        "architecture_signal": false,
+        "eval_nonmutation": true,
+        "finite": true,
+        "micro_hard_exact_3_of_3": false,
+        "under_state_budget": true
+      },
+      "screen_training": {
+        "below_peak_lr_updates": 19,
+        "elapsed_seconds": 52.522431800025515,
+        "exact": 0.015625,
+        "examples": 12800,
+        "examples_per_second": 243.70539522493667,
+        "loss": 1.8824012279510498,
+        "peak_lr": 0.0008,
+        "peak_lr_updates": 181,
+        "updates": 200,
+        "updates_per_second": 3.8078968003896354
+      },
+      "state_elements": 298490,
+      "status": "rejected"
+    }
+  },
+  "hashes": {
+    "candidate_source_sha256": "596110be65de453a75bbbfb5cbd1d44dfaaf10b4ad4f2a3d0bbfa06ec0c2a172",
+    "dataset_sha256": "4d98c892e2dc5c22a5b8378b01e24f9fa237c3057d3a9707c8de8f630a794f0c",
+    "harness_source_sha256": "f736b25847d8e6b0966b62336183d206aa61db15f31d430a4dd16af3d88db325",
+    "manifest_sha256": "0d1e9c8ed4d649f4e0d2767f853916163e46a7f223f6c16187e03737ae14bfcf"
+  },
+  "protocol": {
+    "batch_size": 64,
+    "data_loader_seed": 45,
+    "device": "cpu",
+    "dtype": "float32",
+    "evaluated_splits": [
+      "test",
+      "ood",
+      "depth_t_1",
+      "depth_ood_n_t_1"
+    ],
+    "grad_clip": 1,
+    "model_seed": 74,
+    "optimizer_identity": "competition_submission_c1b.SUBMISSION.build_optimizer",
+    "screen_rule": "promising only if mechanically valid and seen-N T1 >=4/38, or test >9/150 with CE <1.8830257671",
+    "updates": 200
+  }
+}

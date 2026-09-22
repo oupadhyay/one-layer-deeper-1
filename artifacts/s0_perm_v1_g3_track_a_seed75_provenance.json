@@ -1,0 +1,78 @@
+{
+  "checkpoint_config": {
+    "batch_size": 256,
+    "curve_every": 50,
+    "eval_batch_size": 1024,
+    "learning_rate": 0.003,
+    "max_steps": 1200,
+    "seed": 75,
+    "weight_decay": 0.0001,
+    "width": 64
+  },
+  "checkpoint_sha256": "bf6655626c37c7ca2e563b1aefa6c1200be6c3b22148480a0a57004687c6ef98",
+  "dataset_config_sha256": "900752ea14204ada905444cde2e115ba753e8d13689ba6f9d22a507c3cb68e0b",
+  "dataset_manifest_sha256": "77c2af03dfccbeb5ba51f4bc56b39b31fbc9e614fd0ff197551ae6e4e9a27c0d",
+  "depth_evaluator_path": "benchmark/s0_depth.py",
+  "depth_evaluator_sha256": "f4ba363af11ad6452fef50371cd0f92a2d055d52eb5195972cbfb849943d67a1",
+  "device": "cpu",
+  "dtype": "torch.float32",
+  "final_train_step": 1200,
+  "metrics_path": "metrics_s0_perm_v1_g3_track_a_seed75.json",
+  "metrics_sha256": "406e59bf543f6005d6cd2e28a1ca7c92935f74e093392dd2ead70a9a6c9acf88",
+  "no_training": true,
+  "optimizer_constructed": false,
+  "parameter_count": 33108,
+  "record_counts": {
+    "1": 512,
+    "16": 512,
+    "2": 512,
+    "32": 512,
+    "4": 512,
+    "64": 512,
+    "8": 512
+  },
+  "record_sha256": {
+    "T1": "095462e8de2b085102d8db175538d2c0f8ce2cd72ef13b98a0379ac1a9b1d6b5",
+    "T16": "6279a0ce517e5e7c3524e5d99932f5286ffef142a60798790aaddee74dd19452",
+    "T2": "39e4c48166f16d77e80bcb3bd7c287d052a47ac6c494391fb2d8bf5437086a66",
+    "T32": "416cf97b66ba21e037f5a1a513cfd15537d43fa9d8cdb687cd564bee21164065",
+    "T4": "fecb6c87259a3c567e55a870f0aab8cb5e67ec5745b65d26c8a05bc13b3b5456",
+    "T64": "abc45ab96299d51819cb2a119036fbefc547d45daed318328f14fcb262bfec5e",
+    "T8": "3fb16c83169acee4e9b262d2ad522ad4a3aa687cabaf603ba2b93c6be97c1285"
+  },
+  "source_file_sha256": {
+    "T16:depth_t_16_full_file": "6279a0ce517e5e7c3524e5d99932f5286ffef142a60798790aaddee74dd19452",
+    "T1:test_context_full_file": "92b38e9c28ce42a7027936d40f6a3a0157f1bc07b7894f86c1792aed84972103",
+    "T2:depth_t_2_full_file": "39e4c48166f16d77e80bcb3bd7c287d052a47ac6c494391fb2d8bf5437086a66",
+    "T32:depth_t_32_full_file": "416cf97b66ba21e037f5a1a513cfd15537d43fa9d8cdb687cd564bee21164065",
+    "T4:depth_t_4_full_file": "fecb6c87259a3c567e55a870f0aab8cb5e67ec5745b65d26c8a05bc13b3b5456",
+    "T64:depth_t_64_full_file": "abc45ab96299d51819cb2a119036fbefc547d45daed318328f14fcb262bfec5e",
+    "T8:depth_t_8_full_file": "3fb16c83169acee4e9b262d2ad522ad4a3aa687cabaf603ba2b93c6be97c1285"
+  },
+  "training_source_sha256": {
+    "benchmark/s0_research.py": "6e9b7073f9f9c58e8ae3438727e7df0702e631b57dae655915f7c7528bf9799a",
+    "data/s0_perm_v1.py": "a1e8e90add8cbc11a1ad7b7b542aeb732578f57d0f8a96de3554fbacf387aa02"
+  },
+  "verification_checks": {
+    "artifact:dataset_config.json": true,
+    "artifact:depth_t_16.jsonl": true,
+    "artifact:depth_t_2.jsonl": true,
+    "artifact:depth_t_32.jsonl": true,
+    "artifact:depth_t_4.jsonl": true,
+    "artifact:depth_t_64.jsonl": true,
+    "artifact:depth_t_8.jsonl": true,
+    "artifact:ood_size.jsonl": true,
+    "artifact:test_context.jsonl": true,
+    "artifact:test_state.jsonl": true,
+    "artifact:train.jsonl": true,
+    "checkpoint_config": true,
+    "checkpoint_final_step": true,
+    "checkpoint_parameter_count": true,
+    "checkpoint_sha256": true,
+    "dataset_config_sha256": true,
+    "dataset_manifest_sha256": true,
+    "manifest_matches_training_provenance": true,
+    "source:benchmark/s0_research.py": true,
+    "source:data/s0_perm_v1.py": true
+  }
+}

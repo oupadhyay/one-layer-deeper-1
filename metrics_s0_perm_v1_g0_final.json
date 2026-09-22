@@ -1,0 +1,110 @@
+﻿{
+  "artifact_hashes_verified": 11,
+  "byte_identical_regeneration": true,
+  "c6_expected_exact": {
+    "M16": 0.0625,
+    "M24": 0.041666666666666664
+  },
+  "depth_training_edge_overlap_fraction": 0.0,
+  "entropy_bits": {
+    "depth_t_16": {
+      "x0": 4.0,
+      "y": 4.0
+    },
+    "depth_t_2": {
+      "x0": 4.0,
+      "y": 4.0
+    },
+    "depth_t_32": {
+      "x0": 4.0,
+      "y": 4.0
+    },
+    "depth_t_4": {
+      "x0": 4.0,
+      "y": 4.0
+    },
+    "depth_t_64": {
+      "x0": 4.0,
+      "y": 4.0
+    },
+    "depth_t_8": {
+      "x0": 4.0,
+      "y": 4.0
+    },
+    "ood_size": {
+      "x0": 4.584962500721156,
+      "y": 4.584962500721156
+    },
+    "test_context": {
+      "x0": 4.0,
+      "y": 4.0
+    },
+    "test_state": {
+      "x0": 4.0,
+      "y": 4.0
+    }
+  },
+  "generator_git_status": "?? data/s0_perm_v1.py",
+  "generator_sha256": "a1e8e90add8cbc11a1ad7b7b542aeb732578f57d0f8a96de3554fbacf387aa02",
+  "modal_frequencies": {
+    "depth_t_16": {
+      "x0": 0.0625,
+      "y": 0.0625
+    },
+    "depth_t_2": {
+      "x0": 0.0625,
+      "y": 0.0625
+    },
+    "depth_t_32": {
+      "x0": 0.0625,
+      "y": 0.0625
+    },
+    "depth_t_4": {
+      "x0": 0.0625,
+      "y": 0.0625
+    },
+    "depth_t_64": {
+      "x0": 0.0625,
+      "y": 0.0625
+    },
+    "depth_t_8": {
+      "x0": 0.0625,
+      "y": 0.0625
+    },
+    "ood_size": {
+      "x0": 0.041666666666666664,
+      "y": 0.041666666666666664
+    },
+    "test_context": {
+      "x0": 0.0625,
+      "y": 0.0625
+    },
+    "test_state": {
+      "x0": 0.0625,
+      "y": 0.0625
+    }
+  },
+  "oracle_accuracy": 1.0,
+  "passed": true,
+  "repo_head": "629a579da22379086f46942ad16935b31ce1b821",
+  "short_cycle_counts": {
+    "depth_t_16": 25,
+    "depth_t_2": 25,
+    "depth_t_32": 25,
+    "depth_t_4": 25,
+    "depth_t_64": 25,
+    "depth_t_8": 25
+  },
+  "split_counts": {
+    "depth_t_16": 512,
+    "depth_t_2": 512,
+    "depth_t_32": 512,
+    "depth_t_4": 512,
+    "depth_t_64": 512,
+    "depth_t_8": 512,
+    "ood_size": 4800,
+    "test_context": 5120,
+    "test_state": 6000,
+    "train": 26000
+  }
+}

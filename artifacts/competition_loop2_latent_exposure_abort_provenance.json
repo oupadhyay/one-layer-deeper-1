@@ -1,0 +1,42 @@
+{
+  "status": "frozen_abort_before_update_201",
+  "reason": "The mandatory update-200 bitwise reproduction gate failed. Two standalone update-1 processes then produced equal losses but different state hashes, which proves that the eight-thread CPU training path is not bitwise deterministic across processes in this environment.",
+  "continued_exposure_beyond_update_200_gate": false,
+  "replay_attempts": [
+    {
+      "attempt": 1,
+      "updates_completed": 200,
+      "continued_after_gate": false,
+      "protocol_difference_found": "The original capacity preflight was omitted.",
+      "abort_artifact_sha256_before_overwrite": "dd6b8f08ca0fe839aaeb4e178e1ae3c20578d88c41b90e44fc957c78f77b1fd9"
+    },
+    {
+      "attempt": 2,
+      "updates_completed": 200,
+      "continued_after_gate": false,
+      "protocol_difference_found": null,
+      "original_capacity_preflight_replayed": true,
+      "abort_artifact_sha256": "f4fce1854aa7f9368323eaaf03aebc102eb943d2021739c2f3f07f34c1aed493",
+      "mismatched_model_tensors": 33
+    }
+  ],
+  "standalone_update_1_determinism_check": {
+    "process_1": {
+      "loss": 2.548092842102051,
+      "state_sha256": "1cec360a8072916d7830868ae2cd70c11084f92a5718903c2ee2c7ab084baea3"
+    },
+    "process_2": {
+      "loss": 2.548092842102051,
+      "state_sha256": "721fe05b1b8b1282e5f9a2d688113fd3180ef6cfde465d45778109da9d1e236e"
+    },
+    "torch_num_threads": 8,
+    "verdict": "same scalar loss, different post-update model bytes"
+  },
+  "frozen_inputs": {
+    "latent_source_sha256": "c98c5a9fd276575cda6846ca7a00e2ec5a7e61f59a0743a85fa70ccf749f438f",
+    "prior_update_200_weights_sha256": "d675a83b927b11deb5c3b333fad9a4fac7f1a7774cceae53834363987044d5a6",
+    "manifest_sha256": "0d1e9c8ed4d649f4e0d2767f853916163e46a7f223f6c16187e03737ae14bfcf",
+    "exposure_harness_sha256_after_determinism_diagnostic": "dc30061d1a780d370ee85bba5830a1284036c22636f27806601f8f4ef08d4b1f"
+  },
+  "next_action": "Do not continue to update 1600 unless the independent review replaces the impossible cross-process bitwise gate with an explicit deterministic replay protocol or a documented numerical-tolerance gate."
+}

@@ -1,0 +1,16 @@
+{
+  "execution_history": [
+    "The first complete numerical execution produced no artifact because final numpy.bool serialization failed.",
+    "The second full deterministic execution produced the frozen artifact.",
+    "A subsequent hash-helper provenance-only correction changed metadata without a numerical rerun."
+  ],
+  "qualifications": {
+    "unequal_loader_order": "Loop-1 candidates were run sequentially against reused dataloaders, so their shuffled training-loader orders were unequal; comparisons are deterministic but not paired-order comparisons.",
+    "micro_validity": "The three-row micro preflight was a cheap optimization/same-weight hard-feedback check, not evidence of population generalization; its hard 3/3 requirement was missed by every candidate and recorded."
+  },
+  "pinned_sha256": {
+    "loop1_source": "596110be65de453a75bbbfb5cbd1d44dfaaf10b4ad4f2a3d0bbfa06ec0c2a172",
+    "loop1_harness": "f736b25847d8e6b0966b62336183d206aa61db15f31d430a4dd16af3d88db325",
+    "loop1_results": "9a988105d7c898f0992c80042ed505a48ea601bc0989224b50d066dd52f425f1"
+  }
+}

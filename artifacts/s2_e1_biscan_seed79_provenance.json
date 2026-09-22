@@ -1,0 +1,68 @@
+{
+  "C1": {
+    "checkpoint_sha256": "78114f47b9516862cca5ae6191dad06318d3a81d1b52aab3d27f2b0d33c18ab7",
+    "g1_pass": false
+  },
+  "D1": {
+    "checkpoint_sha256": "b321c4d310d555abeb420cd3e3df9c41a9d3bc698c686b4eeb84ec27ddcea9b2",
+    "g1_pass": false
+  },
+  "checkpoint_sha256": "d0b6ef957d1876d226b2be7021d72986529f0c5053e4d17f35cb77099b9e14fb",
+  "dataset_hashes": {
+    "dataset_config.json": "10c26a868b02403b68f7f0348771b52866fcd1de8fb1978a6ce2f412327f2a98",
+    "depth_t_16.jsonl": "66acfdc5612b7e1320c964f4ca197fb70fb744dbacbb8555c62d288b3e3fed79",
+    "depth_t_2.jsonl": "e8d54f79c3e51657d89138268fccc09950cdb6a43090c37fe5a08c81dac87435",
+    "depth_t_32.jsonl": "de8e9757832c8f5c23d6207f62f1307f56e9353b337b96e688887112402711ad",
+    "depth_t_4.jsonl": "8bed5b1df217a26035c9888bbdb634d24aed056b049b6178d03053ee0f25b951",
+    "depth_t_64.jsonl": "1bec3d8b712620a91072a6e52e39f88f0476bf03c0120ca701a20b81f9718d97",
+    "depth_t_8.jsonl": "fd407bef75e85a2f7a48ddb8afc2b3d36b32b7ba9b55aac4ffbdb051d75a2f54",
+    "test_state.jsonl": "4accb941940d5ff9d513b3d887c20a589e9c6c348b9833db64129b01fc65fcb2",
+    "train.jsonl": "4f1db72713873ba564f3b21faefc8f132d0f201b267b6870a3452c8ee3c1441c"
+  },
+  "dataset_pins": {
+    "artifact_manifest.json": "817e2df936909427934fdbe8f59ea1d596649c3e14eb2facedce6c97c64bf578",
+    "dataset_config.json": "10c26a868b02403b68f7f0348771b52866fcd1de8fb1978a6ce2f412327f2a98",
+    "test_state.jsonl": "4accb941940d5ff9d513b3d887c20a589e9c6c348b9833db64129b01fc65fcb2",
+    "train.jsonl": "4f1db72713873ba564f3b21faefc8f132d0f201b267b6870a3452c8ee3c1441c"
+  },
+  "dense_g0_sha256": "0ed5dee741f528ea6ab9db61e566dcc91a5e576c7004e98d8f7438baa2cf2a9b",
+  "depth_inference": 0,
+  "depth_parsed_jsonl": [],
+  "environment": {
+    "cpu_fp32": true,
+    "interop_threads": 1,
+    "intra_threads": 1,
+    "python": "3.13.5 (main, Jul 23 2025, 00:30:06) [MSC v.1944 64 bit (AMD64)]",
+    "torch": "2.12.1+cpu"
+  },
+  "hash_verified_files": [
+    "dataset_config.json",
+    "depth_t_16.jsonl",
+    "depth_t_2.jsonl",
+    "depth_t_32.jsonl",
+    "depth_t_4.jsonl",
+    "depth_t_64.jsonl",
+    "depth_t_8.jsonl",
+    "test_state.jsonl",
+    "train.jsonl"
+  ],
+  "initial_state_sha256": "00634e1ca09906faef049b5ba3670d9deb73b85da021f3a156970acf36a129c8",
+  "no_retry_scheduler_aux_selection_depth": true,
+  "optimization_parsed_jsonl": [
+    "train.jsonl"
+  ],
+  "outer_step_applications_per_forward": 1,
+  "pass_for_independent_review": false,
+  "post_freeze_parsed_jsonl": [
+    "train.jsonl",
+    "test_state.jsonl"
+  ],
+  "predeclaration_sha256": "f7c93a840c3b6ec99ddc4afdc207603285b103599ba5dc43afa029700d47e98e",
+  "runner_sha256": "62ce733484eee46b313e550ee88bd1c2274a1b5ff2d8d6c87b5c251d030aa98a",
+  "source_statuses": {
+    "runner": "predeclared greenfield",
+    "test": "predeclared greenfield"
+  },
+  "test_sha256": "615e84b7147aa36c0d154f12d5d284bba424975f0ae26ffc72ba4dca545a3f5a",
+  "weights_only_strict_restore": true
+}

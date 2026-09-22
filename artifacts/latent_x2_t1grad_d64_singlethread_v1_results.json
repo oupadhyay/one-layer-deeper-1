@@ -1,0 +1,477 @@
+{
+  "backward_gate_disclosure": {
+    "T1": 1.0,
+    "T_not_1": 0.01,
+    "reported_forward_ce": "ordinary unweighted"
+  },
+  "capacity_regularization_test": {
+    "automatic_follow_up": false,
+    "change": "default d_model 112 -> 64",
+    "only_test_after_x2_t1gate_interference_pass": true,
+    "predeclared": true
+  },
+  "contract": {
+    "batch_size": 64,
+    "continuous_model_optimizer_scheduler_iterator": true,
+    "fresh_update0": true,
+    "gradient_clip": 1.0,
+    "loader_seed": 45,
+    "loss": "full cross entropy",
+    "model_seed": 74,
+    "no_resets_early_stop_or_checkpoint_selection": true,
+    "optimizer": "C1B AdamW/warmup20",
+    "probe_or_old_checkpoint_loaded": false,
+    "updates": 1600
+  },
+  "determinism": {
+    "MKL_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "deterministic_algorithms": true,
+    "torch_num_interop_threads": 1,
+    "torch_num_threads": 1
+  },
+  "diagnostics": {
+    "elapsed_seconds": 11.237583699985407
+  },
+  "environment": {
+    "numpy": "2.5.0",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.5 (main, Jul 23 2025, 00:30:06) [MSC v.1944 64 bit (AMD64)]",
+    "torch": "2.12.1+cpu"
+  },
+  "equal_update_parent_context": {
+    "note": "Context only; candidate was trained continuously for exactly 1600 updates.",
+    "selection_or_stopping_used": false,
+    "source": "frozen parent result milestones"
+  },
+  "final_evaluation": {
+    "ood_T6": {
+      "correct_examples": 5,
+      "diagnostic_seconds": 3.528276299999561,
+      "entered_from_training": true,
+      "exact_accuracy": 0.05000000074505806,
+      "example_count": 100,
+      "loss": 3.311321496963501,
+      "model_state_unchanged": true,
+      "rng_state_restored": true
+    },
+    "seen_N_T1": {
+      "correct_examples": 1,
+      "diagnostic_seconds": 3.5835565000306815,
+      "entered_from_training": true,
+      "exact_accuracy": 0.02631578966975212,
+      "example_count": 38,
+      "loss": 2.747737169265747,
+      "model_state_unchanged": true,
+      "rng_state_restored": true
+    },
+    "test": {
+      "correct_examples": 2,
+      "diagnostic_seconds": 3.5625473000109196,
+      "entered_from_training": true,
+      "exact_accuracy": 0.013333333532015483,
+      "example_count": 150,
+      "loss": 2.4323529168554674,
+      "model_state_unchanged": true,
+      "rng_state_restored": true
+    },
+    "test_by_t": {
+      "T1": {
+        "correct_examples": 1,
+        "diagnostic_seconds": 0.006807800033129752,
+        "entered_from_training": true,
+        "exact_accuracy": 0.019999999552965164,
+        "example_count": 50,
+        "loss": 2.491708517074585,
+        "model_state_unchanged": true,
+        "rng_state_restored": true
+      },
+      "T2": {
+        "correct_examples": 0,
+        "diagnostic_seconds": 0.007542099978309125,
+        "entered_from_training": true,
+        "exact_accuracy": 0.0,
+        "example_count": 50,
+        "loss": 2.3802294731140137,
+        "model_state_unchanged": true,
+        "rng_state_restored": true
+      },
+      "T3": {
+        "correct_examples": 1,
+        "diagnostic_seconds": 0.009469400043599308,
+        "entered_from_training": true,
+        "exact_accuracy": 0.019999999552965164,
+        "example_count": 50,
+        "loss": 2.4222354888916016,
+        "model_state_unchanged": true,
+        "rng_state_restored": true
+      }
+    }
+  },
+  "gates": {
+    "capacity_regularization": {
+      "automatic_follow_up": false,
+      "verdict": "MEASURED_BY_COMPETITION_AND_INTERFERENCE_GATES"
+    },
+    "competition_pass": false,
+    "exact_rule": "exposure full train>=60/600; competition exposure AND (seen>=4/38 OR (test>9/150 AND CE<1.8830257671))",
+    "exposure_pass": false,
+    "interference": {
+      "automatic_follow_up": false,
+      "train_t1_correct": 35,
+      "train_t1_cross_entropy": 1.2818839855913846,
+      "verdict": "INCONCLUSIVE"
+    },
+    "mechanistic": {
+      "train_t1_correct": 35,
+      "train_t1_cross_entropy": 1.2818839855913846,
+      "verdict": "PASS"
+    },
+    "seen_pass": false,
+    "test_ce_pass": false
+  },
+  "hashes": {
+    "dataset": "f662210477e43c3847fe43c2f164c97b2d0fde80ec255d45fde4bd7b71895089",
+    "final_weights": "5c0d8c2c550e1837d051def9aa8d7a1227a13f775ccc07f56fb9c6547e631ad2",
+    "harness": "796159aa8fb217167ebed00c133f9ed99ae64f22d2ae839a37ad333ee98ace69",
+    "historical_8thread_checkpoint": null,
+    "manifest": "0d1e9c8ed4d649f4e0d2767f853916163e46a7f223f6c16187e03737ae14bfcf",
+    "milestone_states": {
+      "1600": "9dec743f3ef27e938e396f5e05ecebac3b5a5cbf08b226d00ec727ab600f6396",
+      "200": "76e73a070042478837d6a68fa3a1fdf905ee5d645f01b13b6f292cc630d50a4d",
+      "400": "1c7ff5cd8f3f9af0d4b947e9463b6672897dbdb1d1b24334b8b53183da74d4de",
+      "800": "590c991f39a67f44907ad760ffe45b8746740823610fae801a958218b29f6b7a"
+    },
+    "source": "f6f5e1abd1213e9b2a8c0370769f4dcdd18c1e751810394498aa23a2880ff4c6"
+  },
+  "milestones": {
+    "1600": {
+      "checkpoint": "artifacts\\latent_x2_t1grad_d64_singlethread_v1_update1600.pt",
+      "diagnostic_seconds": 0.13346230000024661,
+      "evaluation": {
+        "full_train": {
+          "correct_examples": 45,
+          "diagnostic_seconds": 0.06686280004214495,
+          "entered_from_training": true,
+          "exact_accuracy": 0.07500000024835268,
+          "example_count": 600,
+          "loss": 1.9354221944401904,
+          "model_state_unchanged": true,
+          "rng_state_restored": true
+        },
+        "train_by_t": {
+          "T1": {
+            "correct_examples": 35,
+            "diagnostic_seconds": 0.015479099994990975,
+            "entered_from_training": true,
+            "exact_accuracy": 0.17500000119209289,
+            "example_count": 200,
+            "loss": 1.2818839855913846,
+            "model_state_unchanged": true,
+            "rng_state_restored": true
+          },
+          "T2": {
+            "correct_examples": 3,
+            "diagnostic_seconds": 0.02250260004075244,
+            "entered_from_training": true,
+            "exact_accuracy": 0.015000000037252903,
+            "example_count": 200,
+            "loss": 2.407040897627417,
+            "model_state_unchanged": true,
+            "rng_state_restored": true
+          },
+          "T3": {
+            "correct_examples": 7,
+            "diagnostic_seconds": 0.028115199995227158,
+            "entered_from_training": true,
+            "exact_accuracy": 0.03500000119209289,
+            "example_count": 200,
+            "loss": 2.0924376649500847,
+            "model_state_unchanged": true,
+            "rng_state_restored": true
+          }
+        }
+      },
+      "examples": 102400,
+      "final_batch": {
+        "clipped_gradient_norm": 1.8418539762496948,
+        "cross_entropy": 1.806037187576294,
+        "exact_accuracy": 0.09375,
+        "example_count": 64,
+        "label_count": 172,
+        "lr_used": 0.0008
+      },
+      "model_state_digest": "d6bc289f3f2c5b06698051ec3d5b3999967a5f7fb94e7d9f12302e68b3b65917",
+      "training_seconds": 672.8059842002112,
+      "update": 1600
+    },
+    "200": {
+      "checkpoint": "artifacts\\latent_x2_t1grad_d64_singlethread_v1_update200.pt",
+      "diagnostic_seconds": 0.13691629999084398,
+      "evaluation": {
+        "full_train": {
+          "correct_examples": 5,
+          "diagnostic_seconds": 0.06979219999630004,
+          "entered_from_training": true,
+          "exact_accuracy": 0.008333333333333333,
+          "example_count": 600,
+          "loss": 1.9003376066684723,
+          "model_state_unchanged": true,
+          "rng_state_restored": true
+        },
+        "train_by_t": {
+          "T1": {
+            "correct_examples": 1,
+            "diagnostic_seconds": 0.0162514999974519,
+            "entered_from_training": true,
+            "exact_accuracy": 0.005,
+            "example_count": 200,
+            "loss": 1.9239478070780915,
+            "model_state_unchanged": true,
+            "rng_state_restored": true
+          },
+          "T2": {
+            "correct_examples": 4,
+            "diagnostic_seconds": 0.021842800022568554,
+            "entered_from_training": true,
+            "exact_accuracy": 0.02,
+            "example_count": 200,
+            "loss": 1.9298439827871934,
+            "model_state_unchanged": true,
+            "rng_state_restored": true
+          },
+          "T3": {
+            "correct_examples": 0,
+            "diagnostic_seconds": 0.028429300000425428,
+            "entered_from_training": true,
+            "exact_accuracy": 0.0,
+            "example_count": 200,
+            "loss": 1.8494433149774798,
+            "model_state_unchanged": true,
+            "rng_state_restored": true
+          }
+        }
+      },
+      "examples": 12800,
+      "final_batch": {
+        "clipped_gradient_norm": 0.41536611318588257,
+        "cross_entropy": 1.9150885343551636,
+        "exact_accuracy": 0.03125,
+        "example_count": 64,
+        "label_count": 177,
+        "lr_used": 0.0008
+      },
+      "model_state_digest": "996a74ab632f5aceb662ccd50aa47257166cfd25527c95d40c5a3f4e3b4c37db",
+      "training_seconds": 83.36233190074563,
+      "update": 200
+    },
+    "400": {
+      "checkpoint": "artifacts\\latent_x2_t1grad_d64_singlethread_v1_update400.pt",
+      "diagnostic_seconds": 0.13529309997102246,
+      "evaluation": {
+        "full_train": {
+          "correct_examples": 7,
+          "diagnostic_seconds": 0.06750419997842982,
+          "entered_from_training": true,
+          "exact_accuracy": 0.011666666666666667,
+          "example_count": 600,
+          "loss": 1.9208837522966107,
+          "model_state_unchanged": true,
+          "rng_state_restored": true
+        },
+        "train_by_t": {
+          "T1": {
+            "correct_examples": 4,
+            "diagnostic_seconds": 0.016848500003106892,
+            "entered_from_training": true,
+            "exact_accuracy": 0.020000000074505805,
+            "example_count": 200,
+            "loss": 1.9034591179973674,
+            "model_state_unchanged": true,
+            "rng_state_restored": true
+          },
+          "T2": {
+            "correct_examples": 3,
+            "diagnostic_seconds": 0.022252800001297146,
+            "entered_from_training": true,
+            "exact_accuracy": 0.015,
+            "example_count": 200,
+            "loss": 1.9762083329056037,
+            "model_state_unchanged": true,
+            "rng_state_restored": true
+          },
+          "T3": {
+            "correct_examples": 0,
+            "diagnostic_seconds": 0.028165999974589795,
+            "entered_from_training": true,
+            "exact_accuracy": 0.0,
+            "example_count": 200,
+            "loss": 1.8835347522427304,
+            "model_state_unchanged": true,
+            "rng_state_restored": true
+          }
+        }
+      },
+      "examples": 25600,
+      "final_batch": {
+        "clipped_gradient_norm": 0.3667799234390259,
+        "cross_entropy": 1.906471848487854,
+        "exact_accuracy": 0.015625,
+        "example_count": 64,
+        "label_count": 171,
+        "lr_used": 0.0008
+      },
+      "model_state_digest": "78c4e03b12dd1fc779c1c4380a99d2514ff7c817d56222e9b2846e261014bffa",
+      "training_seconds": 167.88104280084372,
+      "update": 400
+    },
+    "800": {
+      "checkpoint": "artifacts\\latent_x2_t1grad_d64_singlethread_v1_update800.pt",
+      "diagnostic_seconds": 0.13282950001303107,
+      "evaluation": {
+        "full_train": {
+          "correct_examples": 18,
+          "diagnostic_seconds": 0.0674402000149712,
+          "entered_from_training": true,
+          "exact_accuracy": 0.03000000019868215,
+          "example_count": 600,
+          "loss": 1.9305654698755683,
+          "model_state_unchanged": true,
+          "rng_state_restored": true
+        },
+        "train_by_t": {
+          "T1": {
+            "correct_examples": 8,
+            "diagnostic_seconds": 0.015788299962878227,
+            "entered_from_training": true,
+            "exact_accuracy": 0.0400000000372529,
+            "example_count": 200,
+            "loss": 1.833500903957295,
+            "model_state_unchanged": true,
+            "rng_state_restored": true
+          },
+          "T2": {
+            "correct_examples": 4,
+            "diagnostic_seconds": 0.021179899980779737,
+            "entered_from_training": true,
+            "exact_accuracy": 0.020000000037252903,
+            "example_count": 200,
+            "loss": 2.0340893752396214,
+            "model_state_unchanged": true,
+            "rng_state_restored": true
+          },
+          "T3": {
+            "correct_examples": 6,
+            "diagnostic_seconds": 0.027914000034797937,
+            "entered_from_training": true,
+            "exact_accuracy": 0.03000000014901161,
+            "example_count": 200,
+            "loss": 1.9213587088017439,
+            "model_state_unchanged": true,
+            "rng_state_restored": true
+          }
+        }
+      },
+      "examples": 51200,
+      "final_batch": {
+        "clipped_gradient_norm": 0.5302916169166565,
+        "cross_entropy": 2.0312252044677734,
+        "exact_accuracy": 0.03125,
+        "example_count": 64,
+        "label_count": 174,
+        "lr_used": 0.0008
+      },
+      "model_state_digest": "1edde1bc67fc303a53c0e165a570d8aceac31b509c1db0fb3785ca1858a3c2cc",
+      "training_seconds": 335.14087240060326,
+      "update": 800
+    }
+  },
+  "model_state_elements": 75797,
+  "no_mutation": {
+    "dataset": true,
+    "manifest": true,
+    "source": true
+  },
+  "partitions": {
+    "full_train": 600,
+    "test": 150,
+    "test_by_t": {
+      "T1": 50,
+      "T2": 50,
+      "T3": 50
+    },
+    "train_by_t": {
+      "T1": 200,
+      "T2": 200,
+      "T3": 200
+    }
+  },
+  "preflight": {
+    "d_model": 32,
+    "inputs": [
+      15,
+      89,
+      42
+    ],
+    "maximum_updates": 100,
+    "optimizer": "AdamW(lr=3e-3)",
+    "residues_mod_323": [
+      225,
+      169,
+      149
+    ],
+    "rows": 3,
+    "same_weight_eval_correct": 3,
+    "train_correct": 3,
+    "true_t": [
+      1,
+      1,
+      1
+    ],
+    "updates_run": 66
+  },
+  "protocol": "latent_x2_t1grad_d64_singlethread_v1",
+  "provenance": {
+    "dynamic_dependencies": {
+      "scripts/run_latent_exposure_singlethread_v1.py": "02780ede10f072e322974850aab9647df5eeefeff6b81c9d26efb518942013e9",
+      "scripts\\run_latent_inner_refinement_x2_singlethread_v1.py": "ed954decfedd73f9d495fb3e82364f8e15984944f49a3b0aff2370c8caa0596c"
+    }
+  },
+  "status": "complete",
+  "training": {
+    "elapsed_seconds": 672.8059842002112,
+    "examples": 102400,
+    "lr_counts": {
+      "0.00012": 1,
+      "0.00016000000000000001": 1,
+      "0.00020000000000000001": 1,
+      "0.00024000000000000001": 1,
+      "0.00027999999999999998": 1,
+      "0.00032000000000000003": 1,
+      "0.00036000000000000002": 1,
+      "0.00040000000000000002": 1,
+      "0.00044000000000000007": 1,
+      "0.00048000000000000001": 1,
+      "0.00052000000000000006": 1,
+      "0.00055999999999999995": 1,
+      "0.00060000000000000006": 1,
+      "0.00064000000000000005": 1,
+      "0.00068000000000000005": 1,
+      "0.00072000000000000005": 1,
+      "0.00076000000000000004": 1,
+      "0.00080000000000000004": 1581,
+      "4.0000000000000003e-05": 1,
+      "8.0000000000000007e-05": 1
+    },
+    "lr_representatives": {
+      "1": 4e-05,
+      "1600": 0.0008,
+      "19": 0.00076,
+      "20": 0.0008,
+      "200": 0.0008,
+      "21": 0.0008,
+      "400": 0.0008,
+      "800": 0.0008
+    }
+  }
+}

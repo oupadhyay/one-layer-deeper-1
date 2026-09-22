@@ -1,0 +1,21 @@
+﻿valid: submissions\deq_transition_easy_v1\submission.py (9569 bytes)
+queued: 0b74e09d-af49-49b3-94e0-052249c6f9fc
+tier:   easy
+data:   e5
+left:   49 today
+view:   https://onelayerdeeper.ai/submissions/0b74e09d-af49-49b3-94e0-052249c6f9fc
+[queued] submission.py
+[running] submission.py
+[failed] submission.py
+submission  0b74e09d-af49-49b3-94e0-052249c6f9fc
+file        submission.py
+status      failed
+score       ΓÇö
+max T       ΓÇö
+OOD N max T ΓÇö
+tier        easy
+dataset     E5 ┬╖ 10ΓÇô11 bit N, T=1/2/3
+suite       h100_easy_e5.json
+run         eb98f202-d3ee-4a69-93f6-798acf3007e6
+modal call  fc-01KZGHEKWFVH78EZPB6YDXXVJF
+error       EVALUATION_FAILED

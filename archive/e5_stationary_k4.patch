@@ -1,0 +1,17 @@
+K4 submission ff77c5e6-5b26-4826-b6cc-b90f8d001e6b is reconstructed
+from e5_step5_stationary_k2.py with exactly these changes:
+
+@@ class Model
+-    def run_stationary_cross_recurrence_k2(
++    def run_stationary_cross_recurrence_k4(
+
+@@ run_stationary_cross_recurrence
+             m1 = self.stationary_transition(state, context, context_mask)
+-            updated = self.stationary_transition(m1, context, context_mask)
++            m2 = self.stationary_transition(m1, context, context_mask)
++            m3 = self.stationary_transition(m2, context, context_mask)
++            updated = self.stationary_transition(m3, context, context_mask)
+
+@@ Model.forward
+-        state = self.run_stationary_cross_recurrence_k2(initial_state, context, context_mask, time_steps)
++        state = self.run_stationary_cross_recurrence_k4(initial_state, context, context_mask, time_steps)

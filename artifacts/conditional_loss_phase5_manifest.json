@@ -1,0 +1,16 @@
+{
+  "variants": [
+    "submissions\\conditional_loss2_focal075_easy_v1\\submission.py",
+    "submissions\\conditional_loss2_focal125_easy_v1\\submission.py",
+    "submissions\\conditional_loss2_focal150_easy_v1\\submission.py",
+    "submissions\\conditional_loss2_hard35_easy_v1\\submission.py",
+    "submissions\\conditional_loss2_hard75_easy_v1\\submission.py",
+    "submissions\\conditional_loss2_hard100_easy_v1\\submission.py",
+    "submissions\\conditional_loss2_focal05_lr9_easy_v1\\submission.py",
+    "submissions\\conditional_loss2_focal05_lr11_easy_v1\\submission.py",
+    "submissions\\conditional_loss2_focal05_batch128_easy_v1\\submission.py",
+    "submissions\\conditional_loss2_focal05_batch512_easy_v1\\submission.py",
+    "submissions\\conditional_loss2_focal05_wd0_easy_v1\\submission.py",
+    "submissions\\conditional_loss2_focal05_warm16_easy_v1\\submission.py"
+  ]
+}

@@ -1,0 +1,20 @@
+﻿valid: submissions\deq_transition_easy_v1\submission.py (9526 bytes)
+queued: 52ffedf3-cbb7-45d3-bc00-203b6e22892f
+tier:   easy
+data:   e5
+left:   48 today
+view:   https://onelayerdeeper.ai/submissions/52ffedf3-cbb7-45d3-bc00-203b6e22892f
+[queued] submission.py
+[running] submission.py
+[succeeded] submission.py
+submission  52ffedf3-cbb7-45d3-bc00-203b6e22892f
+file        submission.py
+status      succeeded
+score       0.21%
+max T       <1
+OOD N max T <1
+tier        easy
+dataset     E5 ┬╖ 10ΓÇô11 bit N, T=1/2/3
+suite       h100_easy_e5.json
+run         dada690a-9133-47af-8e3b-c754eb0634b7
+modal call  fc-01KZGHKAKE4CH1HA4X83BG537T

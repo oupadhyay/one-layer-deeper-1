@@ -1,0 +1,71 @@
+{
+  "protocol": "relative_place_attention_t1grad_singlethread_v1",
+  "execution_history": [
+    {
+      "kind": "valid_probe_1",
+      "artifact": "artifacts/relative_place_attention_t1grad_singlethread_v1_probe1.json",
+      "sha256": "b7dd5aaba702c32fc2e03e29664eada6deebd5f7fc1b96af71b1c11356cdb5f9",
+      "complete_update_time_ratio_to_biscan": 0.8793295868697258
+    },
+    {
+      "kind": "valid_probe_2",
+      "artifact": "artifacts/relative_place_attention_t1grad_singlethread_v1_probe2.json",
+      "sha256": "8214b1e38055c1db1139f4753478bad520a5a870b81503e16c4f862488aa10b5",
+      "complete_update_time_ratio_to_biscan": 0.871219746112769
+    },
+    {
+      "kind": "fresh_full_run",
+      "updates": 1600,
+      "examples": 102400,
+      "started_from_update": 0,
+      "loaded_probe_parent_or_checkpoint": false,
+      "result_sha256": "8477074ad9133b115a2863ee13589f4266ebab170efd123a69ee5abff6033920",
+      "final_weights_sha256": "ce7771285de511a1ba9f14ca8127a95018cbd76973f5a18308ea7a0abb1256b9"
+    }
+  ],
+  "candidate_artifact_sha256": {
+    "competition_loop7_relative_place_attention_t1grad.py": "12421d250104ce4b57103e341bef1c15d9296521e0428398d241d25bdf952664",
+    "tests/test_competition_loop7_relative_place_attention_t1grad.py": "24a521333576912cc10f58b36346141ef562dfaba85971774d346a18573e6492",
+    "scripts/run_relative_place_attention_t1grad_singlethread_v1.py": "fcc78b1dfd3518e70b004ab3c278dec20417458987f387638960b658fca7f597"
+  },
+  "executed_dependency_sha256": {
+    "scripts/run_latent_exposure_singlethread_v1.py": "02780ede10f072e322974850aab9647df5eeefeff6b81c9d26efb518942013e9",
+    "competition_submission_c1a.py": "2ac90e61d36fa57c7f4f9ab7144b26022a515e3374c43ff87b7ede95ab4bb354",
+    "competition_submission.py": "00468b791b5b0ad23739170ceb1eec24f3a24c99ef7ef929fa4acf414cbedc73"
+  },
+  "protocol_parent_sha256": {
+    "competition_submission_c1b.py": "425efc4b0422585008de49704857bc4d6e9e9936b127e66926d4987b3c00d293",
+    "frozen_biscan_result": "40cdf560942ac570a078be66b73aa0a4d73d8f75b8ff542c8100a2d2e3afd720"
+  },
+  "data_sha256": {
+    "manifest": "0d1e9c8ed4d649f4e0d2767f853916163e46a7f223f6c16187e03737ae14bfcf",
+    "dataset_directory": "f662210477e43c3847fe43c2f164c97b2d0fde80ec255d45fde4bd7b71895089"
+  },
+  "milestone_checkpoint_sha256": {
+    "200": "e7fc6a17d98dd9a8b6da543bb33836a2f481f36995c8121691b96a3479a005f8",
+    "400": "89f88c37d1ef008ea8d0cad59f5600a5aacbe03b787a4bfc30218de0c6344026",
+    "800": "91afe6e57708e73997f1e64449c049f9f1c7f9651fb363ca366f030579e4b634",
+    "1600": "b96f30824c271a87f9495d0ff5b816b214dc06b12672e10184383ff930dd5d63"
+  },
+  "valid_probe_comparison_payloads_equal": true,
+  "state": {
+    "model_elements": 5362,
+    "final_weights_tensors": 15,
+    "final_weights_only": true,
+    "milestone_checkpoints_include_complete_resume_state": true
+  },
+  "evaluation_scope": {
+    "held_out_evaluated_only_after_update_1600": true,
+    "depth_ood_n_t_1_seconds_are_recorded_in_its_own_metric_but_not_added_to_diagnostics.elapsed_seconds": true
+  },
+  "gates": {
+    "exposure": "FAIL",
+    "one_step_learnability": "INCONCLUSIVE",
+    "competition_signal": "FAIL",
+    "transfer": "FAIL",
+    "promotion": "FAIL"
+  },
+  "classification": "fixed-update CPU diagnostic; not H100 or competition-budget timing",
+  "automatic_follow_up": false,
+  "remote_action": false
+}

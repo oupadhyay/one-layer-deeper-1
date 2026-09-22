@@ -1,0 +1,77 @@
+{
+  "protocol": "biscan_t1grad_singlethread_v1",
+  "execution_history": [
+    {
+      "kind": "pre_step_probe_abort",
+      "optimizer_steps_completed": 0,
+      "artifact_created": false,
+      "reason": "The candidate did not expose the benchmark-required model.config.vocab_size interface. A non-state Config object was added before any valid probe or result run."
+    },
+    {
+      "kind": "valid_probe_1",
+      "artifact": "artifacts/biscan_t1grad_singlethread_v1_probe1.json",
+      "sha256": "e5adb8aa748e1aae78c76c71c304c00b9498f025c1fe350a17847b00169c7013",
+      "complete_update_time_ratio_to_d112_parent": 0.8711342431880509
+    },
+    {
+      "kind": "valid_probe_2",
+      "artifact": "artifacts/biscan_t1grad_singlethread_v1_probe2.json",
+      "sha256": "fda0f611bbc1c7ddcafcba4798888a52b9f82ff5893c745963abec5400575e2a",
+      "complete_update_time_ratio_to_d112_parent": 0.8878096219686661
+    },
+    {
+      "kind": "fresh_full_run",
+      "updates": 1600,
+      "examples": 102400,
+      "started_from_update": 0,
+      "loaded_probe_parent_or_checkpoint": false,
+      "result_sha256": "40cdf560942ac570a078be66b73aa0a4d73d8f75b8ff542c8100a2d2e3afd720",
+      "final_weights_sha256": "d764c4ea410390c14fda0e8f96eb392e9756c0a585f6761207a92bf3e3dccc61"
+    }
+  ],
+  "candidate_artifact_sha256": {
+    "competition_loop6_biscan_t1grad.py": "7fa66ef1d543716bb7c543bd7f0d90fd5703297f5a039d81a0ba2e58cac4445c",
+    "tests/test_competition_loop6_biscan_t1grad.py": "325946cb287d595fa8f4b88725e9838abfa8523703c2516ffde9998d12cd5930",
+    "scripts/run_biscan_t1grad_singlethread_v1.py": "fcd0861bdaa8244bfa9806266b31da1b82741541582efa7c3fbc9ca7117b96a5"
+  },
+  "executed_dependency_sha256": {
+    "scripts/run_latent_exposure_singlethread_v1.py": "02780ede10f072e322974850aab9647df5eeefeff6b81c9d26efb518942013e9",
+    "competition_submission_c1a.py": "2ac90e61d36fa57c7f4f9ab7144b26022a515e3374c43ff87b7ede95ab4bb354",
+    "competition_submission.py": "00468b791b5b0ad23739170ceb1eec24f3a24c99ef7ef929fa4acf414cbedc73"
+  },
+  "protocol_parent_sha256": {
+    "competition_submission_c1b.py": "425efc4b0422585008de49704857bc4d6e9e9936b127e66926d4987b3c00d293",
+    "historical_biscan_source_benchmark/s2_e1_biscan.py": "62ce733484eee46b313e550ee88bd1c2274a1b5ff2d8d6c87b5c251d030aa98a"
+  },
+  "data_sha256": {
+    "manifest": "0d1e9c8ed4d649f4e0d2767f853916163e46a7f223f6c16187e03737ae14bfcf",
+    "dataset_directory": "f662210477e43c3847fe43c2f164c97b2d0fde80ec255d45fde4bd7b71895089"
+  },
+  "milestone_checkpoint_sha256": {
+    "200": "d51d45170d237a097a95e4e0b67a6d70be86d40c802bedcbb59137b1a0c735c3",
+    "400": "ca4bf5ab2b436e78d3624313d40e6c4852d9b48ceffd1e19df9bc50c31633aa8",
+    "800": "875e86baf83309eb5c7fb3bbfe95d828de375297924d76898b8b38d2edef200e",
+    "1600": "f820c0ca56dd5408114ae6279d5e0514ccdd283f8cb8571cf4008134b698fae8"
+  },
+  "valid_probe_comparison_payloads_equal": true,
+  "state": {
+    "model_elements": 63178,
+    "final_weights_tensors": 11,
+    "final_weights_only": true,
+    "milestone_checkpoints_include_complete_resume_state": true
+  },
+  "evaluation_scope": {
+    "held_out_evaluated_only_after_update_1600": true,
+    "depth_ood_n_t_1_seconds_are_recorded_in_its_own_metric_but_not_added_to_diagnostics.elapsed_seconds": true
+  },
+  "gates": {
+    "exposure": "PASS",
+    "one_step_learnability": "PASS",
+    "competition_signal": "FAIL",
+    "scan_transfer": "FAIL",
+    "promotion": "FAIL"
+  },
+  "classification": "fixed-update CPU diagnostic; not H100 or competition-budget timing",
+  "automatic_follow_up": false,
+  "remote_action": false
+}

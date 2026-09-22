@@ -1,0 +1,143 @@
+{
+  "aggregate": {
+    "all_row_modal_collapse": false,
+    "full_train": {
+      "correct_examples": 25,
+      "exact_accuracy": 0.005208333333333333,
+      "example_count": 4800,
+      "loss": 2.140227269254489,
+      "token_count": 14220
+    },
+    "model_state_unchanged": true,
+    "output_place_token_ce": {
+      "LSD": {
+        "loss": 2.301994509473443,
+        "token_count": 4800
+      },
+      "hundreds": {
+        "loss": 2.076044045688734,
+        "token_count": 4147
+      },
+      "tens": {
+        "loss": 2.295450009194283,
+        "token_count": 4689
+      },
+      "thousands": {
+        "loss": 0.020100610649646963,
+        "token_count": 584
+      }
+    },
+    "rng_state_restored": true,
+    "train_by_t": {
+      "T1": {
+        "correct_examples": 8,
+        "exact_accuracy": 0.005,
+        "example_count": 1600,
+        "loss": 2.1390456863596468,
+        "token_count": 4740
+      },
+      "T2": {
+        "correct_examples": 11,
+        "exact_accuracy": 0.006875,
+        "example_count": 1600,
+        "loss": 2.1318121170303,
+        "token_count": 4771
+      },
+      "T3": {
+        "correct_examples": 6,
+        "exact_accuracy": 0.00375,
+        "example_count": 1600,
+        "loss": 2.1499425953273485,
+        "token_count": 4709
+      }
+    },
+    "unique_predicted_sequences": 142
+  },
+  "contract": {
+    "batch_size": 64,
+    "fresh_update0": true,
+    "gradient_clip": 1.0,
+    "loader_seed": 45,
+    "loss": "plain endpoint cross entropy",
+    "model_seed": 74,
+    "no_reset_selection_continuation_or_held_out_evaluation": true,
+    "official_e5_train_loader": true,
+    "official_one_forward_one_backward_train_update": true,
+    "probe_or_checkpoint_loaded": false,
+    "updates": 400
+  },
+  "correction_history": [],
+  "determinism": {
+    "MKL_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "deterministic_algorithms": true,
+    "torch_num_interop_threads": 1,
+    "torch_num_threads": 1
+  },
+  "digests": {
+    "loader_generator": "02ced5b4367ab6c18971f77ec349c369c24da8b17767f643e193e74a933cc09b",
+    "model": "f00c013375ed164cab3c4a00d614fb1941874617ab6849cb34aed992c7811816",
+    "optimizer": "0ccdcc0097a1f90067b1f7100cd31fabb5b16654238af7eff23bf9c8a74f5908",
+    "scheduler": "d3f181004d9c78b395870681aa4da4a74537aa45ea8a4bd61408f3f84966f623"
+  },
+  "final_batch": {
+    "clipped_gradient_norm": 0.42480483651161194,
+    "cross_entropy": 2.1173784732818604,
+    "exact_accuracy": 0.0,
+    "example_count": 64,
+    "label_count": 196,
+    "lr_used": 0.0008
+  },
+  "hashes": {
+    "candidate": "d4fde5841a217bd64eaaabe43dceec253a093607df0fdeaaae8fdb10070460df",
+    "checkpoint": "f8444cd0e111f7ac94ccb1299943684afc22d8610661ae1dddfafa1c79d01108",
+    "dataset": "472ba57a7b33a2266e19ac5bf333dd217e86460a626aa4a1033928bab31747d6",
+    "harness": "1c67f5730708b940a696289a4bc645250e6c22c6e8f38900fb38e4919a11ef0a",
+    "manifest": "af01b9dec3a59579811b620a5aac76bc3637efaaf9a64eed55c4043018fc7cef",
+    "probes": {
+      "factorized_pair_reducer_singlethread_v1_probe1.json": "b2f6e544fd59496a964cb8b791dc3ea5e7b3e70bd9e416e75bafb1444d2f0928",
+      "factorized_pair_reducer_singlethread_v1_probe2.json": "3f1b68220f64f05651c2ae9b05f741977ab074693d3c7c25e1bcea3ed6e22c36"
+    }
+  },
+  "model_state_elements": 64778,
+  "position": {
+    "batches_consumed_in_current_epoch": 25,
+    "batches_per_epoch": 75,
+    "epoch_index": 5,
+    "epoch_start_generator_digest": "43cddfb524602d2f883fb18b746f7f4e4b57e0ea7319cf0004bc06eda90784b2",
+    "examples": 25600,
+    "update": 400
+  },
+  "preflight": {
+    "maximum_updates": 100,
+    "optimizer": "AdamW(lr=3e-3)",
+    "rows": 3,
+    "same_weight_eval_correct": 3,
+    "train_correct": 3,
+    "true_t": [
+      1,
+      1,
+      1
+    ],
+    "updates_run": 8
+  },
+  "promotion_gate": {
+    "clauses": {
+      "finite_metrics": true,
+      "lsd_ce": false,
+      "no_all_row_modal_collapse": true,
+      "t1_learnability": false,
+      "tens_ce": false
+    },
+    "failed_clauses": [
+      "t1_learnability",
+      "lsd_ce",
+      "tens_ce"
+    ],
+    "pass": false,
+    "rule": "T1 CE <=1.90 OR exact >=80/1600; LSD and tens CE <2.25; finite; no all-row modal collapse"
+  },
+  "protocol": "factorized_pair_reducer_singlethread_v1_trainability400",
+  "status": "complete",
+  "training_elapsed_seconds": 14.889086100040004
+}

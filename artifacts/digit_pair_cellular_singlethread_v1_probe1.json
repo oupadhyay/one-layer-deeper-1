@@ -1,0 +1,105 @@
+{
+  "comparison_payload": {
+    "backward_gate": {
+      "T1": 1.0,
+      "T_not_1": 0.01,
+      "forward_values_ungated": true
+    },
+    "batch_horizon_histogram": {
+      "T1": 425,
+      "T2": 437,
+      "T3": 418
+    },
+    "loader_generator_digest": "3100b4c6a145a9e6c3ea8eb51a83cce5a338443bcae1ab3f072d40ea5dec8e5b",
+    "losses": [
+      2.3732287883758545,
+      2.3400673866271973,
+      2.461221218109131,
+      2.39554762840271,
+      2.354072093963623,
+      2.339284658432007,
+      2.3222901821136475,
+      2.347194194793701,
+      2.3423054218292236,
+      2.306257724761963,
+      2.3250861167907715,
+      2.3675036430358887,
+      2.2916972637176514,
+      2.287041664123535,
+      2.254385471343994,
+      2.2691171169281006,
+      2.289137840270996,
+      2.31357741355896,
+      2.2906100749969482,
+      2.271214246749878
+    ],
+    "model_state_digest": "13025bf9a5cd098f94afbaf572c7fcd038558097c19fe605909f37915a6db18f",
+    "optimizer_state_digest": "8eea1880b5013e4e364c43c05fac997e70d7c16096b34b7964b17f954e923a89",
+    "ordered_batch_digests": [
+      "ba7fbb7034fdb4b31e379829fc46ed44ebb88c097978065006ff5f63297f232f",
+      "2df9eb8fff5b23245c20c3578ef59b575cdf454a97f2728384817dd547b97b93",
+      "6fbe85cc6038143fea6cc84760d6e8208b9e7c48c0772a0adda170fa00e59a74",
+      "c0863ef960a0143842063cd5111b80181eb3d243926cb7f9c7a274c804a09ec7",
+      "db44d9bca68f5a2b794623e54995f6fc73ea74d7fc68622eb7743011bcbf75eb",
+      "d959423cd0063bffa75027ef8c068a8efcd6a356e5078c774e2a268fe2eda9c0",
+      "dbae235c2219bb5ec6a679a2a2da7c942c0ea09fccd443c03c8e42094e6d4812",
+      "bb2d310885d21ea65877f5f8376fcfd915f33163044620f97f7ee67f94e29d02",
+      "aefd4b49896e75da98d9e7a8bdf25317057a617c28cc823008bb98397b654d80",
+      "b582d52dcd7a5150a7327d8fc16a00a761a14d28a8c07595b88d436695415c92",
+      "96e84e32d9edea18658178ff48ba6b433bbc8908f78970aec046eb41a5574abd",
+      "5e7e75ec3b8be5a4bd3df0adda8c3e56d5d7bca4244a5ac8b271842acfa9416e",
+      "0672ee2931b438caa8d1834640bb449167f1a4b1e2f52947a74f97f655bbe511",
+      "06ba9eab1454913623a49fca9fb5ab919dd6a3b9067ae47c62273b8c0fded0f7",
+      "68e5216f748eac0a15c02e980a69071a30fabec04b793e90f26331802744f4a4",
+      "c98386e166d4534d016f07270c565e1477d0ad021b80ca754254e5c7384677d1",
+      "e563d710118e9c171dec1d8edab5d67d849eee29a0fcd6c514f30af995811e7c",
+      "f3f4f4b0e4ec9dcb3850552dccc0fb99090bd09eafff97709cf81a2ef6141c49",
+      "2dd9bb83a0d2ab1088096aadc6792e15fbf2fbbe1062b02f703839da95de5ee1",
+      "37aaa36553ed11cc4f3a873ae90a4aa769523805d9aea2223a31bfb578fcfe99"
+    ],
+    "position": {
+      "batches_consumed_in_current_epoch": 20,
+      "batches_per_epoch": 75,
+      "epoch_index": 0,
+      "epoch_start_generator_digest": "1eeb923933b61dee491cb37544bdface7365a275b0af0d0f3509d2b444ff1c94",
+      "examples": 1280,
+      "update": 20
+    },
+    "preflight": {
+      "maximum_updates": 100,
+      "optimizer": "AdamW(lr=3e-3)",
+      "rows": 3,
+      "same_weight_eval_correct": 3,
+      "train_correct": 3,
+      "true_t": [
+        1,
+        1,
+        1
+      ],
+      "updates_run": 12
+    },
+    "protocol": "digit_pair_cellular_singlethread_v1",
+    "scan_call_counts": {
+      "active_row_cell_calls": 17814,
+      "vectorized_cell_calls": 480,
+      "workspace_initialization_count": 60
+    },
+    "scheduler_state_digest": "237e12d3ae222988eeb362c488dce1ac1662cb47e5f2b73a8074012a3e42821f",
+    "settings": {
+      "MKL_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "deterministic_algorithms": true,
+      "torch_num_interop_threads": 1,
+      "torch_num_threads": 1
+    },
+    "width_histogram": {
+      "3": 644,
+      "4": 636
+    }
+  },
+  "timing": {
+    "candidate_training_seconds_per_update": 0.10534558999934233,
+    "e1_biscan_frozen_seconds_per_update": 0.034,
+    "ratio": 3.0983997058630095
+  }
+}
